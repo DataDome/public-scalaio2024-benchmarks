@@ -15,7 +15,7 @@ object Invoice {
     }
   }
 
-  def random(id: Int)(using rand: Random): Invoice = Invoice(id, rand.nextString(20), rand.nextInt(100))
+  def random(id: Int)(using rand: Random): Invoice = Invoice(id, rand.nextSimpleString(20), rand.nextInt(100))
 }
 
 
@@ -32,5 +32,5 @@ object BadInvoice {
     }
   }
 
-  def random(id: Int)(using rand: Random): BadInvoice = BadInvoice(id, rand.nextString(20), rand.nextInt(100))
+  def random(id: Int)(using rand: Random): BadInvoice = BadInvoice(id, rand.nextSimpleString(20), rand.nextInt(100))
 }
