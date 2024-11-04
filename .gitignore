@@ -1,0 +1,39 @@
+### Scala ###
+
+*.class
+
+# sbt
+dist/*
+target/
+lib_managed/
+src_managed/
+project/target/
+project/project/target/
+.history
+.cache
+.lib
+
+# Bloop/Metals/BSP
+.bloop
+.metals
+.bsp
+
+
+
+### Intellij ###
+
+# Ignore everything except formatting configuration
+.idea/*
+!.idea/codeStyles
+.idea/codeStyles/*
+!.idea/codeStyles/Project.xml
+
+
+
+### Misc ###
+
+*.log
+logs
+
+#MacOS
+.DS_store
