@@ -1,0 +1,14 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <ScalaCodeStyleSettings>
+      <option name="USE_SCALA3_INDENTATION_BASED_SYNTAX" value="false" />
+      <option name="SD_ALIGN_OTHER_TAGS_COMMENTS" value="false" />
+      <option name="SD_ALIGN_PARAMETERS_COMMENTS" value="false" />
+      <option name="SD_ALIGN_EXCEPTION_COMMENTS" value="false" />
+      <option name="SD_ALIGN_RETURN_COMMENTS" value="false" />
+    </ScalaCodeStyleSettings>
+    <codeStyleSettings language="Scala">
+      <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>
