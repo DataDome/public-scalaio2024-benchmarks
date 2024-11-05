@@ -1,7 +1,7 @@
 package co.datadome.pub.scalaio2024.benchmarks.chapter4
 
-import co.datadome.pub.scalaio2024.utils.*
 import co.datadome.pub.scalaio2024.benchmarks.chapter4.stats.*
+import co.datadome.pub.scalaio2024.utils.*
 import org.openjdk.jmh.annotations.*
 
 import java.util.concurrent.TimeUnit

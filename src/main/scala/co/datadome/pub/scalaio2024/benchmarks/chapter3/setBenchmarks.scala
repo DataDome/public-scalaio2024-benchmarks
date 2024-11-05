@@ -99,7 +99,6 @@ abstract class SetBenchmarkBase_Invoice(val testSize: Int, val hitRatio: Double)
 }
 
 
-
 abstract class SetBenchmarkBase_BadInvoice(val testSize: Int, val hitRatio: Double) extends SetBenchmarkBase[BadInvoice] {
 
   private lazy val nonTestIds = ((0 until maxIntValue).toSet -- testSet.map(_.id)).toArray
