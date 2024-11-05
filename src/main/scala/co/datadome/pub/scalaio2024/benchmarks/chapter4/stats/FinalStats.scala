@@ -9,7 +9,7 @@ final case class FinalStats(
   countB: Int = 0,
   countC: Int = 0
 ) {
-  def updated(string: String) = {
+  def updated(string: String): FinalStats = {
     if (string.isEmpty) copy(count = count + 1, countSmall = count + 1, countEmpty = countEmpty + 1)
     else if (string.lengthCompare(FinalStats.smallStringSize) < 0) {
       if (string.head == 'a' || string.head == 'A') copy(count = count + 1, countSmall = count + 1, countA = countA + 1)

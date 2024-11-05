@@ -38,7 +38,7 @@ extension (s: ArrayStats) {
       s(ArrayStats.CountEmptyIndex) += 1
       s(ArrayStats.CountSmallIndex) += 1
     } else {
-      if (string.lengthCompare(MutableStats.smallStringSize) < 0) {
+      if (string.lengthCompare(ArrayStats.smallStringSize) < 0) {
         s(ArrayStats.CountSmallIndex) += 1
       }
       if (string.head == 'a' || string.head == 'A') {

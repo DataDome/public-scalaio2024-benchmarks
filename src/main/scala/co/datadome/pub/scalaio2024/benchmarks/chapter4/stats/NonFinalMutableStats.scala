@@ -1,7 +1,7 @@
 package co.datadome.pub.scalaio2024.benchmarks.chapter4.stats
 
 
-case class MutableStats(
+case class NonFinalMutableStats(
   var count: Int = 0,
   var countSmall: Int = 0,
   var countEmpty: Int = 0,
@@ -15,7 +15,7 @@ case class MutableStats(
       countEmpty += 1
       countSmall += 1
     } else {
-      if (string.lengthCompare(MutableStats.smallStringSize) < 0) {
+      if (string.lengthCompare(NonFinalMutableStats.smallStringSize) < 0) {
         countSmall += 1
       }
       if (string.head == 'a' || string.head == 'A') {
@@ -31,6 +31,6 @@ case class MutableStats(
   }
 }
 
-object MutableStats {
+object NonFinalMutableStats {
   val smallStringSize = 3
 }

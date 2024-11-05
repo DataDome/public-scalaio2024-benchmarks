@@ -36,7 +36,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   /* foldLeft */
 
   @Benchmark def foldLeft_immutable_nonfinal(): Unit = {
-    val result = testStrings.foldLeft(Stats()) { (stats, string) =>
+    val result = testStrings.foldLeft(NonFinalStats()) { (stats, string) =>
       stats.updated(string)
     }
     assert(result.count == testSize)
@@ -50,7 +50,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   }
 
   @Benchmark def foldLeft_mutable_nonfinal(): Unit = {
-    val result = testStrings.foldLeft(MutableStats()) { (stats, string) =>
+    val result = testStrings.foldLeft(NonFinalMutableStats()) { (stats, string) =>
       stats.update(string)
       stats
     }
@@ -77,7 +77,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   /* fastFoldLeft */
 
   @Benchmark def fastFoldLeft_immutable_nonfinal(): Unit = {
-    val result = testStrings.fastFoldLeft(Stats()) { (stats, string) =>
+    val result = testStrings.fastFoldLeft(NonFinalStats()) { (stats, string) =>
       stats.updated(string)
     }
     assert(result.count == testSize)
@@ -91,7 +91,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   }
 
   @Benchmark def fastFoldLeft_mutable_nonfinal(): Unit = {
-    val result = testStrings.fastFoldLeft(MutableStats()) { (stats, string) =>
+    val result = testStrings.fastFoldLeft(NonFinalMutableStats()) { (stats, string) =>
       stats.update(string)
       stats
     }
@@ -118,7 +118,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   /* foreach */
 
   @Benchmark def foreach_immutable_nonfinal(): Unit = {
-    var stats = Stats()
+    var stats = NonFinalStats()
     testStrings.foreach { string =>
       stats = stats.updated(string)
     }
@@ -134,7 +134,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   }
 
   @Benchmark def foreach_mutable_nonfinal(): Unit = {
-    val stats = MutableStats()
+    val stats = NonFinalMutableStats()
     testStrings.foreach { string =>
       stats.update(string)
     }
@@ -161,7 +161,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   /* fastForeach */
 
   @Benchmark def fastForeach_immutable_nonfinal(): Unit = {
-    var stats = Stats()
+    var stats = NonFinalStats()
     testStrings.fastForeach { string =>
       stats = stats.updated(string)
     }
@@ -177,7 +177,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   }
 
   @Benchmark def fastForeach_mutable_nonfinal(): Unit = {
-    val stats = MutableStats()
+    val stats = NonFinalMutableStats()
     testStrings.fastForeach { string =>
       stats.update(string)
     }
@@ -204,7 +204,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   /* fastForeach - using the stats during the run */
 
   @Benchmark def fastForeach2_immutable_nonfinal(): Unit = {
-    var stats = Stats()
+    var stats = NonFinalStats()
     var total = 0L
     var totalSmall = 0L
     testStrings.fastForeach { string =>
@@ -228,7 +228,7 @@ abstract class StatsBenchmarkBase(val testSize: Int) {
   }
 
   @Benchmark def fastForeach2_mutable_nonfinal(): Unit = {
-    val stats = MutableStats()
+    val stats = NonFinalMutableStats()
     var total = 0L
     var totalSmall = 0L
     testStrings.fastForeach { string =>
