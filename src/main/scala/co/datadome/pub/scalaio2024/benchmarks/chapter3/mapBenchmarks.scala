@@ -4,7 +4,7 @@ import co.datadome.pub.scalaio2024.utils.*
 import org.openjdk.jmh.annotations.*
 
 import java.util.concurrent.TimeUnit
-import scala.collection.immutable.{HashMap, IntMap}
+import scala.collection.immutable.{HashMap, IntMap, VectorMap}
 import scala.jdk.CollectionConverters.*
 import scala.reflect.ClassTag
 import scala.util.Random
@@ -42,6 +42,7 @@ abstract class MapBenchmarkBase[A: ClassTag : Ordering : Identifiable] {
   lazy val testJavaHashMap: java.util.HashMap[A, String] = new java.util.HashMap(testHashMap.asJava)
   lazy val testArrayMap: ArrayMap[A, Option[String]] = ArrayMap.from(maxIntValue, testHashMap.view.mapValues(Some(_)), None)
   lazy val testIntMap: IntMap[String] = IntMap.from(testHashMap.map((k, v) => k.id -> v))
+  lazy val testVectorMap: VectorMap[A, String] = VectorMap.from(testHashMap)
 
   @Benchmark def get_HashMap(): Unit = {
     val _ = sample.map(testHashMap.get)
@@ -57,6 +58,10 @@ abstract class MapBenchmarkBase[A: ClassTag : Ordering : Identifiable] {
 
   @Benchmark def get_IntMap(): Unit = {
     val _ = sample.map(a => testIntMap.get(a.id))
+  }
+
+  @Benchmark def get_VectorMap(): Unit = {
+    val _ = sample.map(testVectorMap.get)
   }
 }
 
