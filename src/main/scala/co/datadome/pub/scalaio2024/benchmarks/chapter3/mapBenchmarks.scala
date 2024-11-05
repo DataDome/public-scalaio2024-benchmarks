@@ -41,6 +41,7 @@ abstract class MapBenchmarkBase[A: ClassTag : Ordering : Identifiable] {
   lazy val testHashMap: HashMap[A, String] = testSeq.toMap.asInstanceOf[HashMap[A, String]]
   lazy val testJavaHashMap: java.util.HashMap[A, String] = new java.util.HashMap(testHashMap.asJava)
   lazy val testArrayMap: ArrayMap[A, Option[String]] = ArrayMap.from(maxIntValue, testHashMap.view.mapValues(Some(_)), None)
+  lazy val testIntMap: IntMap[String] = IntMap.from(testHashMap.map((k, v) => k.id -> v))
 
   @Benchmark def get_HashMap(): Unit = {
     val _ = sample.map(testHashMap.get)
@@ -52,6 +53,10 @@ abstract class MapBenchmarkBase[A: ClassTag : Ordering : Identifiable] {
 
   @Benchmark def apply_ArrayMap(): Unit = {
     val _ = sample.map(testArrayMap.apply)
+  }
+
+  @Benchmark def get_IntMap(): Unit = {
+    val _ = sample.map(a => testIntMap.get(a.id))
   }
 }
 
@@ -68,13 +73,6 @@ abstract class MapBenchmarkBase_Int(val testSize: Int, val hitRatio: Double) ext
 
   lazy val testSeq: Seq[(Int, String)] = (0 until testSize).map(_ => generateNewEntry())
   lazy val sample: Vector[Int] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownKey() else generateUnknownKey() }.toVector
-
-  lazy val testIntMap: IntMap[String] = IntMap.from(testHashMap.map((k, v) => k -> v))
-
-
-  @Benchmark def get_IntMap(): Unit = {
-    val _ = sample.map(testIntMap.get)
-  }
 }
 
 abstract class MapBenchmarkBase_Invoice(val testSize: Int, val hitRatio: Double) extends MapBenchmarkBase[Invoice] {
