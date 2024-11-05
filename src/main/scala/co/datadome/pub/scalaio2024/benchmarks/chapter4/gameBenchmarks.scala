@@ -80,13 +80,13 @@ abstract class GameBenchmarkBase(val testSize: Int) {
               bestScore = newScore
               bestMoves = (one, two, three, four)
             }
-            gameState.reverse(four)
+            gameState.revert(four)
           }
-          gameState.reverse(three)
+          gameState.revert(three)
         }
-        gameState.reverse(two)
+        gameState.revert(two)
       }
-      gameState.reverse(one)
+      gameState.revert(one)
     }
     gameState.update(bestMoves._1).update(bestMoves._2).update(bestMoves._3).update(bestMoves._4)
     gameState

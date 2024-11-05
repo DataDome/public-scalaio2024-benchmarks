@@ -5,7 +5,7 @@ final case class MutableGameState(
   var positionY: Int,
   var positionZ: Int
 ) {
-  def update(move: GameMove) = {
+  def update(move: GameMove): MutableGameState = {
     move match {
       case GameMove.Up => positionZ = positionZ + 1
       case GameMove.Down => positionZ = positionZ - 1
@@ -17,7 +17,7 @@ final case class MutableGameState(
     this
   }
 
-  def reverse(move: GameMove) = {
+  def revert(move: GameMove): MutableGameState = {
     move match {
       case GameMove.Up => positionZ = positionZ - 1
       case GameMove.Down => positionZ = positionZ + 1

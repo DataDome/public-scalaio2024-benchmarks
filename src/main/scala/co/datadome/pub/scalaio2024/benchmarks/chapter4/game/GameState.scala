@@ -5,7 +5,7 @@ final case class GameState(
   positionY: Int,
   positionZ: Int
 ) {
-  def updated(move: GameMove) = move match {
+  def updated(move: GameMove): GameState = move match {
     case GameMove.Up => copy(positionZ = positionZ + 1)
     case GameMove.Down => copy(positionZ = positionZ - 1)
     case GameMove.North => copy(positionY = positionY + 1)
