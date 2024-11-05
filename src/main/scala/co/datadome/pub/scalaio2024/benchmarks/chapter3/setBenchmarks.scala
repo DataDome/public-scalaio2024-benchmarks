@@ -194,12 +194,12 @@ class SetBenchmark_BadInvoice_AllMiss_Large extends SetBenchmarkBase_BadInvoice(
   override def contains_Array(): Unit = () // very slow
 }
 
-class SetBenchmark_BadInvoice_HalfMiss_VerySmall extends SetBenchmarkBase_BadInvoice(5, 0.5)
+class SetBenchmark_BadInvoice_HalfHit_VerySmall extends SetBenchmarkBase_BadInvoice(5, 0.5)
 
-class SetBenchmark_BadInvoice_HalfMiss_Small extends SetBenchmarkBase_BadInvoice(100, 0.5)
+class SetBenchmark_BadInvoice_HalfHit_Small extends SetBenchmarkBase_BadInvoice(100, 0.5)
 
-class SetBenchmark_BadInvoice_HalfMiss_Medium extends SetBenchmarkBase_BadInvoice(10000, 0.5)
+class SetBenchmark_BadInvoice_HalfHit_Medium extends SetBenchmarkBase_BadInvoice(10000, 0.5)
 
-class SetBenchmark_BadInvoice_HalfMiss_Large extends SetBenchmarkBase_BadInvoice(1000000, 0.5) {
+class SetBenchmark_BadInvoice_HalfHit_Large extends SetBenchmarkBase_BadInvoice(1000000, 0.5) {
   override def contains_Array(): Unit = () // very slow
 }
