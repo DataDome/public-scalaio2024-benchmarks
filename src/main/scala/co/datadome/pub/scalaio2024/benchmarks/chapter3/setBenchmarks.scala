@@ -4,7 +4,6 @@ import co.datadome.pub.scalaio2024.utils.*
 import org.openjdk.jmh.annotations.*
 
 import java.util.concurrent.TimeUnit
-import scala.annotation.tailrec
 import scala.collection.immutable.{BitSet, SortedSet}
 import scala.jdk.CollectionConverters.*
 import scala.reflect.ClassTag
@@ -72,19 +71,47 @@ abstract class SetBenchmarkBase[A: ClassTag : Ordering : Identifiable] {
 
 abstract class SetBenchmarkBase_Int(val testSize: Int, val hitRatio: Double) extends SetBenchmarkBase[Int] {
 
+  private lazy val nonTestInts = ((0 until maxIntValue).toSet -- testSet).toArray
+
   private def generateNewEntry(): Int = rand.nextInt(maxIntValue)
 
   private def generateKnownEntry(): Int = testVector(rand.nextInt(testSize))
 
-  @tailrec
-  private def generateUnknownEntry(): Int = {
-    val a = rand.nextInt(maxIntValue)
-    if (testVector.contains(a)) generateUnknownEntry()
-    else a
-  }
+  private def generateUnknownEntry(): Int = nonTestInts(rand.nextInt(nonTestInts.length))
 
   lazy val testVector: Vector[Int] = (0 until testSize).map(_ => generateNewEntry()).toVector
   lazy val sample: Vector[Int] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownEntry() else generateUnknownEntry() }.toVector
+}
+
+
+abstract class SetBenchmarkBase_Invoice(val testSize: Int, val hitRatio: Double) extends SetBenchmarkBase[Invoice] {
+
+  private lazy val nonTestIds = ((0 until maxIntValue).toSet -- testSet.map(_.id)).toArray
+
+  private def generateNewEntry(): Invoice = Invoice.random(rand.nextInt(maxIntValue))
+
+  private def generateKnownEntry(): Invoice = testVector(rand.nextInt(testSize))
+
+  private def generateUnknownEntry(): Invoice = Invoice.random(nonTestIds(rand.nextInt(nonTestIds.length)))
+
+  lazy val testVector: Vector[Invoice] = (0 until testSize).map(_ => generateNewEntry()).toVector
+  lazy val sample: Vector[Invoice] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownEntry() else generateUnknownEntry() }.toVector
+}
+
+
+
+abstract class SetBenchmarkBase_BadInvoice(val testSize: Int, val hitRatio: Double) extends SetBenchmarkBase[BadInvoice] {
+
+  private lazy val nonTestIds = ((0 until maxIntValue).toSet -- testSet.map(_.id)).toArray
+
+  private def generateNewEntry(): BadInvoice = BadInvoice.random(rand.nextInt(maxIntValue))
+
+  private def generateKnownEntry(): BadInvoice = testVector(rand.nextInt(testSize))
+
+  private def generateUnknownEntry(): BadInvoice = BadInvoice.random(nonTestIds(rand.nextInt(nonTestIds.length)))
+
+  lazy val testVector: Vector[BadInvoice] = (0 until testSize).map(_ => generateNewEntry()).toVector
+  lazy val sample: Vector[BadInvoice] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownEntry() else generateUnknownEntry() }.toVector
 }
 
 class SetBenchmark_Int_AllHit_VerySmall extends SetBenchmarkBase_Int(5, 1.0)
@@ -117,24 +144,6 @@ class SetBenchmark_Int_HalfHit_Large extends SetBenchmarkBase_Int(1000000, 0.5) 
   override def contains_Array(): Unit = () // very slow
 }
 
-
-abstract class SetBenchmarkBase_Invoice(val testSize: Int, val hitRatio: Double) extends SetBenchmarkBase[Invoice] {
-
-  private def generateNewEntry(): Invoice = Invoice.random(rand.nextInt(maxIntValue))
-
-  private def generateKnownEntry(): Invoice = testVector(rand.nextInt(testSize))
-
-  @tailrec
-  private def generateUnknownEntry(): Invoice = {
-    val a = rand.nextInt(maxIntValue)
-    if (testVector.exists(_.id == a)) generateUnknownEntry()
-    else Invoice.random(a)
-  }
-
-  lazy val testVector: Vector[Invoice] = (0 until testSize).map(_ => generateNewEntry()).toVector
-  lazy val sample: Vector[Invoice] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownEntry() else generateUnknownEntry() }.toVector
-}
-
 class SetBenchmark_Invoice_AllHit_VerySmall extends SetBenchmarkBase_Invoice(5, 1.0)
 
 class SetBenchmark_Invoice_AllHit_Small extends SetBenchmarkBase_Invoice(100, 1.0)
@@ -163,24 +172,6 @@ class SetBenchmark_Invoice_HalfHit_Medium extends SetBenchmarkBase_Invoice(10000
 
 class SetBenchmark_Invoice_HalfHit_Large extends SetBenchmarkBase_Invoice(1000000, 0.5) {
   override def contains_Array(): Unit = () // very slow
-}
-
-
-abstract class SetBenchmarkBase_BadInvoice(val testSize: Int, val hitRatio: Double) extends SetBenchmarkBase[BadInvoice] {
-
-  private def generateNewEntry(): BadInvoice = BadInvoice.random(rand.nextInt(maxIntValue))
-
-  private def generateKnownEntry(): BadInvoice = testVector(rand.nextInt(testSize))
-
-  @tailrec
-  private def generateUnknownEntry(): BadInvoice = {
-    val a = rand.nextInt(maxIntValue)
-    if (testVector.exists(_.id == a)) generateUnknownEntry()
-    else BadInvoice.random(a)
-  }
-
-  lazy val testVector: Vector[BadInvoice] = (0 until testSize).map(_ => generateNewEntry()).toVector
-  lazy val sample: Vector[BadInvoice] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownEntry() else generateUnknownEntry() }.toVector
 }
 
 class SetBenchmark_BadInvoice_AllHit_VerySmall extends SetBenchmarkBase_BadInvoice(5, 1.0)

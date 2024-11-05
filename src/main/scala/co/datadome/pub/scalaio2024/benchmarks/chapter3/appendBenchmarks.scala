@@ -73,16 +73,16 @@ abstract class AppendBenchmarkBase_Int(sampleSize: Int) extends AppendBenchmarkB
   override lazy val sample: Seq[Int] = (0 until sampleSize).map(_ => rand.nextInt()).toVector
 }
 
+abstract class AppendBenchmarkBase_String(sampleSize: Int) extends AppendBenchmarkBase[String] {
+  private val stringSize = 50
+  override lazy val sample: Seq[String] = (0 until sampleSize).map(_ => rand.nextSimpleString(stringSize)).toVector
+}
+
 class AppendBenchmark_Int_Small extends AppendBenchmarkBase_Int(100)
 
 class AppendBenchmark_Int_Medium extends AppendBenchmarkBase_Int(10000)
 
 class AppendBenchmark_Int_Large extends AppendBenchmarkBase_Int(1000000)
-
-abstract class AppendBenchmarkBase_String(sampleSize: Int) extends AppendBenchmarkBase[String] {
-  private val stringSize = 50
-  override lazy val sample: Seq[String] = (0 until sampleSize).map(_ => rand.nextSimpleString(stringSize)).toVector
-}
 
 class AppendBenchmark_String_Small extends AppendBenchmarkBase_String(100)
 

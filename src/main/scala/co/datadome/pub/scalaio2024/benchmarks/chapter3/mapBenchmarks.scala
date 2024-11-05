@@ -4,7 +4,6 @@ import co.datadome.pub.scalaio2024.utils.*
 import org.openjdk.jmh.annotations.*
 
 import java.util.concurrent.TimeUnit
-import scala.annotation.tailrec
 import scala.collection.immutable.{HashMap, IntMap}
 import scala.jdk.CollectionConverters.*
 import scala.reflect.ClassTag
@@ -35,9 +34,11 @@ abstract class MapBenchmarkBase[A: ClassTag : Ordering : Identifiable] {
   given rand: Random = new Random(0)
 
   lazy val sample: Vector[A]
-  lazy val testHashMap: HashMap[A, String]
+  lazy val testSeq: Seq[(A, String)]
 
-  lazy val testKeysArray: Array[A] = testHashMap.keys.toArray
+  lazy val testKeys: Seq[A] = testSeq.map(_._1) // might have duplicates, same size as testSeq
+
+  lazy val testHashMap: HashMap[A, String] = testSeq.toMap.asInstanceOf[HashMap[A, String]]
   lazy val testJavaHashMap: java.util.HashMap[A, String] = new java.util.HashMap(testHashMap.asJava)
   lazy val testArrayMap: ArrayMap[A, Option[String]] = ArrayMap.from(maxIntValue, testHashMap.view.mapValues(Some(_)), None)
 
@@ -57,26 +58,51 @@ abstract class MapBenchmarkBase[A: ClassTag : Ordering : Identifiable] {
 
 abstract class MapBenchmarkBase_Int(val testSize: Int, val hitRatio: Double) extends MapBenchmarkBase[Int] {
 
+  private lazy val nonTestKeys = ((0 until maxIntValue).toSet -- testKeys).toArray
+
   private def generateNewEntry(): (Int, String) = rand.nextInt(maxIntValue) -> rand.nextSimpleString(20)
 
-  private def generateKnownKey(): Int = testKeysArray(rand.nextInt(testSize))
+  private def generateKnownKey(): Int = testKeys(rand.nextInt(testSize))
 
-  @tailrec
-  private def generateUnknownKey(): Int = {
-    val i = rand.nextInt(maxIntValue)
-    if (testHashMap.contains(i)) generateUnknownKey()
-    else i
-  }
+  private def generateUnknownKey(): Int = nonTestKeys(rand.nextInt(nonTestKeys.length))
 
-  lazy val testHashMap: HashMap[Int, String] = (0 until testSize).map(_ => generateNewEntry()).toMap.asInstanceOf[HashMap[Int, String]]
+  lazy val testSeq: Seq[(Int, String)] = (0 until testSize).map(_ => generateNewEntry())
   lazy val sample: Vector[Int] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownKey() else generateUnknownKey() }.toVector
 
   lazy val testIntMap: IntMap[String] = IntMap.from(testHashMap.map((k, v) => k -> v))
 
 
   @Benchmark def get_IntMap(): Unit = {
-    val _ = sample.map(testIntMap.apply)
+    val _ = sample.map(testIntMap.get)
   }
+}
+
+abstract class MapBenchmarkBase_Invoice(val testSize: Int, val hitRatio: Double) extends MapBenchmarkBase[Invoice] {
+
+  private lazy val nonTestKeyIds = ((0 until maxIntValue).toSet -- testKeys.map(_.id)).toArray
+
+  private def generateNewEntry(): (Invoice, String) = Invoice.random(rand.nextInt(maxIntValue)) -> rand.nextSimpleString(20)
+
+  private def generateKnownKey(): Invoice = testKeys(rand.nextInt(testSize))
+
+  private def generateUnknownKey(): Invoice = Invoice.random(nonTestKeyIds(rand.nextInt(nonTestKeyIds.length)))
+
+  lazy val testSeq: Seq[(Invoice, String)] = (0 until testSize).map(_ => generateNewEntry())
+  lazy val sample: Vector[Invoice] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownKey() else generateUnknownKey() }.toVector
+}
+
+abstract class MapBenchmarkBase_BadInvoice(val testSize: Int, val hitRatio: Double) extends MapBenchmarkBase[BadInvoice] {
+
+  private lazy val nonTestKeyIds = ((0 until maxIntValue).toSet -- testKeys.map(_.id)).toArray
+
+  private def generateNewEntry(): (BadInvoice, String) = BadInvoice.random(rand.nextInt(maxIntValue)) -> rand.nextSimpleString(20)
+
+  private def generateKnownKey(): BadInvoice = testKeys(rand.nextInt(testSize))
+
+  private def generateUnknownKey(): BadInvoice = BadInvoice.random(nonTestKeyIds(rand.nextInt(nonTestKeyIds.length)))
+
+  lazy val testSeq: Seq[(BadInvoice, String)] = (0 until testSize).map(_ => generateNewEntry())
+  lazy val sample: Vector[BadInvoice] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownKey() else generateUnknownKey() }.toVector
 }
 
 class MapBenchmark_Int_AllHit_VerySmall extends MapBenchmarkBase_Int(5, 1.0)
@@ -104,23 +130,6 @@ class MapBenchmark_Int_HalfHit_Medium extends MapBenchmarkBase_Int(10000, 0.5)
 class MapBenchmark_Int_HalfHit_Large extends MapBenchmarkBase_Int(1000000, 0.5)
 
 
-abstract class MapBenchmarkBase_Invoice(val testSize: Int, val hitRatio: Double) extends MapBenchmarkBase[Invoice] {
-
-  private def generateNewEntry(): (Invoice, String) = Invoice.random(rand.nextInt(maxIntValue)) -> rand.nextSimpleString(20)
-
-  private def generateKnownKey(): Invoice = testKeysArray(rand.nextInt(testSize))
-
-  @tailrec
-  private def generateUnknownKey(): Invoice = {
-    val a = rand.nextInt(maxIntValue)
-    if (testHashMap.exists(_._1.id == a)) generateUnknownKey()
-    else Invoice.random(a)
-  }
-
-  lazy val testHashMap: HashMap[Invoice, String] = (0 until testSize).map(_ => generateNewEntry()).toMap.asInstanceOf[HashMap[Invoice, String]]
-  lazy val sample: Vector[Invoice] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownKey() else generateUnknownKey() }.toVector
-}
-
 class MapBenchmark_Invoice_AllHit_VerySmall extends MapBenchmarkBase_Invoice(5, 1.0)
 
 class MapBenchmark_Invoice_AllHit_Small extends MapBenchmarkBase_Invoice(100, 1.0)
@@ -145,23 +154,6 @@ class MapBenchmark_Invoice_HalfHit_Medium extends MapBenchmarkBase_Invoice(10000
 
 class MapBenchmark_Invoice_HalfHit_Large extends MapBenchmarkBase_Invoice(1000000, 0.5)
 
-
-abstract class MapBenchmarkBase_BadInvoice(val testSize: Int, val hitRatio: Double) extends MapBenchmarkBase[BadInvoice] {
-
-  private def generateNewEntry(): (BadInvoice, String) = BadInvoice.random(rand.nextInt(maxIntValue)) -> rand.nextSimpleString(20)
-
-  private def generateKnownKey(): BadInvoice = testKeysArray(rand.nextInt(testSize))
-
-  @tailrec
-  private def generateUnknownKey(): BadInvoice = {
-    val a = rand.nextInt(maxIntValue)
-    if (testHashMap.exists(_._1.id == a)) generateUnknownKey()
-    else BadInvoice.random(a)
-  }
-
-  lazy val testHashMap: HashMap[BadInvoice, String] = (0 until testSize).map(_ => generateNewEntry()).toMap.asInstanceOf[HashMap[BadInvoice, String]]
-  lazy val sample: Vector[BadInvoice] = (0 until sampleSize).map { i => if (rand.nextDouble() < hitRatio) generateKnownKey() else generateUnknownKey() }.toVector
-}
 
 class MapBenchmark_BadInvoice_AllHit_VerySmall extends MapBenchmarkBase_BadInvoice(5, 1.0)
 
