@@ -1,0 +1,40 @@
+[info] Benchmark                                   Mode  Cnt        Score         Error  Units
+[info] IterationBenchmark_Large.compute0_fastLoop  avgt   20        0.474 ±       0.002  ns/op
+[info] IterationBenchmark_Large.compute0_for       avgt   20  1279050.762 ±   54654.719  ns/op
+[info] IterationBenchmark_Large.compute0_while     avgt   20        0.484 ±       0.001  ns/op
+[info] IterationBenchmark_Large.compute1_fastLoop  avgt   20   463049.554 ±    2026.699  ns/op
+[info] IterationBenchmark_Large.compute1_for       avgt   20  1699078.400 ± 1288285.668  ns/op
+[info] IterationBenchmark_Large.compute1_while     avgt   20   463479.687 ±    2000.640  ns/op
+
+[info] Benchmark                                   Mode  Cnt        Score         Error  Units
+[info] IterationBenchmark_Large.compute0_fastLoop  avgt   20        0.475 ±       0.007  ns/op
+[info] IterationBenchmark_Large.compute0_for       avgt   20  1106184.993 ±   24320.354  ns/op
+[info] IterationBenchmark_Large.compute0_while     avgt   20        0.470 ±       0.007  ns/op
+[info] IterationBenchmark_Large.compute1_fastLoop  avgt   20   459570.172 ±    6233.222  ns/op
+[info] IterationBenchmark_Large.compute1_for       avgt   20  1699790.921 ± 1288857.224  ns/op
+[info] IterationBenchmark_Large.compute1_while     avgt   20   458161.894 ±    1111.392  ns/op
+
+[info] Benchmark                                   Mode  Cnt        Score         Error  Units
+[info] IterationBenchmark_Large.compute0_fastLoop  avgt   20        0.471 ±       0.007  ns/op
+[info] IterationBenchmark_Large.compute0_for       avgt   20  1411806.853 ±  106964.127  ns/op
+[info] IterationBenchmark_Large.compute0_while     avgt   20        0.473 ±       0.002  ns/op
+[info] IterationBenchmark_Large.compute1_fastLoop  avgt   20   458317.371 ±    1029.559  ns/op
+[info] IterationBenchmark_Large.compute1_for       avgt   20  1689297.350 ± 1286681.851  ns/op
+[info] IterationBenchmark_Large.compute1_while     avgt   20   459874.337 ±    5973.087  ns/op
+
+[info] Benchmark                                   Mode  Cnt        Score         Error  Units
+[info] IterationBenchmark_Large.compute0_fastLoop  avgt   20        0.479 ±       0.001  ns/op
+[info] IterationBenchmark_Large.compute0_for       avgt   20  1238849.210 ±  214224.884  ns/op
+[info] IterationBenchmark_Large.compute0_while     avgt   20        0.469 ±       0.001  ns/op
+[info] IterationBenchmark_Large.compute1_fastLoop  avgt   20   458112.574 ±    1359.637  ns/op
+[info] IterationBenchmark_Large.compute1_for       avgt   20  1730755.761 ± 1296534.867  ns/op
+[info] IterationBenchmark_Large.compute1_while     avgt   20   459601.765 ±    4737.658  ns/op
+
+[info] Benchmark                                   Mode  Cnt        Score         Error  Units
+[info] IterationBenchmark_Large.compute0_fastLoop  avgt   20        0.465 ±       0.007  ns/op
+[info] IterationBenchmark_Large.compute0_for       avgt   20  1233122.605 ±  150349.844  ns/op
+[info] IterationBenchmark_Large.compute0_while     avgt   20        0.478 ±       0.008  ns/op
+[info] IterationBenchmark_Large.compute1_fastLoop  avgt   20   459808.552 ±    5683.039  ns/op
+[info] IterationBenchmark_Large.compute1_for       avgt   20  1716037.201 ± 1303450.376  ns/op
+[info] IterationBenchmark_Large.compute1_while     avgt   20   458419.248 ±    1360.795  ns/op
+
