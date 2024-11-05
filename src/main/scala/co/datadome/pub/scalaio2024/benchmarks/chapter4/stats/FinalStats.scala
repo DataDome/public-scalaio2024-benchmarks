@@ -11,7 +11,7 @@ final case class FinalStats(
 ) {
   def updated(string: String) = {
     if (string.isEmpty) copy(count = count + 1, countSmall = count + 1, countEmpty = countEmpty + 1)
-    else if (string.lengthCompare(Stats.smallStringSize) < 0) {
+    else if (string.lengthCompare(FinalStats.smallStringSize) < 0) {
       if (string.head == 'a' || string.head == 'A') copy(count = count + 1, countSmall = count + 1, countA = countA + 1)
       else if (string.head == 'b' || string.head == 'B') copy(count = count + 1, countSmall = count + 1, countB = countB + 1)
       else if (string.head == 'c' || string.head == 'C') copy(count = count + 1, countSmall = count + 1, countC = countC + 1)

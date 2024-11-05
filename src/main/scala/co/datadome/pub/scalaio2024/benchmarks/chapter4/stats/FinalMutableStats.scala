@@ -15,7 +15,7 @@ final case class FinalMutableStats(
       countEmpty += 1
       countSmall += 1
     } else {
-      if (string.lengthCompare(MutableStats.smallStringSize) < 0) {
+      if (string.lengthCompare(FinalMutableStats.smallStringSize) < 0) {
         countSmall += 1
       }
       if (string.head == 'a' || string.head == 'A') {
