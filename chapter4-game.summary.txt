@@ -1,0 +1,29 @@
+[info] Benchmark                     Mode  Cnt         Score        Error  Units
+[info] GameBenchmarkLarge.immutable  avgt   20  14780812.890 ± 253947.123  us/op
+[info] GameBenchmarkLarge.mutable    avgt   20  11324545.038 ± 242010.026  us/op
+[info] GameBenchmarkSmall.immutable  avgt   20      1405.080 ±     56.217  us/op
+[info] GameBenchmarkSmall.mutable    avgt   20      1161.429 ±     15.803  us/op
+
+[info] Benchmark                     Mode  Cnt         Score        Error  Units
+[info] GameBenchmarkLarge.immutable  avgt   20  14629671.775 ± 328371.229  us/op
+[info] GameBenchmarkLarge.mutable    avgt   20  11996932.073 ± 233880.104  us/op
+[info] GameBenchmarkSmall.immutable  avgt   20      1407.828 ±     21.299  us/op
+[info] GameBenchmarkSmall.mutable    avgt   20      1133.150 ±     24.361  us/op
+
+[info] Benchmark                     Mode  Cnt         Score        Error  Units
+[info] GameBenchmarkLarge.immutable  avgt   20  14612425.013 ± 300265.885  us/op
+[info] GameBenchmarkLarge.mutable    avgt   20  12206690.169 ± 310262.638  us/op
+[info] GameBenchmarkSmall.immutable  avgt   20      1399.838 ±     40.684  us/op
+[info] GameBenchmarkSmall.mutable    avgt   20      1122.731 ±     12.988  us/op
+
+[info] Benchmark                     Mode  Cnt         Score        Error  Units
+[info] GameBenchmarkLarge.immutable  avgt   20  14600265.518 ± 304744.776  us/op
+[info] GameBenchmarkLarge.mutable    avgt   20  12011974.004 ± 252105.194  us/op
+[info] GameBenchmarkSmall.immutable  avgt   20      1388.295 ±     49.598  us/op
+[info] GameBenchmarkSmall.mutable    avgt   20      1177.579 ±     38.950  us/op
+
+[info] Benchmark                     Mode  Cnt         Score        Error  Units
+[info] GameBenchmarkLarge.immutable  avgt   20  14542892.772 ± 284952.076  us/op
+[info] GameBenchmarkLarge.mutable    avgt   20  12160048.844 ± 253428.426  us/op
+[info] GameBenchmarkSmall.immutable  avgt   20      1370.533 ±     16.528  us/op
+[info] GameBenchmarkSmall.mutable    avgt   20      1111.520 ±      7.411  us/op

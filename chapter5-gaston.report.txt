@@ -1,0 +1,2270 @@
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.5)
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins/project
+[info] loading settings for project global-plugins from idea.sbt,metals.sbt,utilities.sbt ...
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter5.*(Small|Large).*gaston[134]
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1
+[info] # Run progress: 0.00% complete, ETA 00:04:30
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 62591208.357 us/op
+[info] # Warmup Iteration   2: 62387317.819 us/op
+[info] # Warmup Iteration   3: 62416267.242 us/op
+[info] # Warmup Iteration   4: 62454140.016 us/op
+[info] # Warmup Iteration   5: 61643246.031 us/op
+[info] # Warmup Iteration   6: 62268535.891 us/op
+[info] # Warmup Iteration   7: 62852664.465 us/op
+[info] # Warmup Iteration   8: 62749888.922 us/op
+[info] # Warmup Iteration   9: 62931631.416 us/op
+[info] # Warmup Iteration  10: 62942687.899 us/op
+[info] Iteration   1: 62853017.284 us/op
+[info] Iteration   2: 62685549.609 us/op
+[info] Iteration   3: 61785462.252 us/op
+[info] Iteration   4: 61546542.642 us/op
+[info] Iteration   5: 61117700.245 us/op
+[info] Iteration   6: 61541685.449 us/op
+[info] Iteration   7: 61583725.153 us/op
+[info] Iteration   8: 61373195.774 us/op
+[info] Iteration   9: 61433388.495 us/op
+[info] Iteration  10: 61487606.689 us/op
+[info] Iteration  11: 61779403.825 us/op
+[info] Iteration  12: 61839017.886 us/op
+[info] Iteration  13: 61727129.106 us/op
+[info] Iteration  14: 61583671.200 us/op
+[info] Iteration  15: 62888527.933 us/op
+[info] Iteration  16: 62296826.177 us/op
+[info] Iteration  17: 61878565.156 us/op
+[info] Iteration  18: 61594378.927 us/op
+[info] Iteration  19: 62010422.532 us/op
+[info] Iteration  20: 62766639.850 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1":
+[info]   61888622.809 ±(99.9%) 458907.926 us/op [Average]
+[info]   (min, avg, max) = (61117700.245, 61888622.809, 62888527.933), stdev = 528479.050
+[info]   CI (99.9%): [61429714.883, 62347530.735] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3
+[info] # Run progress: 11.11% complete, ETA 04:08:29
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 50036087.126 us/op
+[info] # Warmup Iteration   2: 49766745.375 us/op
+[info] # Warmup Iteration   3: 49687662.038 us/op
+[info] # Warmup Iteration   4: 49895215.374 us/op
+[info] # Warmup Iteration   5: 49668039.418 us/op
+[info] # Warmup Iteration   6: 49693248.366 us/op
+[info] # Warmup Iteration   7: 49698908.866 us/op
+[info] # Warmup Iteration   8: 49593484.619 us/op
+[info] # Warmup Iteration   9: 49695850.713 us/op
+[info] # Warmup Iteration  10: 49745476.576 us/op
+[info] Iteration   1: 50667134.330 us/op
+[info] Iteration   2: 49653640.071 us/op
+[info] Iteration   3: 49957650.456 us/op
+[info] Iteration   4: 49988635.709 us/op
+[info] Iteration   5: 50028394.013 us/op
+[info] Iteration   6: 49919186.684 us/op
+[info] Iteration   7: 49886566.565 us/op
+[info] Iteration   8: 49856160.554 us/op
+[info] Iteration   9: 49714494.841 us/op
+[info] Iteration  10: 49390497.477 us/op
+[info] Iteration  11: 49958960.811 us/op
+[info] Iteration  12: 50692038.018 us/op
+[info] Iteration  13: 50467200.383 us/op
+[info] Iteration  14: 50515913.068 us/op
+[info] Iteration  15: 50593897.939 us/op
+[info] Iteration  16: 50571433.186 us/op
+[info] Iteration  17: 50679303.931 us/op
+[info] Iteration  18: 50153496.728 us/op
+[info] Iteration  19: 50263183.562 us/op
+[info] Iteration  20: 50590582.078 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3":
+[info]   50177418.520 ±(99.9%) 343820.924 us/op [Average]
+[info]   (min, avg, max) = (49390497.477, 50177418.520, 50692038.018), stdev = 395944.687
+[info]   CI (99.9%): [49833597.596, 50521239.444] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4
+[info] # Run progress: 22.22% complete, ETA 03:16:18
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 24093326.207 us/op
+[info] # Warmup Iteration   2: 23717113.415 us/op
+[info] # Warmup Iteration   3: 23935705.400 us/op
+[info] # Warmup Iteration   4: 24067506.947 us/op
+[info] # Warmup Iteration   5: 23829424.538 us/op
+[info] # Warmup Iteration   6: 23699897.615 us/op
+[info] # Warmup Iteration   7: 23757018.511 us/op
+[info] # Warmup Iteration   8: 23835717.189 us/op
+[info] # Warmup Iteration   9: 23742674.571 us/op
+[info] # Warmup Iteration  10: 23853334.286 us/op
+[info] Iteration   1: 24131723.436 us/op
+[info] Iteration   2: 24400212.536 us/op
+[info] Iteration   3: 24419456.791 us/op
+[info] Iteration   4: 24296426.683 us/op
+[info] Iteration   5: 24362346.464 us/op
+[info] Iteration   6: 24051070.376 us/op
+[info] Iteration   7: 24068149.076 us/op
+[info] Iteration   8: 24048154.331 us/op
+[info] Iteration   9: 24473513.731 us/op
+[info] Iteration  10: 24423071.559 us/op
+[info] Iteration  11: 24341504.529 us/op
+[info] Iteration  12: 24012014.820 us/op
+[info] Iteration  13: 24307549.670 us/op
+[info] Iteration  14: 24399897.004 us/op
+[info] Iteration  15: 24387485.156 us/op
+[info] Iteration  16: 24379779.636 us/op
+[info] Iteration  17: 24421741.420 us/op
+[info] Iteration  18: 24361027.627 us/op
+[info] Iteration  19: 24269053.806 us/op
+[info] Iteration  20: 23990272.178 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4":
+[info]   24277222.541 ±(99.9%) 140117.503 us/op [Average]
+[info]   (min, avg, max) = (23990272.178, 24277222.541, 24473513.731), stdev = 161359.525
+[info]   CI (99.9%): [24137105.039, 24417340.044] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1
+[info] # Run progress: 33.33% complete, ETA 02:16:20
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1097005.188 us/op
+[info] # Warmup Iteration   2: 663872.698 us/op
+[info] # Warmup Iteration   3: 615365.568 us/op
+[info] # Warmup Iteration   4: 617936.610 us/op
+[info] # Warmup Iteration   5: 618018.422 us/op
+[info] # Warmup Iteration   6: 614497.963 us/op
+[info] # Warmup Iteration   7: 631557.672 us/op
+[info] # Warmup Iteration   8: 613463.003 us/op
+[info] # Warmup Iteration   9: 620697.259 us/op
+[info] # Warmup Iteration  10: 625499.255 us/op
+[info] Iteration   1: 620653.239 us/op
+[info] Iteration   2: 642067.019 us/op
+[info] Iteration   3: 622717.263 us/op
+[info] Iteration   4: 613795.606 us/op
+[info] Iteration   5: 627446.341 us/op
+[info] Iteration   6: 608344.222 us/op
+[info] Iteration   7: 633640.946 us/op
+[info] Iteration   8: 621192.708 us/op
+[info] Iteration   9: 628553.659 us/op
+[info] Iteration  10: 621938.991 us/op
+[info] Iteration  11: 622656.772 us/op
+[info] Iteration  12: 627305.491 us/op
+[info] Iteration  13: 626623.766 us/op
+[info] Iteration  14: 618732.619 us/op
+[info] Iteration  15: 624155.149 us/op
+[info] Iteration  16: 617622.762 us/op
+[info] Iteration  17: 611648.837 us/op
+[info] Iteration  18: 620909.011 us/op
+[info] Iteration  19: 629217.349 us/op
+[info] Iteration  20: 616046.522 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1":
+[info]   622763.413 ±(99.9%) 6715.156 us/op [Average]
+[info]   (min, avg, max) = (608344.222, 622763.413, 642067.019), stdev = 7733.183
+[info]   CI (99.9%): [616048.258, 629478.569] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3
+[info] # Run progress: 44.44% complete, ETA 01:26:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 727297.372 us/op
+[info] # Warmup Iteration   2: 574132.985 us/op
+[info] # Warmup Iteration   3: 558050.545 us/op
+[info] # Warmup Iteration   4: 559664.638 us/op
+[info] # Warmup Iteration   5: 559433.104 us/op
+[info] # Warmup Iteration   6: 554440.101 us/op
+[info] # Warmup Iteration   7: 559356.795 us/op
+[info] # Warmup Iteration   8: 563300.758 us/op
+[info] # Warmup Iteration   9: 563438.212 us/op
+[info] # Warmup Iteration  10: 557518.912 us/op
+[info] Iteration   1: 552666.937 us/op
+[info] Iteration   2: 557844.912 us/op
+[info] Iteration   3: 562510.578 us/op
+[info] Iteration   4: 558571.949 us/op
+[info] Iteration   5: 550368.160 us/op
+[info] Iteration   6: 556078.353 us/op
+[info] Iteration   7: 545122.229 us/op
+[info] Iteration   8: 544693.757 us/op
+[info] Iteration   9: 546737.326 us/op
+[info] Iteration  10: 552498.846 us/op
+[info] Iteration  11: 563017.172 us/op
+[info] Iteration  12: 559104.869 us/op
+[info] Iteration  13: 555540.393 us/op
+[info] Iteration  14: 547570.734 us/op
+[info] Iteration  15: 559528.623 us/op
+[info] Iteration  16: 565251.604 us/op
+[info] Iteration  17: 556186.227 us/op
+[info] Iteration  18: 555827.622 us/op
+[info] Iteration  19: 557797.732 us/op
+[info] Iteration  20: 546787.936 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3":
+[info]   554685.298 ±(99.9%) 5350.047 us/op [Average]
+[info]   (min, avg, max) = (544693.757, 554685.298, 565251.604), stdev = 6161.122
+[info]   CI (99.9%): [549335.251, 560035.345] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4
+[info] # Run progress: 55.56% complete, ETA 00:55:29
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 301369.774 us/op
+[info] # Warmup Iteration   2: 238531.590 us/op
+[info] # Warmup Iteration   3: 233903.421 us/op
+[info] # Warmup Iteration   4: 236736.562 us/op
+[info] # Warmup Iteration   5: 236513.905 us/op
+[info] # Warmup Iteration   6: 233415.955 us/op
+[info] # Warmup Iteration   7: 238436.293 us/op
+[info] # Warmup Iteration   8: 237885.905 us/op
+[info] # Warmup Iteration   9: 234386.718 us/op
+[info] # Warmup Iteration  10: 236235.232 us/op
+[info] Iteration   1: 233364.356 us/op
+[info] Iteration   2: 236642.859 us/op
+[info] Iteration   3: 230668.297 us/op
+[info] Iteration   4: 234513.768 us/op
+[info] Iteration   5: 231423.032 us/op
+[info] Iteration   6: 233364.271 us/op
+[info] Iteration   7: 234322.844 us/op
+[info] Iteration   8: 235221.535 us/op
+[info] Iteration   9: 232721.229 us/op
+[info] Iteration  10: 235767.655 us/op
+[info] Iteration  11: 235084.711 us/op
+[info] Iteration  12: 233145.815 us/op
+[info] Iteration  13: 236388.441 us/op
+[info] Iteration  14: 234119.196 us/op
+[info] Iteration  15: 233731.684 us/op
+[info] Iteration  16: 231526.548 us/op
+[info] Iteration  17: 234553.297 us/op
+[info] Iteration  18: 236044.103 us/op
+[info] Iteration  19: 231658.214 us/op
+[info] Iteration  20: 233523.353 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4":
+[info]   233889.260 ±(99.9%) 1489.714 us/op [Average]
+[info]   (min, avg, max) = (230668.297, 233889.260, 236642.859), stdev = 1715.556
+[info]   CI (99.9%): [232399.547, 235378.974] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1
+[info] # Run progress: 66.67% complete, ETA 00:34:59
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 54360.411 us/op
+[info] # Warmup Iteration   2: 32594.737 us/op
+[info] # Warmup Iteration   3: 31514.044 us/op
+[info] # Warmup Iteration   4: 30391.185 us/op
+[info] # Warmup Iteration   5: 30962.372 us/op
+[info] # Warmup Iteration   6: 30455.938 us/op
+[info] # Warmup Iteration   7: 30526.152 us/op
+[info] # Warmup Iteration   8: 30901.930 us/op
+[info] # Warmup Iteration   9: 30800.315 us/op
+[info] # Warmup Iteration  10: 31176.061 us/op
+[info] Iteration   1: 30665.937 us/op
+[info] Iteration   2: 30921.877 us/op
+[info] Iteration   3: 30670.722 us/op
+[info] Iteration   4: 31184.276 us/op
+[info] Iteration   5: 30713.444 us/op
+[info] Iteration   6: 30362.829 us/op
+[info] Iteration   7: 30773.196 us/op
+[info] Iteration   8: 31039.534 us/op
+[info] Iteration   9: 29955.477 us/op
+[info] Iteration  10: 31091.399 us/op
+[info] Iteration  11: 30465.639 us/op
+[info] Iteration  12: 30430.111 us/op
+[info] Iteration  13: 30984.059 us/op
+[info] Iteration  14: 30432.509 us/op
+[info] Iteration  15: 30558.718 us/op
+[info] Iteration  16: 31057.449 us/op
+[info] Iteration  17: 30447.659 us/op
+[info] Iteration  18: 30726.175 us/op
+[info] Iteration  19: 30348.556 us/op
+[info] Iteration  20: 31203.872 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1":
+[info]   30701.672 ±(99.9%) 288.498 us/op [Average]
+[info]   (min, avg, max) = (29955.477, 30701.672, 31203.872), stdev = 332.235
+[info]   CI (99.9%): [30413.173, 30990.170] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3
+[info] # Run progress: 77.78% complete, ETA 00:20:08
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 147206.176 us/op
+[info] # Warmup Iteration   2: 108026.312 us/op
+[info] # Warmup Iteration   3: 103459.688 us/op
+[info] # Warmup Iteration   4: 101729.070 us/op
+[info] # Warmup Iteration   5: 104741.717 us/op
+[info] # Warmup Iteration   6: 101752.530 us/op
+[info] # Warmup Iteration   7: 105749.295 us/op
+[info] # Warmup Iteration   8: 105280.809 us/op
+[info] # Warmup Iteration   9: 106006.257 us/op
+[info] # Warmup Iteration  10: 104703.941 us/op
+[info] Iteration   1: 100793.168 us/op
+[info] Iteration   2: 105649.954 us/op
+[info] Iteration   3: 107308.155 us/op
+[info] Iteration   4: 106021.249 us/op
+[info] Iteration   5: 103255.702 us/op
+[info] Iteration   6: 102703.645 us/op
+[info] Iteration   7: 101009.240 us/op
+[info] Iteration   8: 109044.027 us/op
+[info] Iteration   9: 102419.520 us/op
+[info] Iteration  10: 105520.096 us/op
+[info] Iteration  11: 101023.908 us/op
+[info] Iteration  12: 101363.808 us/op
+[info] Iteration  13: 103633.132 us/op
+[info] Iteration  14: 103407.271 us/op
+[info] Iteration  15: 109066.302 us/op
+[info] Iteration  16: 103802.045 us/op
+[info] Iteration  17: 107836.507 us/op
+[info] Iteration  18: 104592.502 us/op
+[info] Iteration  19: 105557.971 us/op
+[info] Iteration  20: 105142.629 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3":
+[info]   104457.542 ±(99.9%) 2236.891 us/op [Average]
+[info]   (min, avg, max) = (100793.168, 104457.542, 109066.302), stdev = 2576.007
+[info]   CI (99.9%): [102220.651, 106694.432] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4
+[info] # Run progress: 88.89% complete, ETA 00:08:52
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 20184.579 us/op
+[info] # Warmup Iteration   2: 14722.924 us/op
+[info] # Warmup Iteration   3: 14389.810 us/op
+[info] # Warmup Iteration   4: 14331.065 us/op
+[info] # Warmup Iteration   5: 14421.984 us/op
+[info] # Warmup Iteration   6: 14530.343 us/op
+[info] # Warmup Iteration   7: 14378.537 us/op
+[info] # Warmup Iteration   8: 14277.070 us/op
+[info] # Warmup Iteration   9: 14287.942 us/op
+[info] # Warmup Iteration  10: 14741.232 us/op
+[info] Iteration   1: 14588.776 us/op
+[info] Iteration   2: 14399.596 us/op
+[info] Iteration   3: 14380.565 us/op
+[info] Iteration   4: 14404.633 us/op
+[info] Iteration   5: 14371.468 us/op
+[info] Iteration   6: 14266.422 us/op
+[info] Iteration   7: 14335.208 us/op
+[info] Iteration   8: 14091.389 us/op
+[info] Iteration   9: 14257.956 us/op
+[info] Iteration  10: 14444.708 us/op
+[info] Iteration  11: 14183.931 us/op
+[info] Iteration  12: 14391.229 us/op
+[info] Iteration  13: 14130.049 us/op
+[info] Iteration  14: 14326.048 us/op
+[info] Iteration  15: 14275.318 us/op
+[info] Iteration  16: 14514.876 us/op
+[info] Iteration  17: 14225.699 us/op
+[info] Iteration  18: 14398.363 us/op
+[info] Iteration  19: 14350.985 us/op
+[info] Iteration  20: 14348.473 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4":
+[info]   14334.285 ±(99.9%) 105.268 us/op [Average]
+[info]   (min, avg, max) = (14091.389, 14334.285, 14588.776), stdev = 121.227
+[info]   CI (99.9%): [14229.016, 14439.553] (assumes normal distribution)
+[info] # Run complete. Total time: 01:11:32
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  61888622.809 ± 458907.926  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  50177418.520 ± 343820.924  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  24277222.541 ± 140117.503  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    622763.413 ±   6715.156  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    554685.298 ±   5350.047  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    233889.260 ±   1489.714  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     30701.672 ±    288.498  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20    104457.542 ±   2236.891  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     14334.285 ±    105.268  us/op
+[success] Total time: 4294 s (01:11:34), completed Nov 6, 2024, 7:28:09 AM
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.5)
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins/project
+[info] loading settings for project global-plugins from idea.sbt,metals.sbt,utilities.sbt ...
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter5.*(Small|Large).*gaston[134]
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1
+[info] # Run progress: 0.00% complete, ETA 00:04:30
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 63869570.835 us/op
+[info] # Warmup Iteration   2: 63623905.813 us/op
+[info] # Warmup Iteration   3: 62458682.109 us/op
+[info] # Warmup Iteration   4: 62136052.362 us/op
+[info] # Warmup Iteration   5: 62218952.518 us/op
+[info] # Warmup Iteration   6: 63263544.345 us/op
+[info] # Warmup Iteration   7: 63586392.642 us/op
+[info] # Warmup Iteration   8: 63451655.702 us/op
+[info] # Warmup Iteration   9: 63652590.244 us/op
+[info] # Warmup Iteration  10: 63702543.407 us/op
+[info] Iteration   1: 63524664.959 us/op
+[info] Iteration   2: 62219913.970 us/op
+[info] Iteration   3: 62064417.613 us/op
+[info] Iteration   4: 62219776.052 us/op
+[info] Iteration   5: 62524723.567 us/op
+[info] Iteration   6: 63479595.438 us/op
+[info] Iteration   7: 63628588.438 us/op
+[info] Iteration   8: 62995971.131 us/op
+[info] Iteration   9: 62467423.644 us/op
+[info] Iteration  10: 62541839.122 us/op
+[info] Iteration  11: 62488696.449 us/op
+[info] Iteration  12: 62406484.412 us/op
+[info] Iteration  13: 62437161.229 us/op
+[info] Iteration  14: 62216187.368 us/op
+[info] Iteration  15: 62210819.906 us/op
+[info] Iteration  16: 62338314.061 us/op
+[info] Iteration  17: 62396459.978 us/op
+[info] Iteration  18: 63024784.619 us/op
+[info] Iteration  19: 63144857.540 us/op
+[info] Iteration  20: 62650270.720 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1":
+[info]   62649047.511 ±(99.9%) 416103.328 us/op [Average]
+[info]   (min, avg, max) = (62064417.613, 62649047.511, 63628588.438), stdev = 479185.211
+[info]   CI (99.9%): [62232944.183, 63065150.838] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3
+[info] # Run progress: 11.11% complete, ETA 04:11:25
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 50979506.173 us/op
+[info] # Warmup Iteration   2: 50734391.828 us/op
+[info] # Warmup Iteration   3: 50747240.473 us/op
+[info] # Warmup Iteration   4: 50710366.736 us/op
+[info] # Warmup Iteration   5: 50614687.491 us/op
+[info] # Warmup Iteration   6: 50722173.302 us/op
+[info] # Warmup Iteration   7: 50760048.034 us/op
+[info] # Warmup Iteration   8: 50720340.865 us/op
+[info] # Warmup Iteration   9: 50753015.767 us/op
+[info] # Warmup Iteration  10: 50694079.473 us/op
+[info] Iteration   1: 50585911.225 us/op
+[info] Iteration   2: 50540276.103 us/op
+[info] Iteration   3: 50741778.329 us/op
+[info] Iteration   4: 50683751.115 us/op
+[info] Iteration   5: 50702540.108 us/op
+[info] Iteration   6: 50657678.409 us/op
+[info] Iteration   7: 50674439.435 us/op
+[info] Iteration   8: 50635255.849 us/op
+[info] Iteration   9: 50583645.329 us/op
+[info] Iteration  10: 50652051.762 us/op
+[info] Iteration  11: 50802123.404 us/op
+[info] Iteration  12: 50703881.458 us/op
+[info] Iteration  13: 50690504.203 us/op
+[info] Iteration  14: 50572018.884 us/op
+[info] Iteration  15: 50559008.774 us/op
+[info] Iteration  16: 50596718.992 us/op
+[info] Iteration  17: 50603490.794 us/op
+[info] Iteration  18: 50432700.871 us/op
+[info] Iteration  19: 50406310.291 us/op
+[info] Iteration  20: 50306548.821 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3":
+[info]   50606531.708 ±(99.9%) 103048.138 us/op [Average]
+[info]   (min, avg, max) = (50306548.821, 50606531.708, 50802123.404), stdev = 118670.389
+[info]   CI (99.9%): [50503483.570, 50709579.846] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4
+[info] # Run progress: 22.22% complete, ETA 03:18:40
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 23937918.857 us/op
+[info] # Warmup Iteration   2: 23521070.448 us/op
+[info] # Warmup Iteration   3: 23618470.676 us/op
+[info] # Warmup Iteration   4: 23653183.568 us/op
+[info] # Warmup Iteration   5: 23462109.403 us/op
+[info] # Warmup Iteration   6: 23418751.746 us/op
+[info] # Warmup Iteration   7: 23442305.407 us/op
+[info] # Warmup Iteration   8: 23556154.167 us/op
+[info] # Warmup Iteration   9: 23435969.050 us/op
+[info] # Warmup Iteration  10: 23541090.157 us/op
+[info] Iteration   1: 23555016.078 us/op
+[info] Iteration   2: 23601950.078 us/op
+[info] Iteration   3: 23603727.050 us/op
+[info] Iteration   4: 23609596.366 us/op
+[info] Iteration   5: 23545786.484 us/op
+[info] Iteration   6: 23592946.029 us/op
+[info] Iteration   7: 23585121.834 us/op
+[info] Iteration   8: 23445284.052 us/op
+[info] Iteration   9: 23458151.025 us/op
+[info] Iteration  10: 23423890.139 us/op
+[info] Iteration  11: 23468112.812 us/op
+[info] Iteration  12: 23476362.629 us/op
+[info] Iteration  13: 23607873.902 us/op
+[info] Iteration  14: 23565290.025 us/op
+[info] Iteration  15: 23585233.857 us/op
+[info] Iteration  16: 23529345.506 us/op
+[info] Iteration  17: 23513302.443 us/op
+[info] Iteration  18: 23470386.438 us/op
+[info] Iteration  19: 23566152.728 us/op
+[info] Iteration  20: 23525459.887 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4":
+[info]   23536449.468 ±(99.9%) 52638.761 us/op [Average]
+[info]   (min, avg, max) = (23423890.139, 23536449.468, 23609596.366), stdev = 60618.876
+[info]   CI (99.9%): [23483810.707, 23589088.229] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1
+[info] # Run progress: 33.33% complete, ETA 02:17:05
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1108342.785 us/op
+[info] # Warmup Iteration   2: 661878.400 us/op
+[info] # Warmup Iteration   3: 617975.545 us/op
+[info] # Warmup Iteration   4: 626929.823 us/op
+[info] # Warmup Iteration   5: 617184.681 us/op
+[info] # Warmup Iteration   6: 614227.335 us/op
+[info] # Warmup Iteration   7: 625746.936 us/op
+[info] # Warmup Iteration   8: 620078.573 us/op
+[info] # Warmup Iteration   9: 625632.093 us/op
+[info] # Warmup Iteration  10: 628091.433 us/op
+[info] Iteration   1: 617459.155 us/op
+[info] Iteration   2: 639813.282 us/op
+[info] Iteration   3: 621062.709 us/op
+[info] Iteration   4: 612126.767 us/op
+[info] Iteration   5: 629516.492 us/op
+[info] Iteration   6: 607740.435 us/op
+[info] Iteration   7: 631264.998 us/op
+[info] Iteration   8: 617614.670 us/op
+[info] Iteration   9: 626921.848 us/op
+[info] Iteration  10: 623321.213 us/op
+[info] Iteration  11: 619310.428 us/op
+[info] Iteration  12: 622525.461 us/op
+[info] Iteration  13: 621645.901 us/op
+[info] Iteration  14: 619410.412 us/op
+[info] Iteration  15: 621841.724 us/op
+[info] Iteration  16: 616656.946 us/op
+[info] Iteration  17: 613679.923 us/op
+[info] Iteration  18: 629207.626 us/op
+[info] Iteration  19: 643862.438 us/op
+[info] Iteration  20: 626737.383 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1":
+[info]   623085.990 ±(99.9%) 7632.998 us/op [Average]
+[info]   (min, avg, max) = (607740.435, 623085.990, 643862.438), stdev = 8790.172
+[info]   CI (99.9%): [615452.992, 630718.989] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3
+[info] # Run progress: 44.44% complete, ETA 01:26:28
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 678578.855 us/op
+[info] # Warmup Iteration   2: 526009.478 us/op
+[info] # Warmup Iteration   3: 505582.404 us/op
+[info] # Warmup Iteration   4: 506678.958 us/op
+[info] # Warmup Iteration   5: 507689.037 us/op
+[info] # Warmup Iteration   6: 500399.298 us/op
+[info] # Warmup Iteration   7: 505341.565 us/op
+[info] # Warmup Iteration   8: 507459.672 us/op
+[info] # Warmup Iteration   9: 510366.343 us/op
+[info] # Warmup Iteration  10: 503315.017 us/op
+[info] Iteration   1: 500451.765 us/op
+[info] Iteration   2: 504402.462 us/op
+[info] Iteration   3: 504981.502 us/op
+[info] Iteration   4: 496121.903 us/op
+[info] Iteration   5: 496228.801 us/op
+[info] Iteration   6: 492686.920 us/op
+[info] Iteration   7: 490922.850 us/op
+[info] Iteration   8: 503386.460 us/op
+[info] Iteration   9: 505260.155 us/op
+[info] Iteration  10: 500233.700 us/op
+[info] Iteration  11: 497675.582 us/op
+[info] Iteration  12: 510146.382 us/op
+[info] Iteration  13: 503198.784 us/op
+[info] Iteration  14: 505520.273 us/op
+[info] Iteration  15: 503405.610 us/op
+[info] Iteration  16: 501101.096 us/op
+[info] Iteration  17: 500392.652 us/op
+[info] Iteration  18: 501885.400 us/op
+[info] Iteration  19: 505835.144 us/op
+[info] Iteration  20: 506984.454 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3":
+[info]   501541.095 ±(99.9%) 4224.285 us/op [Average]
+[info]   (min, avg, max) = (490922.850, 501541.095, 510146.382), stdev = 4864.693
+[info]   CI (99.9%): [497316.809, 505765.380] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4
+[info] # Run progress: 55.56% complete, ETA 00:55:48
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 388608.448 us/op
+[info] # Warmup Iteration   2: 294520.154 us/op
+[info] # Warmup Iteration   3: 285645.118 us/op
+[info] # Warmup Iteration   4: 290696.025 us/op
+[info] # Warmup Iteration   5: 290617.916 us/op
+[info] # Warmup Iteration   6: 290658.695 us/op
+[info] # Warmup Iteration   7: 284780.951 us/op
+[info] # Warmup Iteration   8: 283832.638 us/op
+[info] # Warmup Iteration   9: 292226.566 us/op
+[info] # Warmup Iteration  10: 290004.457 us/op
+[info] Iteration   1: 287063.075 us/op
+[info] Iteration   2: 288454.999 us/op
+[info] Iteration   3: 287761.021 us/op
+[info] Iteration   4: 283453.694 us/op
+[info] Iteration   5: 286856.827 us/op
+[info] Iteration   6: 281552.189 us/op
+[info] Iteration   7: 285473.783 us/op
+[info] Iteration   8: 288361.742 us/op
+[info] Iteration   9: 283704.843 us/op
+[info] Iteration  10: 284285.018 us/op
+[info] Iteration  11: 283813.260 us/op
+[info] Iteration  12: 285038.196 us/op
+[info] Iteration  13: 285315.277 us/op
+[info] Iteration  14: 286664.367 us/op
+[info] Iteration  15: 286830.053 us/op
+[info] Iteration  16: 284660.146 us/op
+[info] Iteration  17: 284530.887 us/op
+[info] Iteration  18: 286844.388 us/op
+[info] Iteration  19: 285781.078 us/op
+[info] Iteration  20: 284879.192 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4":
+[info]   285566.202 ±(99.9%) 1553.822 us/op [Average]
+[info]   (min, avg, max) = (281552.189, 285566.202, 288454.999), stdev = 1789.383
+[info]   CI (99.9%): [284012.380, 287120.023] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1
+[info] # Run progress: 66.67% complete, ETA 00:35:10
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 56697.431 us/op
+[info] # Warmup Iteration   2: 33447.039 us/op
+[info] # Warmup Iteration   3: 31932.711 us/op
+[info] # Warmup Iteration   4: 30881.894 us/op
+[info] # Warmup Iteration   5: 31714.307 us/op
+[info] # Warmup Iteration   6: 30957.344 us/op
+[info] # Warmup Iteration   7: 31004.955 us/op
+[info] # Warmup Iteration   8: 31363.325 us/op
+[info] # Warmup Iteration   9: 31561.185 us/op
+[info] # Warmup Iteration  10: 31438.029 us/op
+[info] Iteration   1: 31552.503 us/op
+[info] Iteration   2: 31688.706 us/op
+[info] Iteration   3: 31921.201 us/op
+[info] Iteration   4: 30932.757 us/op
+[info] Iteration   5: 32282.480 us/op
+[info] Iteration   6: 31310.635 us/op
+[info] Iteration   7: 30784.815 us/op
+[info] Iteration   8: 31850.548 us/op
+[info] Iteration   9: 31414.586 us/op
+[info] Iteration  10: 30907.399 us/op
+[info] Iteration  11: 31759.208 us/op
+[info] Iteration  12: 31181.481 us/op
+[info] Iteration  13: 31772.248 us/op
+[info] Iteration  14: 31686.099 us/op
+[info] Iteration  15: 31661.008 us/op
+[info] Iteration  16: 30653.729 us/op
+[info] Iteration  17: 31044.840 us/op
+[info] Iteration  18: 30606.977 us/op
+[info] Iteration  19: 31106.519 us/op
+[info] Iteration  20: 30986.567 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1":
+[info]   31355.215 ±(99.9%) 408.359 us/op [Average]
+[info]   (min, avg, max) = (30606.977, 31355.215, 32282.480), stdev = 470.267
+[info]   CI (99.9%): [30946.857, 31763.574] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3
+[info] # Run progress: 77.78% complete, ETA 00:20:14
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 38524.899 us/op
+[info] # Warmup Iteration   2: 26217.644 us/op
+[info] # Warmup Iteration   3: 25386.178 us/op
+[info] # Warmup Iteration   4: 25695.071 us/op
+[info] # Warmup Iteration   5: 25220.995 us/op
+[info] # Warmup Iteration   6: 25158.113 us/op
+[info] # Warmup Iteration   7: 25636.297 us/op
+[info] # Warmup Iteration   8: 25493.068 us/op
+[info] # Warmup Iteration   9: 25689.139 us/op
+[info] # Warmup Iteration  10: 25498.171 us/op
+[info] Iteration   1: 25250.418 us/op
+[info] Iteration   2: 25514.046 us/op
+[info] Iteration   3: 25421.116 us/op
+[info] Iteration   4: 25576.573 us/op
+[info] Iteration   5: 24971.717 us/op
+[info] Iteration   6: 25348.635 us/op
+[info] Iteration   7: 24564.037 us/op
+[info] Iteration   8: 24797.405 us/op
+[info] Iteration   9: 24948.149 us/op
+[info] Iteration  10: 24864.069 us/op
+[info] Iteration  11: 25168.689 us/op
+[info] Iteration  12: 25099.543 us/op
+[info] Iteration  13: 24693.606 us/op
+[info] Iteration  14: 24871.130 us/op
+[info] Iteration  15: 24909.187 us/op
+[info] Iteration  16: 25286.046 us/op
+[info] Iteration  17: 25034.170 us/op
+[info] Iteration  18: 25115.523 us/op
+[info] Iteration  19: 25007.893 us/op
+[info] Iteration  20: 24424.338 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3":
+[info]   25043.314 ±(99.9%) 264.191 us/op [Average]
+[info]   (min, avg, max) = (24424.338, 25043.314, 25576.573), stdev = 304.243
+[info]   CI (99.9%): [24779.124, 25307.505] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4
+[info] # Run progress: 88.89% complete, ETA 00:08:55
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 19509.638 us/op
+[info] # Warmup Iteration   2: 14653.813 us/op
+[info] # Warmup Iteration   3: 14245.372 us/op
+[info] # Warmup Iteration   4: 14161.112 us/op
+[info] # Warmup Iteration   5: 14304.241 us/op
+[info] # Warmup Iteration   6: 14411.639 us/op
+[info] # Warmup Iteration   7: 14264.652 us/op
+[info] # Warmup Iteration   8: 14199.169 us/op
+[info] # Warmup Iteration   9: 14132.531 us/op
+[info] # Warmup Iteration  10: 14500.022 us/op
+[info] Iteration   1: 14395.839 us/op
+[info] Iteration   2: 14206.653 us/op
+[info] Iteration   3: 14214.712 us/op
+[info] Iteration   4: 14266.749 us/op
+[info] Iteration   5: 14075.185 us/op
+[info] Iteration   6: 14081.986 us/op
+[info] Iteration   7: 14246.604 us/op
+[info] Iteration   8: 13994.917 us/op
+[info] Iteration   9: 14103.688 us/op
+[info] Iteration  10: 14314.556 us/op
+[info] Iteration  11: 14012.594 us/op
+[info] Iteration  12: 14223.399 us/op
+[info] Iteration  13: 13966.146 us/op
+[info] Iteration  14: 14310.221 us/op
+[info] Iteration  15: 14275.041 us/op
+[info] Iteration  16: 14097.903 us/op
+[info] Iteration  17: 14391.432 us/op
+[info] Iteration  18: 14333.703 us/op
+[info] Iteration  19: 14472.819 us/op
+[info] Iteration  20: 14407.547 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4":
+[info]   14219.585 ±(99.9%) 129.432 us/op [Average]
+[info]   (min, avg, max) = (13966.146, 14219.585, 14472.819), stdev = 149.054
+[info]   CI (99.9%): [14090.153, 14349.016] (assumes normal distribution)
+[info] # Run complete. Total time: 01:11:53
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  62649047.511 ± 416103.328  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  50606531.708 ± 103048.138  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  23536449.468 ±  52638.761  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    623085.990 ±   7632.998  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    501541.095 ±   4224.285  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    285566.202 ±   1553.822  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     31355.215 ±    408.359  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20     25043.314 ±    264.191  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     14219.585 ±    129.432  us/op
+[success] Total time: 4315 s (01:11:55), completed Nov 6, 2024, 8:40:08 AM
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.5)
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins/project
+[info] loading settings for project global-plugins from idea.sbt,metals.sbt,utilities.sbt ...
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter5.*(Small|Large).*gaston[134]
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1
+[info] # Run progress: 0.00% complete, ETA 00:04:30
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 62670406.222 us/op
+[info] # Warmup Iteration   2: 61844735.059 us/op
+[info] # Warmup Iteration   3: 61729406.284 us/op
+[info] # Warmup Iteration   4: 61659623.246 us/op
+[info] # Warmup Iteration   5: 62148187.028 us/op
+[info] # Warmup Iteration   6: 62114620.683 us/op
+[info] # Warmup Iteration   7: 61953450.224 us/op
+[info] # Warmup Iteration   8: 61732678.912 us/op
+[info] # Warmup Iteration   9: 63394651.219 us/op
+[info] # Warmup Iteration  10: 63456904.094 us/op
+[info] Iteration   1: 63330432.754 us/op
+[info] Iteration   2: 63101365.920 us/op
+[info] Iteration   3: 62555314.885 us/op
+[info] Iteration   4: 62160115.250 us/op
+[info] Iteration   5: 62966827.968 us/op
+[info] Iteration   6: 63045820.573 us/op
+[info] Iteration   7: 63443132.830 us/op
+[info] Iteration   8: 63638638.006 us/op
+[info] Iteration   9: 63527121.658 us/op
+[info] Iteration  10: 62858502.954 us/op
+[info] Iteration  11: 62636443.985 us/op
+[info] Iteration  12: 62472265.899 us/op
+[info] Iteration  13: 63029364.630 us/op
+[info] Iteration  14: 62135567.641 us/op
+[info] Iteration  15: 62057885.593 us/op
+[info] Iteration  16: 62060756.853 us/op
+[info] Iteration  17: 62075167.771 us/op
+[info] Iteration  18: 62078621.853 us/op
+[info] Iteration  19: 62116727.567 us/op
+[info] Iteration  20: 61943537.010 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1":
+[info]   62661680.580 ±(99.9%) 494750.002 us/op [Average]
+[info]   (min, avg, max) = (61943537.010, 62661680.580, 63638638.006), stdev = 569754.838
+[info]   CI (99.9%): [62166930.578, 63156430.582] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3
+[info] # Run progress: 11.11% complete, ETA 04:10:13
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 54606422.645 us/op
+[info] # Warmup Iteration   2: 53401568.525 us/op
+[info] # Warmup Iteration   3: 53191391.489 us/op
+[info] # Warmup Iteration   4: 53494456.101 us/op
+[info] # Warmup Iteration   5: 53314632.304 us/op
+[info] # Warmup Iteration   6: 53061804.945 us/op
+[info] # Warmup Iteration   7: 53028278.245 us/op
+[info] # Warmup Iteration   8: 53126535.687 us/op
+[info] # Warmup Iteration   9: 53324380.531 us/op
+[info] # Warmup Iteration  10: 53239649.342 us/op
+[info] Iteration   1: 53228203.833 us/op
+[info] Iteration   2: 52827223.284 us/op
+[info] Iteration   3: 53135354.073 us/op
+[info] Iteration   4: 52930404.949 us/op
+[info] Iteration   5: 52850837.011 us/op
+[info] Iteration   6: 52961866.407 us/op
+[info] Iteration   7: 53026671.903 us/op
+[info] Iteration   8: 52939193.960 us/op
+[info] Iteration   9: 52870799.171 us/op
+[info] Iteration  10: 52704279.954 us/op
+[info] Iteration  11: 52847550.070 us/op
+[info] Iteration  12: 52794414.784 us/op
+[info] Iteration  13: 53020418.293 us/op
+[info] Iteration  14: 52970246.965 us/op
+[info] Iteration  15: 52641240.910 us/op
+[info] Iteration  16: 52574788.218 us/op
+[info] Iteration  17: 52881867.586 us/op
+[info] Iteration  18: 52884828.404 us/op
+[info] Iteration  19: 52856086.240 us/op
+[info] Iteration  20: 52756957.795 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3":
+[info]   52885161.691 ±(99.9%) 134659.873 us/op [Average]
+[info]   (min, avg, max) = (52574788.218, 52885161.691, 53228203.833), stdev = 155074.510
+[info]   CI (99.9%): [52750501.818, 53019821.563] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4
+[info] # Run progress: 22.22% complete, ETA 03:22:20
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 23410777.073 us/op
+[info] # Warmup Iteration   2: 23032630.314 us/op
+[info] # Warmup Iteration   3: 23148628.683 us/op
+[info] # Warmup Iteration   4: 23158657.180 us/op
+[info] # Warmup Iteration   5: 23043711.335 us/op
+[info] # Warmup Iteration   6: 23019010.151 us/op
+[info] # Warmup Iteration   7: 23059048.154 us/op
+[info] # Warmup Iteration   8: 23135264.825 us/op
+[info] # Warmup Iteration   9: 23042025.294 us/op
+[info] # Warmup Iteration  10: 23106828.416 us/op
+[info] Iteration   1: 23089293.853 us/op
+[info] Iteration   2: 23054430.188 us/op
+[info] Iteration   3: 23068207.919 us/op
+[info] Iteration   4: 23078444.363 us/op
+[info] Iteration   5: 23058492.903 us/op
+[info] Iteration   6: 23083348.465 us/op
+[info] Iteration   7: 23113335.588 us/op
+[info] Iteration   8: 22970871.122 us/op
+[info] Iteration   9: 22990133.474 us/op
+[info] Iteration  10: 22938502.698 us/op
+[info] Iteration  11: 22980913.641 us/op
+[info] Iteration  12: 22961350.185 us/op
+[info] Iteration  13: 22973096.505 us/op
+[info] Iteration  14: 23083345.576 us/op
+[info] Iteration  15: 23049069.315 us/op
+[info] Iteration  16: 23048470.643 us/op
+[info] Iteration  17: 23093216.751 us/op
+[info] Iteration  18: 23046363.892 us/op
+[info] Iteration  19: 23042325.771 us/op
+[info] Iteration  20: 22885766.214 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4":
+[info]   23030448.953 ±(99.9%) 53121.807 us/op [Average]
+[info]   (min, avg, max) = (22885766.214, 23030448.953, 23113335.588), stdev = 61175.151
+[info]   CI (99.9%): [22977327.147, 23083570.760] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1
+[info] # Run progress: 33.33% complete, ETA 02:18:42
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1125760.862 us/op
+[info] # Warmup Iteration   2: 673038.505 us/op
+[info] # Warmup Iteration   3: 626549.222 us/op
+[info] # Warmup Iteration   4: 625101.468 us/op
+[info] # Warmup Iteration   5: 620449.316 us/op
+[info] # Warmup Iteration   6: 617488.771 us/op
+[info] # Warmup Iteration   7: 630638.590 us/op
+[info] # Warmup Iteration   8: 624930.882 us/op
+[info] # Warmup Iteration   9: 629752.042 us/op
+[info] # Warmup Iteration  10: 634916.724 us/op
+[info] Iteration   1: 624617.160 us/op
+[info] Iteration   2: 642150.794 us/op
+[info] Iteration   3: 624165.448 us/op
+[info] Iteration   4: 612668.008 us/op
+[info] Iteration   5: 631572.613 us/op
+[info] Iteration   6: 611094.077 us/op
+[info] Iteration   7: 636154.877 us/op
+[info] Iteration   8: 619882.788 us/op
+[info] Iteration   9: 634954.215 us/op
+[info] Iteration  10: 633395.997 us/op
+[info] Iteration  11: 625080.480 us/op
+[info] Iteration  12: 633074.562 us/op
+[info] Iteration  13: 629385.662 us/op
+[info] Iteration  14: 623889.021 us/op
+[info] Iteration  15: 626043.735 us/op
+[info] Iteration  16: 621129.101 us/op
+[info] Iteration  17: 618545.557 us/op
+[info] Iteration  18: 625320.756 us/op
+[info] Iteration  19: 636235.711 us/op
+[info] Iteration  20: 616960.650 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1":
+[info]   626316.060 ±(99.9%) 7192.671 us/op [Average]
+[info]   (min, avg, max) = (611094.077, 626316.060, 642150.794), stdev = 8283.091
+[info]   CI (99.9%): [619123.389, 633508.732] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3
+[info] # Run progress: 44.44% complete, ETA 01:27:29
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 672640.558 us/op
+[info] # Warmup Iteration   2: 509896.846 us/op
+[info] # Warmup Iteration   3: 498781.565 us/op
+[info] # Warmup Iteration   4: 496503.465 us/op
+[info] # Warmup Iteration   5: 490404.439 us/op
+[info] # Warmup Iteration   6: 497784.501 us/op
+[info] # Warmup Iteration   7: 500174.541 us/op
+[info] # Warmup Iteration   8: 490611.021 us/op
+[info] # Warmup Iteration   9: 493357.321 us/op
+[info] # Warmup Iteration  10: 494937.300 us/op
+[info] Iteration   1: 487424.025 us/op
+[info] Iteration   2: 484494.841 us/op
+[info] Iteration   3: 481576.104 us/op
+[info] Iteration   4: 479376.612 us/op
+[info] Iteration   5: 491757.448 us/op
+[info] Iteration   6: 490209.924 us/op
+[info] Iteration   7: 484783.153 us/op
+[info] Iteration   8: 496496.176 us/op
+[info] Iteration   9: 490707.750 us/op
+[info] Iteration  10: 497776.667 us/op
+[info] Iteration  11: 491657.079 us/op
+[info] Iteration  12: 496860.236 us/op
+[info] Iteration  13: 496642.491 us/op
+[info] Iteration  14: 493847.024 us/op
+[info] Iteration  15: 497412.215 us/op
+[info] Iteration  16: 487714.861 us/op
+[info] Iteration  17: 483838.848 us/op
+[info] Iteration  18: 500778.635 us/op
+[info] Iteration  19: 483391.498 us/op
+[info] Iteration  20: 500560.173 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3":
+[info]   490865.288 ±(99.9%) 5696.053 us/op [Average]
+[info]   (min, avg, max) = (479376.612, 490865.288, 500778.635), stdev = 6559.583
+[info]   CI (99.9%): [485169.235, 496561.341] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4
+[info] # Run progress: 55.56% complete, ETA 00:56:33
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 378346.154 us/op
+[info] # Warmup Iteration   2: 300286.398 us/op
+[info] # Warmup Iteration   3: 290727.859 us/op
+[info] # Warmup Iteration   4: 294374.779 us/op
+[info] # Warmup Iteration   5: 294172.566 us/op
+[info] # Warmup Iteration   6: 295507.398 us/op
+[info] # Warmup Iteration   7: 289477.269 us/op
+[info] # Warmup Iteration   8: 291426.221 us/op
+[info] # Warmup Iteration   9: 299464.992 us/op
+[info] # Warmup Iteration  10: 293615.279 us/op
+[info] Iteration   1: 292708.820 us/op
+[info] Iteration   2: 291930.332 us/op
+[info] Iteration   3: 292362.798 us/op
+[info] Iteration   4: 287756.030 us/op
+[info] Iteration   5: 291537.383 us/op
+[info] Iteration   6: 285912.306 us/op
+[info] Iteration   7: 286173.106 us/op
+[info] Iteration   8: 292751.484 us/op
+[info] Iteration   9: 289057.376 us/op
+[info] Iteration  10: 288004.825 us/op
+[info] Iteration  11: 288624.827 us/op
+[info] Iteration  12: 289521.697 us/op
+[info] Iteration  13: 290521.394 us/op
+[info] Iteration  14: 292335.357 us/op
+[info] Iteration  15: 290590.008 us/op
+[info] Iteration  16: 290841.814 us/op
+[info] Iteration  17: 288576.923 us/op
+[info] Iteration  18: 289955.358 us/op
+[info] Iteration  19: 289698.998 us/op
+[info] Iteration  20: 289949.601 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4":
+[info]   289940.522 ±(99.9%) 1768.323 us/op [Average]
+[info]   (min, avg, max) = (285912.306, 289940.522, 292751.484), stdev = 2036.403
+[info]   CI (99.9%): [288172.199, 291708.845] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1
+[info] # Run progress: 66.67% complete, ETA 00:35:38
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 67047.507 us/op
+[info] # Warmup Iteration   2: 33704.741 us/op
+[info] # Warmup Iteration   3: 31277.473 us/op
+[info] # Warmup Iteration   4: 30750.481 us/op
+[info] # Warmup Iteration   5: 31081.188 us/op
+[info] # Warmup Iteration   6: 30319.260 us/op
+[info] # Warmup Iteration   7: 30319.150 us/op
+[info] # Warmup Iteration   8: 30504.667 us/op
+[info] # Warmup Iteration   9: 30754.747 us/op
+[info] # Warmup Iteration  10: 30930.032 us/op
+[info] Iteration   1: 30528.819 us/op
+[info] Iteration   2: 30838.815 us/op
+[info] Iteration   3: 30704.609 us/op
+[info] Iteration   4: 30617.827 us/op
+[info] Iteration   5: 30913.513 us/op
+[info] Iteration   6: 30246.807 us/op
+[info] Iteration   7: 30345.771 us/op
+[info] Iteration   8: 30968.927 us/op
+[info] Iteration   9: 30052.996 us/op
+[info] Iteration  10: 30888.284 us/op
+[info] Iteration  11: 30582.130 us/op
+[info] Iteration  12: 30385.465 us/op
+[info] Iteration  13: 31016.471 us/op
+[info] Iteration  14: 31191.637 us/op
+[info] Iteration  15: 30748.542 us/op
+[info] Iteration  16: 31535.166 us/op
+[info] Iteration  17: 30770.076 us/op
+[info] Iteration  18: 30757.628 us/op
+[info] Iteration  19: 30551.352 us/op
+[info] Iteration  20: 30917.469 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1":
+[info]   30728.115 ±(99.9%) 293.768 us/op [Average]
+[info]   (min, avg, max) = (30052.996, 30728.115, 31535.166), stdev = 338.304
+[info]   CI (99.9%): [30434.347, 31021.883] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3
+[info] # Run progress: 77.78% complete, ETA 00:20:31
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 39020.810 us/op
+[info] # Warmup Iteration   2: 27655.274 us/op
+[info] # Warmup Iteration   3: 27057.030 us/op
+[info] # Warmup Iteration   4: 27281.592 us/op
+[info] # Warmup Iteration   5: 26758.496 us/op
+[info] # Warmup Iteration   6: 26658.950 us/op
+[info] # Warmup Iteration   7: 26856.283 us/op
+[info] # Warmup Iteration   8: 26857.069 us/op
+[info] # Warmup Iteration   9: 27012.880 us/op
+[info] # Warmup Iteration  10: 27355.721 us/op
+[info] Iteration   1: 26478.301 us/op
+[info] Iteration   2: 26724.324 us/op
+[info] Iteration   3: 26745.303 us/op
+[info] Iteration   4: 26980.894 us/op
+[info] Iteration   5: 26625.822 us/op
+[info] Iteration   6: 26056.109 us/op
+[info] Iteration   7: 26533.529 us/op
+[info] Iteration   8: 25863.965 us/op
+[info] Iteration   9: 26125.395 us/op
+[info] Iteration  10: 25959.312 us/op
+[info] Iteration  11: 26016.043 us/op
+[info] Iteration  12: 26502.706 us/op
+[info] Iteration  13: 26690.284 us/op
+[info] Iteration  14: 26433.294 us/op
+[info] Iteration  15: 26285.811 us/op
+[info] Iteration  16: 26589.461 us/op
+[info] Iteration  17: 26879.860 us/op
+[info] Iteration  18: 26577.937 us/op
+[info] Iteration  19: 26727.216 us/op
+[info] Iteration  20: 26706.122 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3":
+[info]   26475.084 ±(99.9%) 278.492 us/op [Average]
+[info]   (min, avg, max) = (25863.965, 26475.084, 26980.894), stdev = 320.711
+[info]   CI (99.9%): [26196.593, 26753.576] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4
+[info] # Run progress: 88.89% complete, ETA 00:09:02
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 17082.481 us/op
+[info] # Warmup Iteration   2: 12200.628 us/op
+[info] # Warmup Iteration   3: 11866.723 us/op
+[info] # Warmup Iteration   4: 11965.050 us/op
+[info] # Warmup Iteration   5: 12053.423 us/op
+[info] # Warmup Iteration   6: 11828.816 us/op
+[info] # Warmup Iteration   7: 11604.794 us/op
+[info] # Warmup Iteration   8: 11731.789 us/op
+[info] # Warmup Iteration   9: 11992.542 us/op
+[info] # Warmup Iteration  10: 11844.207 us/op
+[info] Iteration   1: 11677.892 us/op
+[info] Iteration   2: 11704.580 us/op
+[info] Iteration   3: 11570.148 us/op
+[info] Iteration   4: 11674.118 us/op
+[info] Iteration   5: 11529.300 us/op
+[info] Iteration   6: 11561.882 us/op
+[info] Iteration   7: 11773.943 us/op
+[info] Iteration   8: 11612.843 us/op
+[info] Iteration   9: 11507.127 us/op
+[info] Iteration  10: 11739.299 us/op
+[info] Iteration  11: 11649.357 us/op
+[info] Iteration  12: 11683.877 us/op
+[info] Iteration  13: 11717.414 us/op
+[info] Iteration  14: 11679.996 us/op
+[info] Iteration  15: 11669.265 us/op
+[info] Iteration  16: 11699.982 us/op
+[info] Iteration  17: 11751.128 us/op
+[info] Iteration  18: 11648.741 us/op
+[info] Iteration  19: 11729.904 us/op
+[info] Iteration  20: 11534.481 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4":
+[info]   11655.764 ±(99.9%) 68.122 us/op [Average]
+[info]   (min, avg, max) = (11507.127, 11655.764, 11773.943), stdev = 78.450
+[info]   CI (99.9%): [11587.641, 11723.886] (assumes normal distribution)
+[info] # Run complete. Total time: 01:12:50
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  62661680.580 ± 494750.002  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  52885161.691 ± 134659.873  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  23030448.953 ±  53121.807  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    626316.060 ±   7192.671  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    490865.288 ±   5696.053  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    289940.522 ±   1768.323  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     30728.115 ±    293.768  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20     26475.084 ±    278.492  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     11655.764 ±     68.122  us/op
+[success] Total time: 4372 s (01:12:52), completed Nov 6, 2024, 9:53:05 AM
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.5)
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins/project
+[info] loading settings for project global-plugins from idea.sbt,metals.sbt,utilities.sbt ...
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter5.*(Small|Large).*gaston[134]
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1
+[info] # Run progress: 0.00% complete, ETA 00:04:30
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 64059934.348 us/op
+[info] # Warmup Iteration   2: 63921040.776 us/op
+[info] # Warmup Iteration   3: 62946787.209 us/op
+[info] # Warmup Iteration   4: 62740877.807 us/op
+[info] # Warmup Iteration   5: 62888399.988 us/op
+[info] # Warmup Iteration   6: 62710888.430 us/op
+[info] # Warmup Iteration   7: 62820821.090 us/op
+[info] # Warmup Iteration   8: 62867066.689 us/op
+[info] # Warmup Iteration   9: 63076298.866 us/op
+[info] # Warmup Iteration  10: 63038824.473 us/op
+[info] Iteration   1: 62435100.055 us/op
+[info] Iteration   2: 62563351.644 us/op
+[info] Iteration   3: 62382727.331 us/op
+[info] Iteration   4: 62178420.441 us/op
+[info] Iteration   5: 62090711.301 us/op
+[info] Iteration   6: 62425260.345 us/op
+[info] Iteration   7: 62212201.530 us/op
+[info] Iteration   8: 62698294.665 us/op
+[info] Iteration   9: 62478452.085 us/op
+[info] Iteration  10: 62991777.708 us/op
+[info] Iteration  11: 62871147.750 us/op
+[info] Iteration  12: 62844284.911 us/op
+[info] Iteration  13: 62701813.991 us/op
+[info] Iteration  14: 62539153.679 us/op
+[info] Iteration  15: 62665125.303 us/op
+[info] Iteration  16: 62582755.028 us/op
+[info] Iteration  17: 62484480.947 us/op
+[info] Iteration  18: 62469985.725 us/op
+[info] Iteration  19: 62368310.695 us/op
+[info] Iteration  20: 62619105.909 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1":
+[info]   62530123.052 ±(99.9%) 200221.469 us/op [Average]
+[info]   (min, avg, max) = (62090711.301, 62530123.052, 62991777.708), stdev = 230575.341
+[info]   CI (99.9%): [62329901.583, 62730344.521] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3
+[info] # Run progress: 11.11% complete, ETA 04:10:58
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 50142207.357 us/op
+[info] # Warmup Iteration   2: 50836804.094 us/op
+[info] # Warmup Iteration   3: 50778973.277 us/op
+[info] # Warmup Iteration   4: 50174858.542 us/op
+[info] # Warmup Iteration   5: 50418170.236 us/op
+[info] # Warmup Iteration   6: 49799553.363 us/op
+[info] # Warmup Iteration   7: 49810706.161 us/op
+[info] # Warmup Iteration   8: 49720773.993 us/op
+[info] # Warmup Iteration   9: 49868568.942 us/op
+[info] # Warmup Iteration  10: 49829012.515 us/op
+[info] Iteration   1: 49861387.184 us/op
+[info] Iteration   2: 49783341.510 us/op
+[info] Iteration   3: 49871665.091 us/op
+[info] Iteration   4: 50672298.047 us/op
+[info] Iteration   5: 50597997.894 us/op
+[info] Iteration   6: 49825524.846 us/op
+[info] Iteration   7: 50103833.324 us/op
+[info] Iteration   8: 50750389.655 us/op
+[info] Iteration   9: 49663160.694 us/op
+[info] Iteration  10: 50100386.276 us/op
+[info] Iteration  11: 50331203.919 us/op
+[info] Iteration  12: 49829581.044 us/op
+[info] Iteration  13: 50800794.038 us/op
+[info] Iteration  14: 50713934.641 us/op
+[info] Iteration  15: 50588556.311 us/op
+[info] Iteration  16: 50481801.399 us/op
+[info] Iteration  17: 50143912.246 us/op
+[info] Iteration  18: 50633040.379 us/op
+[info] Iteration  19: 50504530.095 us/op
+[info] Iteration  20: 49837109.006 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3":
+[info]   50254722.380 ±(99.9%) 338850.060 us/op [Average]
+[info]   (min, avg, max) = (49663160.694, 50254722.380, 50800794.038), stdev = 390220.233
+[info]   CI (99.9%): [49915872.320, 50593572.440] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4
+[info] # Run progress: 22.22% complete, ETA 03:17:43
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 23038921.816 us/op
+[info] # Warmup Iteration   2: 22658910.635 us/op
+[info] # Warmup Iteration   3: 23446978.313 us/op
+[info] # Warmup Iteration   4: 23473527.125 us/op
+[info] # Warmup Iteration   5: 23300382.359 us/op
+[info] # Warmup Iteration   6: 22831622.185 us/op
+[info] # Warmup Iteration   7: 23176758.805 us/op
+[info] # Warmup Iteration   8: 22890601.032 us/op
+[info] # Warmup Iteration   9: 22904852.420 us/op
+[info] # Warmup Iteration  10: 23082833.507 us/op
+[info] Iteration   1: 23199375.995 us/op
+[info] Iteration   2: 22956684.559 us/op
+[info] Iteration   3: 22917384.949 us/op
+[info] Iteration   4: 22824709.286 us/op
+[info] Iteration   5: 22931841.524 us/op
+[info] Iteration   6: 22918363.728 us/op
+[info] Iteration   7: 23301904.890 us/op
+[info] Iteration   8: 23302402.833 us/op
+[info] Iteration   9: 23147223.117 us/op
+[info] Iteration  10: 23102085.353 us/op
+[info] Iteration  11: 23335419.919 us/op
+[info] Iteration  12: 23117399.067 us/op
+[info] Iteration  13: 22797463.353 us/op
+[info] Iteration  14: 22993884.465 us/op
+[info] Iteration  15: 23212907.876 us/op
+[info] Iteration  16: 23284526.821 us/op
+[info] Iteration  17: 23306522.996 us/op
+[info] Iteration  18: 23170391.636 us/op
+[info] Iteration  19: 22898020.991 us/op
+[info] Iteration  20: 23249499.363 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4":
+[info]   23098400.636 ±(99.9%) 154413.444 us/op [Average]
+[info]   (min, avg, max) = (22797463.353, 23098400.636, 23335419.919), stdev = 177822.752
+[info]   CI (99.9%): [22943987.192, 23252814.080] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1
+[info] # Run progress: 33.33% complete, ETA 02:16:05
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1095159.209 us/op
+[info] # Warmup Iteration   2: 658947.550 us/op
+[info] # Warmup Iteration   3: 624651.671 us/op
+[info] # Warmup Iteration   4: 628324.881 us/op
+[info] # Warmup Iteration   5: 623537.616 us/op
+[info] # Warmup Iteration   6: 620982.390 us/op
+[info] # Warmup Iteration   7: 634596.826 us/op
+[info] # Warmup Iteration   8: 627835.974 us/op
+[info] # Warmup Iteration   9: 634250.785 us/op
+[info] # Warmup Iteration  10: 642314.857 us/op
+[info] Iteration   1: 641735.983 us/op
+[info] Iteration   2: 661678.876 us/op
+[info] Iteration   3: 641719.948 us/op
+[info] Iteration   4: 632799.817 us/op
+[info] Iteration   5: 651339.094 us/op
+[info] Iteration   6: 622336.034 us/op
+[info] Iteration   7: 657408.244 us/op
+[info] Iteration   8: 643858.727 us/op
+[info] Iteration   9: 642686.707 us/op
+[info] Iteration  10: 636007.440 us/op
+[info] Iteration  11: 633729.190 us/op
+[info] Iteration  12: 637022.208 us/op
+[info] Iteration  13: 635988.400 us/op
+[info] Iteration  14: 632649.796 us/op
+[info] Iteration  15: 634163.211 us/op
+[info] Iteration  16: 628576.954 us/op
+[info] Iteration  17: 625256.099 us/op
+[info] Iteration  18: 639925.383 us/op
+[info] Iteration  19: 643016.362 us/op
+[info] Iteration  20: 623767.399 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1":
+[info]   638283.293 ±(99.9%) 8961.066 us/op [Average]
+[info]   (min, avg, max) = (622336.034, 638283.293, 661678.876), stdev = 10319.577
+[info]   CI (99.9%): [629322.227, 647244.359] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3
+[info] # Run progress: 44.44% complete, ETA 01:25:52
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 663301.255 us/op
+[info] # Warmup Iteration   2: 514604.725 us/op
+[info] # Warmup Iteration   3: 500883.455 us/op
+[info] # Warmup Iteration   4: 497941.145 us/op
+[info] # Warmup Iteration   5: 495072.388 us/op
+[info] # Warmup Iteration   6: 506306.570 us/op
+[info] # Warmup Iteration   7: 506771.794 us/op
+[info] # Warmup Iteration   8: 501809.827 us/op
+[info] # Warmup Iteration   9: 497653.998 us/op
+[info] # Warmup Iteration  10: 502268.885 us/op
+[info] Iteration   1: 502620.658 us/op
+[info] Iteration   2: 502838.306 us/op
+[info] Iteration   3: 497628.017 us/op
+[info] Iteration   4: 491247.261 us/op
+[info] Iteration   5: 487391.848 us/op
+[info] Iteration   6: 488961.151 us/op
+[info] Iteration   7: 503463.480 us/op
+[info] Iteration   8: 495675.798 us/op
+[info] Iteration   9: 491851.777 us/op
+[info] Iteration  10: 501737.860 us/op
+[info] Iteration  11: 503944.670 us/op
+[info] Iteration  12: 499021.178 us/op
+[info] Iteration  13: 497795.839 us/op
+[info] Iteration  14: 493705.362 us/op
+[info] Iteration  15: 496969.337 us/op
+[info] Iteration  16: 498157.530 us/op
+[info] Iteration  17: 502018.770 us/op
+[info] Iteration  18: 498737.735 us/op
+[info] Iteration  19: 491914.964 us/op
+[info] Iteration  20: 493251.786 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3":
+[info]   496946.666 ±(99.9%) 4372.690 us/op [Average]
+[info]   (min, avg, max) = (487391.848, 496946.666, 503944.670), stdev = 5035.596
+[info]   CI (99.9%): [492573.977, 501319.356] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4
+[info] # Run progress: 55.56% complete, ETA 00:55:29
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 303574.969 us/op
+[info] # Warmup Iteration   2: 233632.737 us/op
+[info] # Warmup Iteration   3: 228841.616 us/op
+[info] # Warmup Iteration   4: 231252.922 us/op
+[info] # Warmup Iteration   5: 231688.941 us/op
+[info] # Warmup Iteration   6: 228216.724 us/op
+[info] # Warmup Iteration   7: 234570.310 us/op
+[info] # Warmup Iteration   8: 231848.650 us/op
+[info] # Warmup Iteration   9: 229803.453 us/op
+[info] # Warmup Iteration  10: 231449.234 us/op
+[info] Iteration   1: 228899.391 us/op
+[info] Iteration   2: 230731.024 us/op
+[info] Iteration   3: 225633.836 us/op
+[info] Iteration   4: 229263.843 us/op
+[info] Iteration   5: 226546.684 us/op
+[info] Iteration   6: 228141.476 us/op
+[info] Iteration   7: 229284.651 us/op
+[info] Iteration   8: 229180.565 us/op
+[info] Iteration   9: 228698.827 us/op
+[info] Iteration  10: 230558.023 us/op
+[info] Iteration  11: 229119.598 us/op
+[info] Iteration  12: 230583.019 us/op
+[info] Iteration  13: 232661.519 us/op
+[info] Iteration  14: 230072.993 us/op
+[info] Iteration  15: 232170.347 us/op
+[info] Iteration  16: 225495.204 us/op
+[info] Iteration  17: 228837.224 us/op
+[info] Iteration  18: 230470.400 us/op
+[info] Iteration  19: 226212.657 us/op
+[info] Iteration  20: 229963.441 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4":
+[info]   229126.236 ±(99.9%) 1711.103 us/op [Average]
+[info]   (min, avg, max) = (225495.204, 229126.236, 232661.519), stdev = 1970.509
+[info]   CI (99.9%): [227415.133, 230837.339] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1
+[info] # Run progress: 66.67% complete, ETA 00:34:58
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 59235.055 us/op
+[info] # Warmup Iteration   2: 33345.994 us/op
+[info] # Warmup Iteration   3: 32465.980 us/op
+[info] # Warmup Iteration   4: 30945.264 us/op
+[info] # Warmup Iteration   5: 31754.275 us/op
+[info] # Warmup Iteration   6: 31313.425 us/op
+[info] # Warmup Iteration   7: 31106.398 us/op
+[info] # Warmup Iteration   8: 31461.998 us/op
+[info] # Warmup Iteration   9: 31868.113 us/op
+[info] # Warmup Iteration  10: 31432.230 us/op
+[info] Iteration   1: 31639.983 us/op
+[info] Iteration   2: 31577.677 us/op
+[info] Iteration   3: 31731.704 us/op
+[info] Iteration   4: 30818.499 us/op
+[info] Iteration   5: 32512.349 us/op
+[info] Iteration   6: 31027.957 us/op
+[info] Iteration   7: 30760.270 us/op
+[info] Iteration   8: 32150.943 us/op
+[info] Iteration   9: 31509.496 us/op
+[info] Iteration  10: 30984.823 us/op
+[info] Iteration  11: 33392.301 us/op
+[info] Iteration  12: 31514.960 us/op
+[info] Iteration  13: 32094.249 us/op
+[info] Iteration  14: 32345.761 us/op
+[info] Iteration  15: 31837.347 us/op
+[info] Iteration  16: 31798.004 us/op
+[info] Iteration  17: 32576.080 us/op
+[info] Iteration  18: 31214.682 us/op
+[info] Iteration  19: 32607.191 us/op
+[info] Iteration  20: 31191.725 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1":
+[info]   31764.300 ±(99.9%) 599.073 us/op [Average]
+[info]   (min, avg, max) = (30760.270, 31764.300, 33392.301), stdev = 689.894
+[info]   CI (99.9%): [31165.227, 32363.373] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3
+[info] # Run progress: 77.78% complete, ETA 00:20:07
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 35970.055 us/op
+[info] # Warmup Iteration   2: 25937.837 us/op
+[info] # Warmup Iteration   3: 25377.335 us/op
+[info] # Warmup Iteration   4: 25676.471 us/op
+[info] # Warmup Iteration   5: 25248.695 us/op
+[info] # Warmup Iteration   6: 25035.232 us/op
+[info] # Warmup Iteration   7: 25722.393 us/op
+[info] # Warmup Iteration   8: 25631.793 us/op
+[info] # Warmup Iteration   9: 25205.986 us/op
+[info] # Warmup Iteration  10: 25095.896 us/op
+[info] Iteration   1: 24699.412 us/op
+[info] Iteration   2: 25098.815 us/op
+[info] Iteration   3: 24961.586 us/op
+[info] Iteration   4: 25143.949 us/op
+[info] Iteration   5: 24462.907 us/op
+[info] Iteration   6: 24722.276 us/op
+[info] Iteration   7: 24776.067 us/op
+[info] Iteration   8: 24906.711 us/op
+[info] Iteration   9: 24791.419 us/op
+[info] Iteration  10: 24971.388 us/op
+[info] Iteration  11: 25473.851 us/op
+[info] Iteration  12: 25716.606 us/op
+[info] Iteration  13: 25090.242 us/op
+[info] Iteration  14: 25163.573 us/op
+[info] Iteration  15: 24894.222 us/op
+[info] Iteration  16: 25245.560 us/op
+[info] Iteration  17: 24963.090 us/op
+[info] Iteration  18: 25432.588 us/op
+[info] Iteration  19: 25596.963 us/op
+[info] Iteration  20: 24944.716 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3":
+[info]   25052.797 ±(99.9%) 276.593 us/op [Average]
+[info]   (min, avg, max) = (24462.907, 25052.797, 25716.606), stdev = 318.525
+[info]   CI (99.9%): [24776.204, 25329.390] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4
+[info] # Run progress: 88.89% complete, ETA 00:08:52
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 15660.603 us/op
+[info] # Warmup Iteration   2: 11951.805 us/op
+[info] # Warmup Iteration   3: 11554.441 us/op
+[info] # Warmup Iteration   4: 11729.400 us/op
+[info] # Warmup Iteration   5: 11758.747 us/op
+[info] # Warmup Iteration   6: 11657.477 us/op
+[info] # Warmup Iteration   7: 11636.080 us/op
+[info] # Warmup Iteration   8: 11852.526 us/op
+[info] # Warmup Iteration   9: 11809.939 us/op
+[info] # Warmup Iteration  10: 11666.221 us/op
+[info] Iteration   1: 11591.464 us/op
+[info] Iteration   2: 11654.110 us/op
+[info] Iteration   3: 11559.553 us/op
+[info] Iteration   4: 11682.526 us/op
+[info] Iteration   5: 11400.857 us/op
+[info] Iteration   6: 11715.028 us/op
+[info] Iteration   7: 11607.884 us/op
+[info] Iteration   8: 11569.863 us/op
+[info] Iteration   9: 11474.573 us/op
+[info] Iteration  10: 11655.316 us/op
+[info] Iteration  11: 11691.213 us/op
+[info] Iteration  12: 11557.751 us/op
+[info] Iteration  13: 11858.644 us/op
+[info] Iteration  14: 11654.742 us/op
+[info] Iteration  15: 11600.890 us/op
+[info] Iteration  16: 11666.577 us/op
+[info] Iteration  17: 11644.026 us/op
+[info] Iteration  18: 11602.277 us/op
+[info] Iteration  19: 11697.105 us/op
+[info] Iteration  20: 11475.316 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4":
+[info]   11617.986 ±(99.9%) 86.602 us/op [Average]
+[info]   (min, avg, max) = (11400.857, 11617.986, 11858.644), stdev = 99.731
+[info]   CI (99.9%): [11531.384, 11704.588] (assumes normal distribution)
+[info] # Run complete. Total time: 01:11:29
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  62530123.052 ± 200221.469  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  50254722.380 ± 338850.060  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  23098400.636 ± 154413.444  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    638283.293 ±   8961.066  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    496946.666 ±   4372.690  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    229126.236 ±   1711.103  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     31764.300 ±    599.073  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20     25052.797 ±    276.593  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     11617.986 ±     86.602  us/op
+[success] Total time: 4291 s (01:11:31), completed Nov 6, 2024, 11:04:40 AM
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.5)
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins/project
+[info] loading settings for project global-plugins from idea.sbt,metals.sbt,utilities.sbt ...
+[info] loading global plugins from /home/gael/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gael/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter5.*(Small|Large).*gaston[134]
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1
+[info] # Run progress: 0.00% complete, ETA 00:04:30
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 63473271.909 us/op
+[info] # Warmup Iteration   2: 62719759.244 us/op
+[info] # Warmup Iteration   3: 62451231.109 us/op
+[info] # Warmup Iteration   4: 62319111.160 us/op
+[info] # Warmup Iteration   5: 62406194.197 us/op
+[info] # Warmup Iteration   6: 62201386.884 us/op
+[info] # Warmup Iteration   7: 62234596.546 us/op
+[info] # Warmup Iteration   8: 62170594.267 us/op
+[info] # Warmup Iteration   9: 62501442.140 us/op
+[info] # Warmup Iteration  10: 62736048.732 us/op
+[info] Iteration   1: 62824385.083 us/op
+[info] Iteration   2: 62948168.208 us/op
+[info] Iteration   3: 62645582.140 us/op
+[info] Iteration   4: 62704989.418 us/op
+[info] Iteration   5: 62490947.597 us/op
+[info] Iteration   6: 62813942.899 us/op
+[info] Iteration   7: 62666324.441 us/op
+[info] Iteration   8: 62749445.828 us/op
+[info] Iteration   9: 62538589.156 us/op
+[info] Iteration  10: 62986495.506 us/op
+[info] Iteration  11: 62606978.508 us/op
+[info] Iteration  12: 62770193.341 us/op
+[info] Iteration  13: 62754082.033 us/op
+[info] Iteration  14: 62696319.344 us/op
+[info] Iteration  15: 62667735.867 us/op
+[info] Iteration  16: 63014383.678 us/op
+[info] Iteration  17: 62738343.547 us/op
+[info] Iteration  18: 62722637.052 us/op
+[info] Iteration  19: 62701215.706 us/op
+[info] Iteration  20: 62439735.863 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston1":
+[info]   62724024.761 ±(99.9%) 129568.735 us/op [Average]
+[info]   (min, avg, max) = (62439735.863, 62724024.761, 63014383.678), stdev = 149211.548
+[info]   CI (99.9%): [62594456.026, 62853593.496] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3
+[info] # Run progress: 11.11% complete, ETA 04:10:43
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 53192850.689 us/op
+[info] # Warmup Iteration   2: 53056916.356 us/op
+[info] # Warmup Iteration   3: 53034930.899 us/op
+[info] # Warmup Iteration   4: 53152453.803 us/op
+[info] # Warmup Iteration   5: 53872021.930 us/op
+[info] # Warmup Iteration   6: 52877939.924 us/op
+[info] # Warmup Iteration   7: 52826587.475 us/op
+[info] # Warmup Iteration   8: 52769170.607 us/op
+[info] # Warmup Iteration   9: 52986827.055 us/op
+[info] # Warmup Iteration  10: 53602849.575 us/op
+[info] Iteration   1: 53359979.300 us/op
+[info] Iteration   2: 53171083.094 us/op
+[info] Iteration   3: 53166698.762 us/op
+[info] Iteration   4: 53623712.348 us/op
+[info] Iteration   5: 53237703.560 us/op
+[info] Iteration   6: 53170376.359 us/op
+[info] Iteration   7: 53281393.932 us/op
+[info] Iteration   8: 53440118.038 us/op
+[info] Iteration   9: 54011555.971 us/op
+[info] Iteration  10: 53597272.392 us/op
+[info] Iteration  11: 54186576.874 us/op
+[info] Iteration  12: 53803624.359 us/op
+[info] Iteration  13: 53571704.400 us/op
+[info] Iteration  14: 53421844.192 us/op
+[info] Iteration  15: 52810846.755 us/op
+[info] Iteration  16: 52877455.287 us/op
+[info] Iteration  17: 53117823.556 us/op
+[info] Iteration  18: 53124016.934 us/op
+[info] Iteration  19: 53189823.260 us/op
+[info] Iteration  20: 53113783.967 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston3":
+[info]   53363869.667 ±(99.9%) 305627.037 us/op [Average]
+[info]   (min, avg, max) = (52810846.755, 53363869.667, 54186576.874), stdev = 351960.550
+[info]   CI (99.9%): [53058242.630, 53669496.704] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4
+[info] # Run progress: 22.22% complete, ETA 03:22:59
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 23219574.720 us/op
+[info] # Warmup Iteration   2: 22678387.380 us/op
+[info] # Warmup Iteration   3: 22791506.646 us/op
+[info] # Warmup Iteration   4: 22839580.592 us/op
+[info] # Warmup Iteration   5: 22725098.006 us/op
+[info] # Warmup Iteration   6: 22657899.365 us/op
+[info] # Warmup Iteration   7: 22691580.828 us/op
+[info] # Warmup Iteration   8: 22798084.712 us/op
+[info] # Warmup Iteration   9: 22711154.994 us/op
+[info] # Warmup Iteration  10: 22771516.325 us/op
+[info] Iteration   1: 22733372.640 us/op
+[info] Iteration   2: 22725272.355 us/op
+[info] Iteration   3: 22752560.276 us/op
+[info] Iteration   4: 22749569.973 us/op
+[info] Iteration   5: 22721655.296 us/op
+[info] Iteration   6: 22732227.980 us/op
+[info] Iteration   7: 22735841.024 us/op
+[info] Iteration   8: 23159862.329 us/op
+[info] Iteration   9: 23209291.547 us/op
+[info] Iteration  10: 23197014.382 us/op
+[info] Iteration  11: 23224003.286 us/op
+[info] Iteration  12: 23176726.452 us/op
+[info] Iteration  13: 22883631.799 us/op
+[info] Iteration  14: 22717094.182 us/op
+[info] Iteration  15: 23086721.614 us/op
+[info] Iteration  16: 23197077.578 us/op
+[info] Iteration  17: 23219541.851 us/op
+[info] Iteration  18: 23186714.868 us/op
+[info] Iteration  19: 23189885.593 us/op
+[info] Iteration  20: 23206903.465 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkLarge.improve_gaston4":
+[info]   22990248.425 ±(99.9%) 197112.691 us/op [Average]
+[info]   (min, avg, max) = (22717094.182, 22990248.425, 23224003.286), stdev = 226995.268
+[info]   CI (99.9%): [22793135.733, 23187361.116] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1
+[info] # Run progress: 33.33% complete, ETA 02:18:56
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1120140.002 us/op
+[info] # Warmup Iteration   2: 666672.459 us/op
+[info] # Warmup Iteration   3: 623016.588 us/op
+[info] # Warmup Iteration   4: 628590.514 us/op
+[info] # Warmup Iteration   5: 634732.170 us/op
+[info] # Warmup Iteration   6: 629728.762 us/op
+[info] # Warmup Iteration   7: 642010.830 us/op
+[info] # Warmup Iteration   8: 636413.418 us/op
+[info] # Warmup Iteration   9: 642002.739 us/op
+[info] # Warmup Iteration  10: 644216.685 us/op
+[info] Iteration   1: 631558.611 us/op
+[info] Iteration   2: 654176.778 us/op
+[info] Iteration   3: 635066.389 us/op
+[info] Iteration   4: 627546.486 us/op
+[info] Iteration   5: 649754.648 us/op
+[info] Iteration   6: 621959.248 us/op
+[info] Iteration   7: 649213.825 us/op
+[info] Iteration   8: 634953.179 us/op
+[info] Iteration   9: 644307.311 us/op
+[info] Iteration  10: 640885.817 us/op
+[info] Iteration  11: 635956.739 us/op
+[info] Iteration  12: 640131.523 us/op
+[info] Iteration  13: 638843.462 us/op
+[info] Iteration  14: 635012.600 us/op
+[info] Iteration  15: 640235.616 us/op
+[info] Iteration  16: 634018.487 us/op
+[info] Iteration  17: 630188.628 us/op
+[info] Iteration  18: 637456.968 us/op
+[info] Iteration  19: 649345.699 us/op
+[info] Iteration  20: 630768.994 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston1":
+[info]   638069.050 ±(99.9%) 7130.423 us/op [Average]
+[info]   (min, avg, max) = (621959.248, 638069.050, 654176.778), stdev = 8211.405
+[info]   CI (99.9%): [630938.627, 645199.473] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3
+[info] # Run progress: 44.44% complete, ETA 01:27:38
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 675768.276 us/op
+[info] # Warmup Iteration   2: 509701.287 us/op
+[info] # Warmup Iteration   3: 498583.281 us/op
+[info] # Warmup Iteration   4: 495049.441 us/op
+[info] # Warmup Iteration   5: 499145.331 us/op
+[info] # Warmup Iteration   6: 510885.435 us/op
+[info] # Warmup Iteration   7: 513769.434 us/op
+[info] # Warmup Iteration   8: 508669.051 us/op
+[info] # Warmup Iteration   9: 505133.255 us/op
+[info] # Warmup Iteration  10: 506316.242 us/op
+[info] Iteration   1: 500499.448 us/op
+[info] Iteration   2: 500086.138 us/op
+[info] Iteration   3: 489759.864 us/op
+[info] Iteration   4: 488367.783 us/op
+[info] Iteration   5: 487625.803 us/op
+[info] Iteration   6: 484474.468 us/op
+[info] Iteration   7: 496937.891 us/op
+[info] Iteration   8: 495576.652 us/op
+[info] Iteration   9: 489661.897 us/op
+[info] Iteration  10: 499777.908 us/op
+[info] Iteration  11: 494793.133 us/op
+[info] Iteration  12: 495610.255 us/op
+[info] Iteration  13: 490740.886 us/op
+[info] Iteration  14: 494165.841 us/op
+[info] Iteration  15: 498632.442 us/op
+[info] Iteration  16: 497625.860 us/op
+[info] Iteration  17: 497292.396 us/op
+[info] Iteration  18: 488347.142 us/op
+[info] Iteration  19: 488608.175 us/op
+[info] Iteration  20: 505248.957 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston3":
+[info]   494191.647 ±(99.9%) 4755.429 us/op [Average]
+[info]   (min, avg, max) = (484474.468, 494191.647, 505248.957), stdev = 5476.359
+[info]   CI (99.9%): [489436.218, 498947.076] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4
+[info] # Run progress: 55.56% complete, ETA 00:56:38
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 351810.657 us/op
+[info] # Warmup Iteration   2: 242227.883 us/op
+[info] # Warmup Iteration   3: 235471.189 us/op
+[info] # Warmup Iteration   4: 239840.937 us/op
+[info] # Warmup Iteration   5: 238741.148 us/op
+[info] # Warmup Iteration   6: 235581.400 us/op
+[info] # Warmup Iteration   7: 237791.586 us/op
+[info] # Warmup Iteration   8: 242424.432 us/op
+[info] # Warmup Iteration   9: 235634.469 us/op
+[info] # Warmup Iteration  10: 238199.154 us/op
+[info] Iteration   1: 233806.591 us/op
+[info] Iteration   2: 238082.462 us/op
+[info] Iteration   3: 233921.076 us/op
+[info] Iteration   4: 236391.154 us/op
+[info] Iteration   5: 236210.180 us/op
+[info] Iteration   6: 235919.077 us/op
+[info] Iteration   7: 234721.111 us/op
+[info] Iteration   8: 236989.087 us/op
+[info] Iteration   9: 237444.041 us/op
+[info] Iteration  10: 237605.278 us/op
+[info] Iteration  11: 237646.215 us/op
+[info] Iteration  12: 234931.026 us/op
+[info] Iteration  13: 240741.879 us/op
+[info] Iteration  14: 236169.498 us/op
+[info] Iteration  15: 236298.000 us/op
+[info] Iteration  16: 234727.123 us/op
+[info] Iteration  17: 234567.778 us/op
+[info] Iteration  18: 240043.392 us/op
+[info] Iteration  19: 234096.783 us/op
+[info] Iteration  20: 237010.574 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkSmall.improve_gaston4":
+[info]   236366.116 ±(99.9%) 1659.449 us/op [Average]
+[info]   (min, avg, max) = (233806.591, 236366.116, 240741.879), stdev = 1911.024
+[info]   CI (99.9%): [234706.668, 238025.565] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1
+[info] # Run progress: 66.67% complete, ETA 00:35:41
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 60487.063 us/op
+[info] # Warmup Iteration   2: 33037.042 us/op
+[info] # Warmup Iteration   3: 31414.079 us/op
+[info] # Warmup Iteration   4: 30510.166 us/op
+[info] # Warmup Iteration   5: 31346.391 us/op
+[info] # Warmup Iteration   6: 30624.703 us/op
+[info] # Warmup Iteration   7: 30587.354 us/op
+[info] # Warmup Iteration   8: 30767.309 us/op
+[info] # Warmup Iteration   9: 31017.622 us/op
+[info] # Warmup Iteration  10: 31273.685 us/op
+[info] Iteration   1: 30912.175 us/op
+[info] Iteration   2: 31306.295 us/op
+[info] Iteration   3: 31164.874 us/op
+[info] Iteration   4: 30981.096 us/op
+[info] Iteration   5: 31280.072 us/op
+[info] Iteration   6: 30951.817 us/op
+[info] Iteration   7: 30611.556 us/op
+[info] Iteration   8: 31214.485 us/op
+[info] Iteration   9: 30658.369 us/op
+[info] Iteration  10: 30977.617 us/op
+[info] Iteration  11: 31421.788 us/op
+[info] Iteration  12: 30619.658 us/op
+[info] Iteration  13: 31074.953 us/op
+[info] Iteration  14: 30811.270 us/op
+[info] Iteration  15: 31030.179 us/op
+[info] Iteration  16: 31267.318 us/op
+[info] Iteration  17: 30724.680 us/op
+[info] Iteration  18: 31034.833 us/op
+[info] Iteration  19: 31078.451 us/op
+[info] Iteration  20: 30726.893 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston1":
+[info]   30992.419 ±(99.9%) 210.520 us/op [Average]
+[info]   (min, avg, max) = (30611.556, 30992.419, 31421.788), stdev = 242.435
+[info]   CI (99.9%): [30781.899, 31202.939] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3
+[info] # Run progress: 77.78% complete, ETA 00:20:32
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 36411.401 us/op
+[info] # Warmup Iteration   2: 25698.776 us/op
+[info] # Warmup Iteration   3: 25009.877 us/op
+[info] # Warmup Iteration   4: 25098.419 us/op
+[info] # Warmup Iteration   5: 24630.388 us/op
+[info] # Warmup Iteration   6: 24484.444 us/op
+[info] # Warmup Iteration   7: 25160.854 us/op
+[info] # Warmup Iteration   8: 25083.257 us/op
+[info] # Warmup Iteration   9: 24889.594 us/op
+[info] # Warmup Iteration  10: 24855.590 us/op
+[info] Iteration   1: 24606.282 us/op
+[info] Iteration   2: 24972.695 us/op
+[info] Iteration   3: 24810.748 us/op
+[info] Iteration   4: 24863.073 us/op
+[info] Iteration   5: 24306.818 us/op
+[info] Iteration   6: 24618.273 us/op
+[info] Iteration   7: 24093.653 us/op
+[info] Iteration   8: 24215.681 us/op
+[info] Iteration   9: 24148.923 us/op
+[info] Iteration  10: 24426.320 us/op
+[info] Iteration  11: 24943.531 us/op
+[info] Iteration  12: 24706.577 us/op
+[info] Iteration  13: 24691.170 us/op
+[info] Iteration  14: 24387.591 us/op
+[info] Iteration  15: 25172.916 us/op
+[info] Iteration  16: 24798.454 us/op
+[info] Iteration  17: 24873.105 us/op
+[info] Iteration  18: 24715.915 us/op
+[info] Iteration  19: 24809.433 us/op
+[info] Iteration  20: 24404.242 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston3":
+[info]   24628.270 ±(99.9%) 258.305 us/op [Average]
+[info]   (min, avg, max) = (24093.653, 24628.270, 25172.916), stdev = 297.464
+[info]   CI (99.9%): [24369.965, 24886.575] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.5, OpenJDK 64-Bit Server VM, 21.0.5+11-LTS
+[info] # VM invoker: /home/gael/.sdkman/candidates/java/21.0.5-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4
+[info] # Run progress: 88.89% complete, ETA 00:09:03
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 15783.458 us/op
+[info] # Warmup Iteration   2: 11834.532 us/op
+[info] # Warmup Iteration   3: 11470.468 us/op
+[info] # Warmup Iteration   4: 11709.703 us/op
+[info] # Warmup Iteration   5: 11727.399 us/op
+[info] # Warmup Iteration   6: 11614.629 us/op
+[info] # Warmup Iteration   7: 11425.465 us/op
+[info] # Warmup Iteration   8: 11714.369 us/op
+[info] # Warmup Iteration   9: 11703.167 us/op
+[info] # Warmup Iteration  10: 11527.092 us/op
+[info] Iteration   1: 11542.869 us/op
+[info] Iteration   2: 11614.410 us/op
+[info] Iteration   3: 11464.116 us/op
+[info] Iteration   4: 11501.150 us/op
+[info] Iteration   5: 11359.695 us/op
+[info] Iteration   6: 11539.698 us/op
+[info] Iteration   7: 11482.829 us/op
+[info] Iteration   8: 11502.671 us/op
+[info] Iteration   9: 11410.843 us/op
+[info] Iteration  10: 11543.228 us/op
+[info] Iteration  11: 11607.048 us/op
+[info] Iteration  12: 11470.814 us/op
+[info] Iteration  13: 11578.360 us/op
+[info] Iteration  14: 11571.421 us/op
+[info] Iteration  15: 11456.161 us/op
+[info] Iteration  16: 11606.956 us/op
+[info] Iteration  17: 11623.369 us/op
+[info] Iteration  18: 11421.691 us/op
+[info] Iteration  19: 11555.703 us/op
+[info] Iteration  20: 11406.171 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter5.GastonBenchmarkXSmall.improve_gaston4":
+[info]   11512.960 ±(99.9%) 67.384 us/op [Average]
+[info]   (min, avg, max) = (11359.695, 11512.960, 11623.369), stdev = 77.599
+[info]   CI (99.9%): [11445.576, 11580.344] (assumes normal distribution)
+[info] # Run complete. Total time: 01:12:56
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  62724024.761 ± 129568.735  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  53363869.667 ± 305627.037  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  22990248.425 ± 197112.691  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    638069.050 ±   7130.423  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    494191.647 ±   4755.429  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    236366.116 ±   1659.449  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     30992.419 ±    210.520  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20     24628.270 ±    258.305  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     11512.960 ±     67.384  us/op
+[success] Total time: 4378 s (01:12:58), completed Nov 6, 2024, 12:17:43 PM

@@ -1,0 +1,2515 @@
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.4)
+[info] loading settings for project global-plugins from metals.sbt,plugins.sbt ...
+[info] loading global plugins from /home/gaelrenoux/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[success] Generated .bloop/public-scalaio2024-benchmarks-build.json
+[success] Total time: 0 s, completed Nov 5, 2024, 7:43:48 PM
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter3.MapBenchmark_Invoice_HalfHit_(Small|Large).*
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap
+[info] # Run progress: 0.00% complete, ETA 00:05:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3463487.505 us/op
+[info] # Warmup Iteration   2: 4.585 us/op
+[info] # Warmup Iteration   3: 2.868 us/op
+[info] # Warmup Iteration   4: 2.737 us/op
+[info] # Warmup Iteration   5: 2.727 us/op
+[info] # Warmup Iteration   6: 2.691 us/op
+[info] # Warmup Iteration   7: 2.685 us/op
+[info] # Warmup Iteration   8: 2.670 us/op
+[info] # Warmup Iteration   9: 2.682 us/op
+[info] # Warmup Iteration  10: 2.864 us/op
+[info] Iteration   1: 2.699 us/op
+[info] Iteration   2: 2.682 us/op
+[info] Iteration   3: 2.678 us/op
+[info] Iteration   4: 2.666 us/op
+[info] Iteration   5: 2.719 us/op
+[info] Iteration   6: 2.671 us/op
+[info] Iteration   7: 2.696 us/op
+[info] Iteration   8: 2.663 us/op
+[info] Iteration   9: 2.686 us/op
+[info] Iteration  10: 2.693 us/op
+[info] Iteration  11: 2.672 us/op
+[info] Iteration  12: 2.666 us/op
+[info] Iteration  13: 2.679 us/op
+[info] Iteration  14: 2.742 us/op
+[info] Iteration  15: 2.708 us/op
+[info] Iteration  16: 2.670 us/op
+[info] Iteration  17: 2.687 us/op
+[info] Iteration  18: 2.704 us/op
+[info] Iteration  19: 2.670 us/op
+[info] Iteration  20: 2.695 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap":
+[info]   2.687 ±(99.9%) 0.018 us/op [Average]
+[info]   (min, avg, max) = (2.663, 2.687, 2.742), stdev = 0.020
+[info]   CI (99.9%): [2.670, 2.705] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap
+[info] # Run progress: 10.00% complete, ETA 00:05:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3260995.108 us/op
+[info] # Warmup Iteration   2: 93.112 us/op
+[info] # Warmup Iteration   3: 68.158 us/op
+[info] # Warmup Iteration   4: 68.876 us/op
+[info] # Warmup Iteration   5: 70.473 us/op
+[info] # Warmup Iteration   6: 69.164 us/op
+[info] # Warmup Iteration   7: 69.477 us/op
+[info] # Warmup Iteration   8: 68.994 us/op
+[info] # Warmup Iteration   9: 69.184 us/op
+[info] # Warmup Iteration  10: 68.738 us/op
+[info] Iteration   1: 68.974 us/op
+[info] Iteration   2: 69.489 us/op
+[info] Iteration   3: 68.278 us/op
+[info] Iteration   4: 68.705 us/op
+[info] Iteration   5: 69.189 us/op
+[info] Iteration   6: 68.389 us/op
+[info] Iteration   7: 69.033 us/op
+[info] Iteration   8: 68.631 us/op
+[info] Iteration   9: 68.283 us/op
+[info] Iteration  10: 73.770 us/op
+[info] Iteration  11: 69.137 us/op
+[info] Iteration  12: 69.875 us/op
+[info] Iteration  13: 69.198 us/op
+[info] Iteration  14: 68.534 us/op
+[info] Iteration  15: 68.661 us/op
+[info] Iteration  16: 68.743 us/op
+[info] Iteration  17: 68.984 us/op
+[info] Iteration  18: 67.854 us/op
+[info] Iteration  19: 68.093 us/op
+[info] Iteration  20: 68.989 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap":
+[info]   69.040 ±(99.9%) 1.054 us/op [Average]
+[info]   (min, avg, max) = (67.854, 69.040, 73.770), stdev = 1.214
+[info]   CI (99.9%): [67.987, 70.094] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap
+[info] # Run progress: 20.00% complete, ETA 00:04:25
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 4566097.163 us/op
+[info] # Warmup Iteration   2: 369.628 us/op
+[info] # Warmup Iteration   3: 391.063 us/op
+[info] # Warmup Iteration   4: 288.375 us/op
+[info] # Warmup Iteration   5: 287.144 us/op
+[info] # Warmup Iteration   6: 286.125 us/op
+[info] # Warmup Iteration   7: 297.721 us/op
+[info] # Warmup Iteration   8: 294.780 us/op
+[info] # Warmup Iteration   9: 288.956 us/op
+[info] # Warmup Iteration  10: 287.642 us/op
+[info] Iteration   1: 287.092 us/op
+[info] Iteration   2: 293.685 us/op
+[info] Iteration   3: 290.485 us/op
+[info] Iteration   4: 286.406 us/op
+[info] Iteration   5: 286.610 us/op
+[info] Iteration   6: 466.682 us/op
+[info] Iteration   7: 288.016 us/op
+[info] Iteration   8: 292.772 us/op
+[info] Iteration   9: 286.354 us/op
+[info] Iteration  10: 308.484 us/op
+[info] Iteration  11: 289.156 us/op
+[info] Iteration  12: 288.798 us/op
+[info] Iteration  13: 292.964 us/op
+[info] Iteration  14: 291.710 us/op
+[info] Iteration  15: 288.189 us/op
+[info] Iteration  16: 288.104 us/op
+[info] Iteration  17: 289.174 us/op
+[info] Iteration  18: 295.025 us/op
+[info] Iteration  19: 287.316 us/op
+[info] Iteration  20: 291.499 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap":
+[info]   299.426 ±(99.9%) 34.453 us/op [Average]
+[info]   (min, avg, max) = (286.354, 299.426, 466.682), stdev = 39.676
+[info]   CI (99.9%): [264.973, 333.879] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap
+[info] # Run progress: 30.00% complete, ETA 00:03:55
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3694110.146 us/op
+[info] # Warmup Iteration   2: 17.526 us/op
+[info] # Warmup Iteration   3: 12.595 us/op
+[info] # Warmup Iteration   4: 14.014 us/op
+[info] # Warmup Iteration   5: 12.797 us/op
+[info] # Warmup Iteration   6: 23.060 us/op
+[info] # Warmup Iteration   7: 12.609 us/op
+[info] # Warmup Iteration   8: 12.213 us/op
+[info] # Warmup Iteration   9: 12.525 us/op
+[info] # Warmup Iteration  10: 12.224 us/op
+[info] Iteration   1: 12.259 us/op
+[info] Iteration   2: 12.271 us/op
+[info] Iteration   3: 12.278 us/op
+[info] Iteration   4: 12.726 us/op
+[info] Iteration   5: 12.369 us/op
+[info] Iteration   6: 12.200 us/op
+[info] Iteration   7: 12.423 us/op
+[info] Iteration   8: 12.340 us/op
+[info] Iteration   9: 12.601 us/op
+[info] Iteration  10: 12.414 us/op
+[info] Iteration  11: 12.366 us/op
+[info] Iteration  12: 12.391 us/op
+[info] Iteration  13: 12.932 us/op
+[info] Iteration  14: 12.424 us/op
+[info] Iteration  15: 12.264 us/op
+[info] Iteration  16: 12.079 us/op
+[info] Iteration  17: 12.150 us/op
+[info] Iteration  18: 12.507 us/op
+[info] Iteration  19: 12.394 us/op
+[info] Iteration  20: 12.159 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap":
+[info]   12.377 ±(99.9%) 0.175 us/op [Average]
+[info]   (min, avg, max) = (12.079, 12.377, 12.932), stdev = 0.202
+[info]   CI (99.9%): [12.202, 12.552] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap
+[info] # Run progress: 40.00% complete, ETA 00:03:21
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3673112.509 us/op
+[info] # Warmup Iteration   2: 119.250 us/op
+[info] # Warmup Iteration   3: 155.547 us/op
+[info] # Warmup Iteration   4: 130.546 us/op
+[info] # Warmup Iteration   5: 113.623 us/op
+[info] # Warmup Iteration   6: 117.293 us/op
+[info] # Warmup Iteration   7: 114.580 us/op
+[info] # Warmup Iteration   8: 115.879 us/op
+[info] # Warmup Iteration   9: 117.091 us/op
+[info] # Warmup Iteration  10: 113.286 us/op
+[info] Iteration   1: 113.664 us/op
+[info] Iteration   2: 116.748 us/op
+[info] Iteration   3: 114.109 us/op
+[info] Iteration   4: 115.945 us/op
+[info] Iteration   5: 113.709 us/op
+[info] Iteration   6: 117.415 us/op
+[info] Iteration   7: 113.369 us/op
+[info] Iteration   8: 114.347 us/op
+[info] Iteration   9: 115.935 us/op
+[info] Iteration  10: 115.304 us/op
+[info] Iteration  11: 114.649 us/op
+[info] Iteration  12: 115.626 us/op
+[info] Iteration  13: 114.272 us/op
+[info] Iteration  14: 115.449 us/op
+[info] Iteration  15: 113.838 us/op
+[info] Iteration  16: 112.522 us/op
+[info] Iteration  17: 115.691 us/op
+[info] Iteration  18: 114.990 us/op
+[info] Iteration  19: 115.429 us/op
+[info] Iteration  20: 114.784 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap":
+[info]   114.890 ±(99.9%) 1.040 us/op [Average]
+[info]   (min, avg, max) = (112.522, 114.890, 117.415), stdev = 1.198
+[info]   CI (99.9%): [113.849, 115.930] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap
+[info] # Run progress: 50.00% complete, ETA 00:02:51
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1163547.390 us/op
+[info] # Warmup Iteration   2: 2.826 us/op
+[info] # Warmup Iteration   3: 2.197 us/op
+[info] # Warmup Iteration   4: 2.108 us/op
+[info] # Warmup Iteration   5: 2.135 us/op
+[info] # Warmup Iteration   6: 2.148 us/op
+[info] # Warmup Iteration   7: 2.128 us/op
+[info] # Warmup Iteration   8: 2.116 us/op
+[info] # Warmup Iteration   9: 2.119 us/op
+[info] # Warmup Iteration  10: 2.147 us/op
+[info] Iteration   1: 2.179 us/op
+[info] Iteration   2: 2.116 us/op
+[info] Iteration   3: 2.105 us/op
+[info] Iteration   4: 2.130 us/op
+[info] Iteration   5: 2.127 us/op
+[info] Iteration   6: 2.155 us/op
+[info] Iteration   7: 2.213 us/op
+[info] Iteration   8: 2.114 us/op
+[info] Iteration   9: 2.131 us/op
+[info] Iteration  10: 2.121 us/op
+[info] Iteration  11: 2.139 us/op
+[info] Iteration  12: 2.112 us/op
+[info] Iteration  13: 2.164 us/op
+[info] Iteration  14: 2.112 us/op
+[info] Iteration  15: 2.118 us/op
+[info] Iteration  16: 2.141 us/op
+[info] Iteration  17: 2.126 us/op
+[info] Iteration  18: 2.112 us/op
+[info] Iteration  19: 2.105 us/op
+[info] Iteration  20: 2.110 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap":
+[info]   2.132 ±(99.9%) 0.024 us/op [Average]
+[info]   (min, avg, max) = (2.105, 2.132, 2.213), stdev = 0.028
+[info]   CI (99.9%): [2.108, 2.156] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap
+[info] # Run progress: 60.00% complete, ETA 00:02:15
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 7358.130 us/op
+[info] # Warmup Iteration   2: 13.479 us/op
+[info] # Warmup Iteration   3: 10.569 us/op
+[info] # Warmup Iteration   4: 10.597 us/op
+[info] # Warmup Iteration   5: 10.578 us/op
+[info] # Warmup Iteration   6: 10.466 us/op
+[info] # Warmup Iteration   7: 10.441 us/op
+[info] # Warmup Iteration   8: 10.426 us/op
+[info] # Warmup Iteration   9: 10.421 us/op
+[info] # Warmup Iteration  10: 10.607 us/op
+[info] Iteration   1: 10.566 us/op
+[info] Iteration   2: 10.742 us/op
+[info] Iteration   3: 10.388 us/op
+[info] Iteration   4: 10.476 us/op
+[info] Iteration   5: 10.560 us/op
+[info] Iteration   6: 10.586 us/op
+[info] Iteration   7: 10.377 us/op
+[info] Iteration   8: 10.516 us/op
+[info] Iteration   9: 10.433 us/op
+[info] Iteration  10: 10.588 us/op
+[info] Iteration  11: 10.591 us/op
+[info] Iteration  12: 10.418 us/op
+[info] Iteration  13: 10.397 us/op
+[info] Iteration  14: 10.450 us/op
+[info] Iteration  15: 10.584 us/op
+[info] Iteration  16: 10.401 us/op
+[info] Iteration  17: 10.804 us/op
+[info] Iteration  18: 10.665 us/op
+[info] Iteration  19: 10.487 us/op
+[info] Iteration  20: 10.544 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap":
+[info]   10.529 ±(99.9%) 0.103 us/op [Average]
+[info]   (min, avg, max) = (10.377, 10.529, 10.804), stdev = 0.118
+[info]   CI (99.9%): [10.426, 10.631] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap
+[info] # Run progress: 70.00% complete, ETA 00:01:40
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1106195.125 us/op
+[info] # Warmup Iteration   2: 18.715 us/op
+[info] # Warmup Iteration   3: 16.056 us/op
+[info] # Warmup Iteration   4: 15.987 us/op
+[info] # Warmup Iteration   5: 15.582 us/op
+[info] # Warmup Iteration   6: 15.386 us/op
+[info] # Warmup Iteration   7: 15.572 us/op
+[info] # Warmup Iteration   8: 15.599 us/op
+[info] # Warmup Iteration   9: 15.788 us/op
+[info] # Warmup Iteration  10: 15.852 us/op
+[info] Iteration   1: 15.585 us/op
+[info] Iteration   2: 15.530 us/op
+[info] Iteration   3: 15.900 us/op
+[info] Iteration   4: 15.742 us/op
+[info] Iteration   5: 16.051 us/op
+[info] Iteration   6: 15.710 us/op
+[info] Iteration   7: 15.582 us/op
+[info] Iteration   8: 15.870 us/op
+[info] Iteration   9: 15.692 us/op
+[info] Iteration  10: 15.563 us/op
+[info] Iteration  11: 15.814 us/op
+[info] Iteration  12: 15.729 us/op
+[info] Iteration  13: 15.810 us/op
+[info] Iteration  14: 15.594 us/op
+[info] Iteration  15: 15.585 us/op
+[info] Iteration  16: 15.573 us/op
+[info] Iteration  17: 15.888 us/op
+[info] Iteration  18: 15.411 us/op
+[info] Iteration  19: 15.678 us/op
+[info] Iteration  20: 15.902 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap":
+[info]   15.710 ±(99.9%) 0.140 us/op [Average]
+[info]   (min, avg, max) = (15.411, 15.710, 16.051), stdev = 0.161
+[info]   CI (99.9%): [15.571, 15.850] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap
+[info] # Run progress: 80.00% complete, ETA 00:01:06
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1041834.823 us/op
+[info] # Warmup Iteration   2: 8.227 us/op
+[info] # Warmup Iteration   3: 7.044 us/op
+[info] # Warmup Iteration   4: 6.863 us/op
+[info] # Warmup Iteration   5: 6.843 us/op
+[info] # Warmup Iteration   6: 6.786 us/op
+[info] # Warmup Iteration   7: 6.788 us/op
+[info] # Warmup Iteration   8: 6.886 us/op
+[info] # Warmup Iteration   9: 6.767 us/op
+[info] # Warmup Iteration  10: 6.765 us/op
+[info] Iteration   1: 6.827 us/op
+[info] Iteration   2: 6.865 us/op
+[info] Iteration   3: 6.865 us/op
+[info] Iteration   4: 6.781 us/op
+[info] Iteration   5: 6.845 us/op
+[info] Iteration   6: 6.785 us/op
+[info] Iteration   7: 6.782 us/op
+[info] Iteration   8: 6.978 us/op
+[info] Iteration   9: 6.808 us/op
+[info] Iteration  10: 6.773 us/op
+[info] Iteration  11: 6.765 us/op
+[info] Iteration  12: 6.795 us/op
+[info] Iteration  13: 6.885 us/op
+[info] Iteration  14: 6.778 us/op
+[info] Iteration  15: 6.772 us/op
+[info] Iteration  16: 6.768 us/op
+[info] Iteration  17: 6.802 us/op
+[info] Iteration  18: 6.879 us/op
+[info] Iteration  19: 6.770 us/op
+[info] Iteration  20: 7.306 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap":
+[info]   6.841 ±(99.9%) 0.106 us/op [Average]
+[info]   (min, avg, max) = (6.765, 6.841, 7.306), stdev = 0.122
+[info]   CI (99.9%): [6.735, 6.948] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap
+[info] # Run progress: 90.00% complete, ETA 00:00:32
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1097620.032 us/op
+[info] # Warmup Iteration   2: 16.723 us/op
+[info] # Warmup Iteration   3: 12.512 us/op
+[info] # Warmup Iteration   4: 12.462 us/op
+[info] # Warmup Iteration   5: 12.407 us/op
+[info] # Warmup Iteration   6: 12.278 us/op
+[info] # Warmup Iteration   7: 12.430 us/op
+[info] # Warmup Iteration   8: 12.295 us/op
+[info] # Warmup Iteration   9: 12.322 us/op
+[info] # Warmup Iteration  10: 12.246 us/op
+[info] Iteration   1: 12.259 us/op
+[info] Iteration   2: 12.447 us/op
+[info] Iteration   3: 12.318 us/op
+[info] Iteration   4: 12.328 us/op
+[info] Iteration   5: 12.394 us/op
+[info] Iteration   6: 12.337 us/op
+[info] Iteration   7: 12.668 us/op
+[info] Iteration   8: 12.166 us/op
+[info] Iteration   9: 12.202 us/op
+[info] Iteration  10: 12.229 us/op
+[info] Iteration  11: 12.440 us/op
+[info] Iteration  12: 12.377 us/op
+[info] Iteration  13: 12.206 us/op
+[info] Iteration  14: 12.238 us/op
+[info] Iteration  15: 12.261 us/op
+[info] Iteration  16: 12.189 us/op
+[info] Iteration  17: 12.380 us/op
+[info] Iteration  18: 12.278 us/op
+[info] Iteration  19: 12.304 us/op
+[info] Iteration  20: 12.271 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap":
+[info]   12.315 ±(99.9%) 0.101 us/op [Average]
+[info]   (min, avg, max) = (12.166, 12.315, 12.668), stdev = 0.117
+[info]   CI (99.9%): [12.213, 12.416] (assumes normal distribution)
+[info] # Run complete. Total time: 00:05:26
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                                           Mode  Cnt    Score    Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.687 ±  0.018  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   69.040 ±  1.054  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  299.426 ± 34.453  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   12.377 ±  0.175  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  114.890 ±  1.040  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.132 ±  0.024  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.529 ±  0.103  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   15.710 ±  0.140  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.841 ±  0.106  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.315 ±  0.101  us/op
+[success] Total time: 329 s (05:29), completed Nov 5, 2024, 7:49:17 PM
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.4)
+[info] loading settings for project global-plugins from metals.sbt,plugins.sbt ...
+[info] loading global plugins from /home/gaelrenoux/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[success] Generated .bloop/public-scalaio2024-benchmarks-build.json
+[success] Total time: 0 s, completed Nov 5, 2024, 10:21:43 PM
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter3.MapBenchmark_Invoice_HalfHit_(Small|Large).*
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap
+[info] # Run progress: 0.00% complete, ETA 00:05:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3580470.479 us/op
+[info] # Warmup Iteration   2: 11.131 us/op
+[info] # Warmup Iteration   3: 2.688 us/op
+[info] # Warmup Iteration   4: 2.695 us/op
+[info] # Warmup Iteration   5: 2.675 us/op
+[info] # Warmup Iteration   6: 2.683 us/op
+[info] # Warmup Iteration   7: 2.695 us/op
+[info] # Warmup Iteration   8: 2.658 us/op
+[info] # Warmup Iteration   9: 2.672 us/op
+[info] # Warmup Iteration  10: 2.720 us/op
+[info] Iteration   1: 2.693 us/op
+[info] Iteration   2: 2.711 us/op
+[info] Iteration   3: 2.673 us/op
+[info] Iteration   4: 2.683 us/op
+[info] Iteration   5: 2.652 us/op
+[info] Iteration   6: 2.665 us/op
+[info] Iteration   7: 2.694 us/op
+[info] Iteration   8: 2.684 us/op
+[info] Iteration   9: 2.690 us/op
+[info] Iteration  10: 2.670 us/op
+[info] Iteration  11: 2.656 us/op
+[info] Iteration  12: 2.710 us/op
+[info] Iteration  13: 2.687 us/op
+[info] Iteration  14: 2.667 us/op
+[info] Iteration  15: 2.656 us/op
+[info] Iteration  16: 2.654 us/op
+[info] Iteration  17: 2.708 us/op
+[info] Iteration  18: 2.665 us/op
+[info] Iteration  19: 2.657 us/op
+[info] Iteration  20: 2.723 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap":
+[info]   2.680 ±(99.9%) 0.019 us/op [Average]
+[info]   (min, avg, max) = (2.652, 2.680, 2.723), stdev = 0.022
+[info]   CI (99.9%): [2.661, 2.699] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap
+[info] # Run progress: 10.00% complete, ETA 00:05:02
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3415832.345 us/op
+[info] # Warmup Iteration   2: 94.450 us/op
+[info] # Warmup Iteration   3: 73.015 us/op
+[info] # Warmup Iteration   4: 68.820 us/op
+[info] # Warmup Iteration   5: 76.534 us/op
+[info] # Warmup Iteration   6: 74.064 us/op
+[info] # Warmup Iteration   7: 73.612 us/op
+[info] # Warmup Iteration   8: 75.046 us/op
+[info] # Warmup Iteration   9: 74.019 us/op
+[info] # Warmup Iteration  10: 77.609 us/op
+[info] Iteration   1: 72.725 us/op
+[info] Iteration   2: 72.332 us/op
+[info] Iteration   3: 74.627 us/op
+[info] Iteration   4: 72.617 us/op
+[info] Iteration   5: 72.145 us/op
+[info] Iteration   6: 73.546 us/op
+[info] Iteration   7: 72.362 us/op
+[info] Iteration   8: 74.091 us/op
+[info] Iteration   9: 72.088 us/op
+[info] Iteration  10: 72.881 us/op
+[info] Iteration  11: 72.351 us/op
+[info] Iteration  12: 74.095 us/op
+[info] Iteration  13: 73.678 us/op
+[info] Iteration  14: 72.692 us/op
+[info] Iteration  15: 71.634 us/op
+[info] Iteration  16: 73.268 us/op
+[info] Iteration  17: 73.167 us/op
+[info] Iteration  18: 74.602 us/op
+[info] Iteration  19: 73.909 us/op
+[info] Iteration  20: 73.760 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap":
+[info]   73.128 ±(99.9%) 0.760 us/op [Average]
+[info]   (min, avg, max) = (71.634, 73.128, 74.627), stdev = 0.876
+[info]   CI (99.9%): [72.368, 73.889] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap
+[info] # Run progress: 20.00% complete, ETA 00:04:27
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 4412298.737 us/op
+[info] # Warmup Iteration   2: 346.642 us/op
+[info] # Warmup Iteration   3: 294.517 us/op
+[info] # Warmup Iteration   4: 263.848 us/op
+[info] # Warmup Iteration   5: 263.136 us/op
+[info] # Warmup Iteration   6: 271.147 us/op
+[info] # Warmup Iteration   7: 286.253 us/op
+[info] # Warmup Iteration   8: 272.593 us/op
+[info] # Warmup Iteration   9: 285.074 us/op
+[info] # Warmup Iteration  10: 281.950 us/op
+[info] Iteration   1: 424.106 us/op
+[info] Iteration   2: 254.495 us/op
+[info] Iteration   3: 263.541 us/op
+[info] Iteration   4: 271.705 us/op
+[info] Iteration   5: 267.922 us/op
+[info] Iteration   6: 271.006 us/op
+[info] Iteration   7: 261.381 us/op
+[info] Iteration   8: 266.837 us/op
+[info] Iteration   9: 274.558 us/op
+[info] Iteration  10: 271.909 us/op
+[info] Iteration  11: 269.187 us/op
+[info] Iteration  12: 272.992 us/op
+[info] Iteration  13: 269.437 us/op
+[info] Iteration  14: 274.919 us/op
+[info] Iteration  15: 267.987 us/op
+[info] Iteration  16: 271.005 us/op
+[info] Iteration  17: 270.668 us/op
+[info] Iteration  18: 269.197 us/op
+[info] Iteration  19: 273.030 us/op
+[info] Iteration  20: 270.571 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap":
+[info]   276.823 ±(99.9%) 30.387 us/op [Average]
+[info]   (min, avg, max) = (254.495, 276.823, 424.106), stdev = 34.994
+[info]   CI (99.9%): [246.436, 307.209] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap
+[info] # Run progress: 30.00% complete, ETA 00:03:55
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3539501.196 us/op
+[info] # Warmup Iteration   2: 17.952 us/op
+[info] # Warmup Iteration   3: 12.272 us/op
+[info] # Warmup Iteration   4: 13.429 us/op
+[info] # Warmup Iteration   5: 13.221 us/op
+[info] # Warmup Iteration   6: 24.313 us/op
+[info] # Warmup Iteration   7: 12.764 us/op
+[info] # Warmup Iteration   8: 12.733 us/op
+[info] # Warmup Iteration   9: 12.631 us/op
+[info] # Warmup Iteration  10: 13.985 us/op
+[info] Iteration   1: 12.863 us/op
+[info] Iteration   2: 12.622 us/op
+[info] Iteration   3: 12.690 us/op
+[info] Iteration   4: 12.708 us/op
+[info] Iteration   5: 12.712 us/op
+[info] Iteration   6: 12.771 us/op
+[info] Iteration   7: 12.569 us/op
+[info] Iteration   8: 12.781 us/op
+[info] Iteration   9: 12.545 us/op
+[info] Iteration  10: 12.884 us/op
+[info] Iteration  11: 13.124 us/op
+[info] Iteration  12: 12.457 us/op
+[info] Iteration  13: 12.544 us/op
+[info] Iteration  14: 12.500 us/op
+[info] Iteration  15: 12.533 us/op
+[info] Iteration  16: 12.787 us/op
+[info] Iteration  17: 12.814 us/op
+[info] Iteration  18: 12.787 us/op
+[info] Iteration  19: 12.698 us/op
+[info] Iteration  20: 12.875 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap":
+[info]   12.713 ±(99.9%) 0.142 us/op [Average]
+[info]   (min, avg, max) = (12.457, 12.713, 13.124), stdev = 0.163
+[info]   CI (99.9%): [12.572, 12.855] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap
+[info] # Run progress: 40.00% complete, ETA 00:03:21
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3826859.802 us/op
+[info] # Warmup Iteration   2: 123.230 us/op
+[info] # Warmup Iteration   3: 164.358 us/op
+[info] # Warmup Iteration   4: 126.836 us/op
+[info] # Warmup Iteration   5: 118.030 us/op
+[info] # Warmup Iteration   6: 118.513 us/op
+[info] # Warmup Iteration   7: 117.326 us/op
+[info] # Warmup Iteration   8: 99.815 us/op
+[info] # Warmup Iteration   9: 141.768 us/op
+[info] # Warmup Iteration  10: 128.216 us/op
+[info] Iteration   1: 118.438 us/op
+[info] Iteration   2: 103.455 us/op
+[info] Iteration   3: 131.383 us/op
+[info] Iteration   4: 129.051 us/op
+[info] Iteration   5: 117.989 us/op
+[info] Iteration   6: 101.303 us/op
+[info] Iteration   7: 127.931 us/op
+[info] Iteration   8: 127.919 us/op
+[info] Iteration   9: 117.551 us/op
+[info] Iteration  10: 99.605 us/op
+[info] Iteration  11: 133.253 us/op
+[info] Iteration  12: 131.316 us/op
+[info] Iteration  13: 117.557 us/op
+[info] Iteration  14: 99.639 us/op
+[info] Iteration  15: 130.518 us/op
+[info] Iteration  16: 129.539 us/op
+[info] Iteration  17: 118.563 us/op
+[info] Iteration  18: 117.874 us/op
+[info] Iteration  19: 117.092 us/op
+[info] Iteration  20: 118.131 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap":
+[info]   119.405 ±(99.9%) 9.608 us/op [Average]
+[info]   (min, avg, max) = (99.605, 119.405, 133.253), stdev = 11.065
+[info]   CI (99.9%): [109.797, 129.014] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap
+[info] # Run progress: 50.00% complete, ETA 00:02:50
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1018.075 us/op
+[info] # Warmup Iteration   2: 2.598 us/op
+[info] # Warmup Iteration   3: 2.185 us/op
+[info] # Warmup Iteration   4: 2.150 us/op
+[info] # Warmup Iteration   5: 2.108 us/op
+[info] # Warmup Iteration   6: 2.125 us/op
+[info] # Warmup Iteration   7: 2.100 us/op
+[info] # Warmup Iteration   8: 2.121 us/op
+[info] # Warmup Iteration   9: 2.130 us/op
+[info] # Warmup Iteration  10: 2.119 us/op
+[info] Iteration   1: 2.104 us/op
+[info] Iteration   2: 2.115 us/op
+[info] Iteration   3: 2.112 us/op
+[info] Iteration   4: 2.122 us/op
+[info] Iteration   5: 2.103 us/op
+[info] Iteration   6: 2.119 us/op
+[info] Iteration   7: 2.117 us/op
+[info] Iteration   8: 2.118 us/op
+[info] Iteration   9: 2.130 us/op
+[info] Iteration  10: 2.120 us/op
+[info] Iteration  11: 2.121 us/op
+[info] Iteration  12: 2.115 us/op
+[info] Iteration  13: 2.108 us/op
+[info] Iteration  14: 2.137 us/op
+[info] Iteration  15: 2.115 us/op
+[info] Iteration  16: 2.101 us/op
+[info] Iteration  17: 2.096 us/op
+[info] Iteration  18: 2.103 us/op
+[info] Iteration  19: 2.184 us/op
+[info] Iteration  20: 2.129 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap":
+[info]   2.118 ±(99.9%) 0.016 us/op [Average]
+[info]   (min, avg, max) = (2.096, 2.118, 2.184), stdev = 0.019
+[info]   CI (99.9%): [2.102, 2.135] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap
+[info] # Run progress: 60.00% complete, ETA 00:02:13
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1012.784 us/op
+[info] # Warmup Iteration   2: 12.551 us/op
+[info] # Warmup Iteration   3: 10.537 us/op
+[info] # Warmup Iteration   4: 10.497 us/op
+[info] # Warmup Iteration   5: 10.332 us/op
+[info] # Warmup Iteration   6: 10.362 us/op
+[info] # Warmup Iteration   7: 10.340 us/op
+[info] # Warmup Iteration   8: 10.301 us/op
+[info] # Warmup Iteration   9: 10.457 us/op
+[info] # Warmup Iteration  10: 10.377 us/op
+[info] Iteration   1: 10.407 us/op
+[info] Iteration   2: 10.339 us/op
+[info] Iteration   3: 10.304 us/op
+[info] Iteration   4: 10.515 us/op
+[info] Iteration   5: 10.296 us/op
+[info] Iteration   6: 10.329 us/op
+[info] Iteration   7: 11.139 us/op
+[info] Iteration   8: 10.376 us/op
+[info] Iteration   9: 10.471 us/op
+[info] Iteration  10: 10.333 us/op
+[info] Iteration  11: 10.564 us/op
+[info] Iteration  12: 10.425 us/op
+[info] Iteration  13: 10.327 us/op
+[info] Iteration  14: 10.510 us/op
+[info] Iteration  15: 10.380 us/op
+[info] Iteration  16: 10.392 us/op
+[info] Iteration  17: 10.319 us/op
+[info] Iteration  18: 10.311 us/op
+[info] Iteration  19: 10.479 us/op
+[info] Iteration  20: 10.368 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap":
+[info]   10.429 ±(99.9%) 0.160 us/op [Average]
+[info]   (min, avg, max) = (10.296, 10.429, 11.139), stdev = 0.185
+[info]   CI (99.9%): [10.269, 10.590] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap
+[info] # Run progress: 70.00% complete, ETA 00:01:39
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 9908.208 us/op
+[info] # Warmup Iteration   2: 17.456 us/op
+[info] # Warmup Iteration   3: 15.501 us/op
+[info] # Warmup Iteration   4: 15.025 us/op
+[info] # Warmup Iteration   5: 14.999 us/op
+[info] # Warmup Iteration   6: 14.958 us/op
+[info] # Warmup Iteration   7: 15.215 us/op
+[info] # Warmup Iteration   8: 15.064 us/op
+[info] # Warmup Iteration   9: 14.926 us/op
+[info] # Warmup Iteration  10: 14.916 us/op
+[info] Iteration   1: 15.091 us/op
+[info] Iteration   2: 14.797 us/op
+[info] Iteration   3: 15.185 us/op
+[info] Iteration   4: 14.743 us/op
+[info] Iteration   5: 14.942 us/op
+[info] Iteration   6: 14.933 us/op
+[info] Iteration   7: 14.768 us/op
+[info] Iteration   8: 15.080 us/op
+[info] Iteration   9: 14.929 us/op
+[info] Iteration  10: 14.854 us/op
+[info] Iteration  11: 14.898 us/op
+[info] Iteration  12: 15.431 us/op
+[info] Iteration  13: 15.049 us/op
+[info] Iteration  14: 14.774 us/op
+[info] Iteration  15: 14.832 us/op
+[info] Iteration  16: 14.956 us/op
+[info] Iteration  17: 15.121 us/op
+[info] Iteration  18: 15.082 us/op
+[info] Iteration  19: 14.801 us/op
+[info] Iteration  20: 14.879 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap":
+[info]   14.957 ±(99.9%) 0.150 us/op [Average]
+[info]   (min, avg, max) = (14.743, 14.957, 15.431), stdev = 0.172
+[info]   CI (99.9%): [14.808, 15.107] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap
+[info] # Run progress: 80.00% complete, ETA 00:01:05
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 947.717 us/op
+[info] # Warmup Iteration   2: 7.759 us/op
+[info] # Warmup Iteration   3: 6.948 us/op
+[info] # Warmup Iteration   4: 6.856 us/op
+[info] # Warmup Iteration   5: 6.957 us/op
+[info] # Warmup Iteration   6: 6.831 us/op
+[info] # Warmup Iteration   7: 6.932 us/op
+[info] # Warmup Iteration   8: 6.832 us/op
+[info] # Warmup Iteration   9: 7.030 us/op
+[info] # Warmup Iteration  10: 6.838 us/op
+[info] Iteration   1: 6.943 us/op
+[info] Iteration   2: 6.908 us/op
+[info] Iteration   3: 6.863 us/op
+[info] Iteration   4: 6.830 us/op
+[info] Iteration   5: 6.815 us/op
+[info] Iteration   6: 6.840 us/op
+[info] Iteration   7: 6.961 us/op
+[info] Iteration   8: 6.826 us/op
+[info] Iteration   9: 6.892 us/op
+[info] Iteration  10: 6.821 us/op
+[info] Iteration  11: 6.855 us/op
+[info] Iteration  12: 7.070 us/op
+[info] Iteration  13: 6.823 us/op
+[info] Iteration  14: 7.396 us/op
+[info] Iteration  15: 6.872 us/op
+[info] Iteration  16: 6.845 us/op
+[info] Iteration  17: 6.900 us/op
+[info] Iteration  18: 6.820 us/op
+[info] Iteration  19: 6.942 us/op
+[info] Iteration  20: 6.816 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap":
+[info]   6.902 ±(99.9%) 0.116 us/op [Average]
+[info]   (min, avg, max) = (6.815, 6.902, 7.396), stdev = 0.133
+[info]   CI (99.9%): [6.786, 7.017] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap
+[info] # Run progress: 90.00% complete, ETA 00:00:32
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1103835.062 us/op
+[info] # Warmup Iteration   2: 16.739 us/op
+[info] # Warmup Iteration   3: 12.476 us/op
+[info] # Warmup Iteration   4: 12.437 us/op
+[info] # Warmup Iteration   5: 12.212 us/op
+[info] # Warmup Iteration   6: 12.464 us/op
+[info] # Warmup Iteration   7: 12.219 us/op
+[info] # Warmup Iteration   8: 12.350 us/op
+[info] # Warmup Iteration   9: 12.221 us/op
+[info] # Warmup Iteration  10: 12.376 us/op
+[info] Iteration   1: 12.431 us/op
+[info] Iteration   2: 12.377 us/op
+[info] Iteration   3: 12.208 us/op
+[info] Iteration   4: 12.281 us/op
+[info] Iteration   5: 12.324 us/op
+[info] Iteration   6: 12.387 us/op
+[info] Iteration   7: 12.214 us/op
+[info] Iteration   8: 12.323 us/op
+[info] Iteration   9: 12.230 us/op
+[info] Iteration  10: 12.323 us/op
+[info] Iteration  11: 12.359 us/op
+[info] Iteration  12: 12.277 us/op
+[info] Iteration  13: 12.227 us/op
+[info] Iteration  14: 12.167 us/op
+[info] Iteration  15: 12.210 us/op
+[info] Iteration  16: 12.405 us/op
+[info] Iteration  17: 12.188 us/op
+[info] Iteration  18: 12.239 us/op
+[info] Iteration  19: 12.215 us/op
+[info] Iteration  20: 12.241 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap":
+[info]   12.281 ±(99.9%) 0.069 us/op [Average]
+[info]   (min, avg, max) = (12.167, 12.281, 12.431), stdev = 0.079
+[info]   CI (99.9%): [12.212, 12.350] (assumes normal distribution)
+[info] # Run complete. Total time: 00:05:24
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                                           Mode  Cnt    Score    Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.680 ±  0.019  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   73.128 ±  0.760  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  276.823 ± 30.387  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   12.713 ±  0.142  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  119.405 ±  9.608  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.118 ±  0.016  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.429 ±  0.160  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   14.957 ±  0.150  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.902 ±  0.116  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.281 ±  0.069  us/op
+[success] Total time: 327 s (05:27), completed Nov 5, 2024, 10:27:11 PM
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.4)
+[info] loading settings for project global-plugins from metals.sbt,plugins.sbt ...
+[info] loading global plugins from /home/gaelrenoux/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[success] Generated .bloop/public-scalaio2024-benchmarks-build.json
+[success] Total time: 0 s, completed Nov 6, 2024, 12:59:23 AM
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter3.MapBenchmark_Invoice_HalfHit_(Small|Large).*
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap
+[info] # Run progress: 0.00% complete, ETA 00:05:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3563876.051 us/op
+[info] # Warmup Iteration   2: 5.203 us/op
+[info] # Warmup Iteration   3: 2.925 us/op
+[info] # Warmup Iteration   4: 2.742 us/op
+[info] # Warmup Iteration   5: 2.741 us/op
+[info] # Warmup Iteration   6: 2.715 us/op
+[info] # Warmup Iteration   7: 2.875 us/op
+[info] # Warmup Iteration   8: 2.686 us/op
+[info] # Warmup Iteration   9: 2.695 us/op
+[info] # Warmup Iteration  10: 2.734 us/op
+[info] Iteration   1: 2.692 us/op
+[info] Iteration   2: 2.700 us/op
+[info] Iteration   3: 2.682 us/op
+[info] Iteration   4: 2.731 us/op
+[info] Iteration   5: 2.723 us/op
+[info] Iteration   6: 2.690 us/op
+[info] Iteration   7: 2.675 us/op
+[info] Iteration   8: 2.695 us/op
+[info] Iteration   9: 2.705 us/op
+[info] Iteration  10: 2.735 us/op
+[info] Iteration  11: 2.681 us/op
+[info] Iteration  12: 2.691 us/op
+[info] Iteration  13: 2.680 us/op
+[info] Iteration  14: 2.684 us/op
+[info] Iteration  15: 2.723 us/op
+[info] Iteration  16: 2.692 us/op
+[info] Iteration  17: 2.689 us/op
+[info] Iteration  18: 2.692 us/op
+[info] Iteration  19: 2.691 us/op
+[info] Iteration  20: 2.769 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap":
+[info]   2.701 ±(99.9%) 0.020 us/op [Average]
+[info]   (min, avg, max) = (2.675, 2.701, 2.769), stdev = 0.024
+[info]   CI (99.9%): [2.680, 2.721] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap
+[info] # Run progress: 10.00% complete, ETA 00:05:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3411167.927 us/op
+[info] # Warmup Iteration   2: 101.309 us/op
+[info] # Warmup Iteration   3: 79.010 us/op
+[info] # Warmup Iteration   4: 80.361 us/op
+[info] # Warmup Iteration   5: 78.724 us/op
+[info] # Warmup Iteration   6: 76.749 us/op
+[info] # Warmup Iteration   7: 76.781 us/op
+[info] # Warmup Iteration   8: 79.147 us/op
+[info] # Warmup Iteration   9: 78.001 us/op
+[info] # Warmup Iteration  10: 77.603 us/op
+[info] Iteration   1: 77.384 us/op
+[info] Iteration   2: 76.377 us/op
+[info] Iteration   3: 76.098 us/op
+[info] Iteration   4: 75.872 us/op
+[info] Iteration   5: 75.991 us/op
+[info] Iteration   6: 76.909 us/op
+[info] Iteration   7: 76.824 us/op
+[info] Iteration   8: 75.931 us/op
+[info] Iteration   9: 75.535 us/op
+[info] Iteration  10: 75.913 us/op
+[info] Iteration  11: 77.279 us/op
+[info] Iteration  12: 77.133 us/op
+[info] Iteration  13: 76.267 us/op
+[info] Iteration  14: 75.614 us/op
+[info] Iteration  15: 81.417 us/op
+[info] Iteration  16: 75.988 us/op
+[info] Iteration  17: 75.298 us/op
+[info] Iteration  18: 75.675 us/op
+[info] Iteration  19: 76.260 us/op
+[info] Iteration  20: 76.056 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap":
+[info]   76.491 ±(99.9%) 1.130 us/op [Average]
+[info]   (min, avg, max) = (75.298, 76.491, 81.417), stdev = 1.301
+[info]   CI (99.9%): [75.361, 77.620] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap
+[info] # Run progress: 20.00% complete, ETA 00:04:26
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 4366707.771 us/op
+[info] # Warmup Iteration   2: 352.422 us/op
+[info] # Warmup Iteration   3: 318.239 us/op
+[info] # Warmup Iteration   4: 270.494 us/op
+[info] # Warmup Iteration   5: 270.582 us/op
+[info] # Warmup Iteration   6: 267.546 us/op
+[info] # Warmup Iteration   7: 428.103 us/op
+[info] # Warmup Iteration   8: 268.909 us/op
+[info] # Warmup Iteration   9: 260.510 us/op
+[info] # Warmup Iteration  10: 270.644 us/op
+[info] Iteration   1: 266.788 us/op
+[info] Iteration   2: 266.672 us/op
+[info] Iteration   3: 265.333 us/op
+[info] Iteration   4: 270.245 us/op
+[info] Iteration   5: 272.549 us/op
+[info] Iteration   6: 268.735 us/op
+[info] Iteration   7: 292.942 us/op
+[info] Iteration   8: 270.039 us/op
+[info] Iteration   9: 263.725 us/op
+[info] Iteration  10: 264.106 us/op
+[info] Iteration  11: 270.634 us/op
+[info] Iteration  12: 275.514 us/op
+[info] Iteration  13: 273.687 us/op
+[info] Iteration  14: 269.552 us/op
+[info] Iteration  15: 270.544 us/op
+[info] Iteration  16: 273.281 us/op
+[info] Iteration  17: 271.762 us/op
+[info] Iteration  18: 270.660 us/op
+[info] Iteration  19: 266.888 us/op
+[info] Iteration  20: 270.492 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap":
+[info]   270.707 ±(99.9%) 5.312 us/op [Average]
+[info]   (min, avg, max) = (263.725, 270.707, 292.942), stdev = 6.117
+[info]   CI (99.9%): [265.396, 276.019] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap
+[info] # Run progress: 30.00% complete, ETA 00:03:55
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3652713.095 us/op
+[info] # Warmup Iteration   2: 20.030 us/op
+[info] # Warmup Iteration   3: 25.935 us/op
+[info] # Warmup Iteration   4: 14.366 us/op
+[info] # Warmup Iteration   5: 14.252 us/op
+[info] # Warmup Iteration   6: 14.118 us/op
+[info] # Warmup Iteration   7: 14.112 us/op
+[info] # Warmup Iteration   8: 14.117 us/op
+[info] # Warmup Iteration   9: 14.194 us/op
+[info] # Warmup Iteration  10: 16.851 us/op
+[info] Iteration   1: 18.805 us/op
+[info] Iteration   2: 14.106 us/op
+[info] Iteration   3: 14.269 us/op
+[info] Iteration   4: 14.278 us/op
+[info] Iteration   5: 14.025 us/op
+[info] Iteration   6: 14.121 us/op
+[info] Iteration   7: 14.043 us/op
+[info] Iteration   8: 14.118 us/op
+[info] Iteration   9: 14.317 us/op
+[info] Iteration  10: 14.098 us/op
+[info] Iteration  11: 13.919 us/op
+[info] Iteration  12: 13.965 us/op
+[info] Iteration  13: 14.053 us/op
+[info] Iteration  14: 14.286 us/op
+[info] Iteration  15: 14.100 us/op
+[info] Iteration  16: 14.318 us/op
+[info] Iteration  17: 14.271 us/op
+[info] Iteration  18: 14.028 us/op
+[info] Iteration  19: 14.294 us/op
+[info] Iteration  20: 14.169 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap":
+[info]   14.379 ±(99.9%) 0.911 us/op [Average]
+[info]   (min, avg, max) = (13.919, 14.379, 18.805), stdev = 1.049
+[info]   CI (99.9%): [13.468, 15.290] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap
+[info] # Run progress: 40.00% complete, ETA 00:03:21
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3858326.475 us/op
+[info] # Warmup Iteration   2: 116.579 us/op
+[info] # Warmup Iteration   3: 156.152 us/op
+[info] # Warmup Iteration   4: 132.671 us/op
+[info] # Warmup Iteration   5: 118.208 us/op
+[info] # Warmup Iteration   6: 116.207 us/op
+[info] # Warmup Iteration   7: 115.604 us/op
+[info] # Warmup Iteration   8: 108.512 us/op
+[info] # Warmup Iteration   9: 125.571 us/op
+[info] # Warmup Iteration  10: 124.677 us/op
+[info] Iteration   1: 115.113 us/op
+[info] Iteration   2: 115.965 us/op
+[info] Iteration   3: 114.899 us/op
+[info] Iteration   4: 116.209 us/op
+[info] Iteration   5: 113.587 us/op
+[info] Iteration   6: 116.650 us/op
+[info] Iteration   7: 114.751 us/op
+[info] Iteration   8: 113.222 us/op
+[info] Iteration   9: 114.496 us/op
+[info] Iteration  10: 113.169 us/op
+[info] Iteration  11: 114.018 us/op
+[info] Iteration  12: 115.038 us/op
+[info] Iteration  13: 114.966 us/op
+[info] Iteration  14: 114.086 us/op
+[info] Iteration  15: 114.974 us/op
+[info] Iteration  16: 114.339 us/op
+[info] Iteration  17: 115.467 us/op
+[info] Iteration  18: 114.088 us/op
+[info] Iteration  19: 115.496 us/op
+[info] Iteration  20: 113.876 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap":
+[info]   114.720 ±(99.9%) 0.826 us/op [Average]
+[info]   (min, avg, max) = (113.169, 114.720, 116.650), stdev = 0.951
+[info]   CI (99.9%): [113.894, 115.547] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap
+[info] # Run progress: 50.00% complete, ETA 00:02:51
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1130493.711 us/op
+[info] # Warmup Iteration   2: 2.875 us/op
+[info] # Warmup Iteration   3: 2.186 us/op
+[info] # Warmup Iteration   4: 2.136 us/op
+[info] # Warmup Iteration   5: 2.127 us/op
+[info] # Warmup Iteration   6: 2.187 us/op
+[info] # Warmup Iteration   7: 2.137 us/op
+[info] # Warmup Iteration   8: 2.184 us/op
+[info] # Warmup Iteration   9: 2.124 us/op
+[info] # Warmup Iteration  10: 2.335 us/op
+[info] Iteration   1: 2.166 us/op
+[info] Iteration   2: 2.160 us/op
+[info] Iteration   3: 2.130 us/op
+[info] Iteration   4: 2.148 us/op
+[info] Iteration   5: 2.125 us/op
+[info] Iteration   6: 2.154 us/op
+[info] Iteration   7: 2.120 us/op
+[info] Iteration   8: 2.151 us/op
+[info] Iteration   9: 2.125 us/op
+[info] Iteration  10: 2.130 us/op
+[info] Iteration  11: 2.171 us/op
+[info] Iteration  12: 2.130 us/op
+[info] Iteration  13: 2.119 us/op
+[info] Iteration  14: 2.124 us/op
+[info] Iteration  15: 2.118 us/op
+[info] Iteration  16: 2.170 us/op
+[info] Iteration  17: 2.111 us/op
+[info] Iteration  18: 2.122 us/op
+[info] Iteration  19: 2.125 us/op
+[info] Iteration  20: 2.157 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap":
+[info]   2.138 ±(99.9%) 0.017 us/op [Average]
+[info]   (min, avg, max) = (2.111, 2.138, 2.171), stdev = 0.019
+[info]   CI (99.9%): [2.121, 2.155] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap
+[info] # Run progress: 60.00% complete, ETA 00:02:15
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1080311.034 us/op
+[info] # Warmup Iteration   2: 13.917 us/op
+[info] # Warmup Iteration   3: 10.783 us/op
+[info] # Warmup Iteration   4: 10.426 us/op
+[info] # Warmup Iteration   5: 10.529 us/op
+[info] # Warmup Iteration   6: 10.327 us/op
+[info] # Warmup Iteration   7: 10.398 us/op
+[info] # Warmup Iteration   8: 10.340 us/op
+[info] # Warmup Iteration   9: 11.239 us/op
+[info] # Warmup Iteration  10: 10.494 us/op
+[info] Iteration   1: 10.457 us/op
+[info] Iteration   2: 10.364 us/op
+[info] Iteration   3: 10.311 us/op
+[info] Iteration   4: 10.338 us/op
+[info] Iteration   5: 10.600 us/op
+[info] Iteration   6: 10.352 us/op
+[info] Iteration   7: 10.492 us/op
+[info] Iteration   8: 10.379 us/op
+[info] Iteration   9: 10.493 us/op
+[info] Iteration  10: 10.483 us/op
+[info] Iteration  11: 10.479 us/op
+[info] Iteration  12: 10.403 us/op
+[info] Iteration  13: 10.399 us/op
+[info] Iteration  14: 10.399 us/op
+[info] Iteration  15: 10.523 us/op
+[info] Iteration  16: 10.395 us/op
+[info] Iteration  17: 10.430 us/op
+[info] Iteration  18: 10.340 us/op
+[info] Iteration  19: 10.390 us/op
+[info] Iteration  20: 10.483 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap":
+[info]   10.425 ±(99.9%) 0.064 us/op [Average]
+[info]   (min, avg, max) = (10.311, 10.425, 10.600), stdev = 0.074
+[info]   CI (99.9%): [10.362, 10.489] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap
+[info] # Run progress: 70.00% complete, ETA 00:01:40
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1023901.138 us/op
+[info] # Warmup Iteration   2: 18.016 us/op
+[info] # Warmup Iteration   3: 15.096 us/op
+[info] # Warmup Iteration   4: 15.401 us/op
+[info] # Warmup Iteration   5: 15.076 us/op
+[info] # Warmup Iteration   6: 14.865 us/op
+[info] # Warmup Iteration   7: 14.851 us/op
+[info] # Warmup Iteration   8: 14.949 us/op
+[info] # Warmup Iteration   9: 15.184 us/op
+[info] # Warmup Iteration  10: 14.801 us/op
+[info] Iteration   1: 14.763 us/op
+[info] Iteration   2: 15.008 us/op
+[info] Iteration   3: 16.106 us/op
+[info] Iteration   4: 14.937 us/op
+[info] Iteration   5: 14.969 us/op
+[info] Iteration   6: 15.041 us/op
+[info] Iteration   7: 14.981 us/op
+[info] Iteration   8: 14.900 us/op
+[info] Iteration   9: 15.096 us/op
+[info] Iteration  10: 14.909 us/op
+[info] Iteration  11: 14.964 us/op
+[info] Iteration  12: 14.873 us/op
+[info] Iteration  13: 14.834 us/op
+[info] Iteration  14: 15.093 us/op
+[info] Iteration  15: 14.959 us/op
+[info] Iteration  16: 14.801 us/op
+[info] Iteration  17: 14.888 us/op
+[info] Iteration  18: 14.847 us/op
+[info] Iteration  19: 15.152 us/op
+[info] Iteration  20: 14.760 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap":
+[info]   14.994 ±(99.9%) 0.246 us/op [Average]
+[info]   (min, avg, max) = (14.760, 14.994, 16.106), stdev = 0.283
+[info]   CI (99.9%): [14.748, 15.240] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap
+[info] # Run progress: 80.00% complete, ETA 00:01:06
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1049231.056 us/op
+[info] # Warmup Iteration   2: 8.302 us/op
+[info] # Warmup Iteration   3: 7.023 us/op
+[info] # Warmup Iteration   4: 6.888 us/op
+[info] # Warmup Iteration   5: 6.908 us/op
+[info] # Warmup Iteration   6: 6.927 us/op
+[info] # Warmup Iteration   7: 6.825 us/op
+[info] # Warmup Iteration   8: 6.912 us/op
+[info] # Warmup Iteration   9: 6.855 us/op
+[info] # Warmup Iteration  10: 6.873 us/op
+[info] Iteration   1: 6.806 us/op
+[info] Iteration   2: 6.799 us/op
+[info] Iteration   3: 6.887 us/op
+[info] Iteration   4: 6.865 us/op
+[info] Iteration   5: 6.813 us/op
+[info] Iteration   6: 6.851 us/op
+[info] Iteration   7: 6.819 us/op
+[info] Iteration   8: 6.952 us/op
+[info] Iteration   9: 6.803 us/op
+[info] Iteration  10: 6.809 us/op
+[info] Iteration  11: 6.807 us/op
+[info] Iteration  12: 6.886 us/op
+[info] Iteration  13: 7.031 us/op
+[info] Iteration  14: 6.817 us/op
+[info] Iteration  15: 6.847 us/op
+[info] Iteration  16: 6.855 us/op
+[info] Iteration  17: 6.836 us/op
+[info] Iteration  18: 6.912 us/op
+[info] Iteration  19: 6.845 us/op
+[info] Iteration  20: 7.183 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap":
+[info]   6.871 ±(99.9%) 0.081 us/op [Average]
+[info]   (min, avg, max) = (6.799, 6.871, 7.183), stdev = 0.093
+[info]   CI (99.9%): [6.790, 6.952] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap
+[info] # Run progress: 90.00% complete, ETA 00:00:32
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1009.068 us/op
+[info] # Warmup Iteration   2: 15.399 us/op
+[info] # Warmup Iteration   3: 12.520 us/op
+[info] # Warmup Iteration   4: 12.258 us/op
+[info] # Warmup Iteration   5: 12.284 us/op
+[info] # Warmup Iteration   6: 12.289 us/op
+[info] # Warmup Iteration   7: 12.451 us/op
+[info] # Warmup Iteration   8: 12.303 us/op
+[info] # Warmup Iteration   9: 12.269 us/op
+[info] # Warmup Iteration  10: 12.205 us/op
+[info] Iteration   1: 12.249 us/op
+[info] Iteration   2: 12.489 us/op
+[info] Iteration   3: 12.388 us/op
+[info] Iteration   4: 12.195 us/op
+[info] Iteration   5: 12.218 us/op
+[info] Iteration   6: 12.255 us/op
+[info] Iteration   7: 12.444 us/op
+[info] Iteration   8: 12.382 us/op
+[info] Iteration   9: 12.238 us/op
+[info] Iteration  10: 12.356 us/op
+[info] Iteration  11: 12.231 us/op
+[info] Iteration  12: 12.370 us/op
+[info] Iteration  13: 12.205 us/op
+[info] Iteration  14: 12.304 us/op
+[info] Iteration  15: 12.203 us/op
+[info] Iteration  16: 12.185 us/op
+[info] Iteration  17: 12.385 us/op
+[info] Iteration  18: 12.253 us/op
+[info] Iteration  19: 12.232 us/op
+[info] Iteration  20: 12.878 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap":
+[info]   12.323 ±(99.9%) 0.138 us/op [Average]
+[info]   (min, avg, max) = (12.185, 12.323, 12.878), stdev = 0.159
+[info]   CI (99.9%): [12.185, 12.461] (assumes normal distribution)
+[info] # Run complete. Total time: 00:05:26
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                                           Mode  Cnt    Score   Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.701 ± 0.020  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   76.491 ± 1.130  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  270.707 ± 5.312  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   14.379 ± 0.911  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  114.720 ± 0.826  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.138 ± 0.017  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.425 ± 0.064  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   14.994 ± 0.246  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.871 ± 0.081  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.323 ± 0.138  us/op
+[success] Total time: 328 s (05:28), completed Nov 6, 2024, 1:04:52 AM
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.4)
+[info] loading settings for project global-plugins from metals.sbt,plugins.sbt ...
+[info] loading global plugins from /home/gaelrenoux/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[success] Generated .bloop/public-scalaio2024-benchmarks-build.json
+[success] Total time: 0 s, completed Nov 6, 2024, 3:37:03 AM
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter3.MapBenchmark_Invoice_HalfHit_(Small|Large).*
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap
+[info] # Run progress: 0.00% complete, ETA 00:05:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3492025.403 us/op
+[info] # Warmup Iteration   2: 5.042 us/op
+[info] # Warmup Iteration   3: 2.902 us/op
+[info] # Warmup Iteration   4: 2.692 us/op
+[info] # Warmup Iteration   5: 2.675 us/op
+[info] # Warmup Iteration   6: 2.821 us/op
+[info] # Warmup Iteration   7: 2.678 us/op
+[info] # Warmup Iteration   8: 2.720 us/op
+[info] # Warmup Iteration   9: 2.742 us/op
+[info] # Warmup Iteration  10: 2.667 us/op
+[info] Iteration   1: 2.669 us/op
+[info] Iteration   2: 2.698 us/op
+[info] Iteration   3: 2.703 us/op
+[info] Iteration   4: 2.659 us/op
+[info] Iteration   5: 2.661 us/op
+[info] Iteration   6: 2.750 us/op
+[info] Iteration   7: 2.689 us/op
+[info] Iteration   8: 2.703 us/op
+[info] Iteration   9: 2.679 us/op
+[info] Iteration  10: 2.678 us/op
+[info] Iteration  11: 2.662 us/op
+[info] Iteration  12: 2.668 us/op
+[info] Iteration  13: 2.756 us/op
+[info] Iteration  14: 2.683 us/op
+[info] Iteration  15: 2.668 us/op
+[info] Iteration  16: 2.673 us/op
+[info] Iteration  17: 2.688 us/op
+[info] Iteration  18: 2.720 us/op
+[info] Iteration  19: 2.671 us/op
+[info] Iteration  20: 2.661 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap":
+[info]   2.687 ±(99.9%) 0.024 us/op [Average]
+[info]   (min, avg, max) = (2.659, 2.687, 2.756), stdev = 0.028
+[info]   CI (99.9%): [2.663, 2.711] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap
+[info] # Run progress: 10.00% complete, ETA 00:05:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3286950.514 us/op
+[info] # Warmup Iteration   2: 115.251 us/op
+[info] # Warmup Iteration   3: 70.262 us/op
+[info] # Warmup Iteration   4: 70.354 us/op
+[info] # Warmup Iteration   5: 109.766 us/op
+[info] # Warmup Iteration   6: 70.212 us/op
+[info] # Warmup Iteration   7: 75.025 us/op
+[info] # Warmup Iteration   8: 69.980 us/op
+[info] # Warmup Iteration   9: 69.872 us/op
+[info] # Warmup Iteration  10: 71.462 us/op
+[info] Iteration   1: 69.409 us/op
+[info] Iteration   2: 69.559 us/op
+[info] Iteration   3: 69.439 us/op
+[info] Iteration   4: 68.483 us/op
+[info] Iteration   5: 70.493 us/op
+[info] Iteration   6: 69.591 us/op
+[info] Iteration   7: 70.123 us/op
+[info] Iteration   8: 68.602 us/op
+[info] Iteration   9: 69.480 us/op
+[info] Iteration  10: 69.866 us/op
+[info] Iteration  11: 69.235 us/op
+[info] Iteration  12: 70.173 us/op
+[info] Iteration  13: 69.169 us/op
+[info] Iteration  14: 69.180 us/op
+[info] Iteration  15: 70.318 us/op
+[info] Iteration  16: 68.812 us/op
+[info] Iteration  17: 68.924 us/op
+[info] Iteration  18: 68.790 us/op
+[info] Iteration  19: 68.681 us/op
+[info] Iteration  20: 69.708 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap":
+[info]   69.402 ±(99.9%) 0.512 us/op [Average]
+[info]   (min, avg, max) = (68.483, 69.402, 70.493), stdev = 0.590
+[info]   CI (99.9%): [68.890, 69.914] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap
+[info] # Run progress: 20.00% complete, ETA 00:04:26
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 4491196.911 us/op
+[info] # Warmup Iteration   2: 350.408 us/op
+[info] # Warmup Iteration   3: 318.970 us/op
+[info] # Warmup Iteration   4: 258.691 us/op
+[info] # Warmup Iteration   5: 259.899 us/op
+[info] # Warmup Iteration   6: 273.048 us/op
+[info] # Warmup Iteration   7: 271.226 us/op
+[info] # Warmup Iteration   8: 267.182 us/op
+[info] # Warmup Iteration   9: 290.985 us/op
+[info] # Warmup Iteration  10: 269.754 us/op
+[info] Iteration   1: 413.738 us/op
+[info] Iteration   2: 250.766 us/op
+[info] Iteration   3: 269.191 us/op
+[info] Iteration   4: 266.930 us/op
+[info] Iteration   5: 254.043 us/op
+[info] Iteration   6: 270.119 us/op
+[info] Iteration   7: 254.295 us/op
+[info] Iteration   8: 263.588 us/op
+[info] Iteration   9: 267.109 us/op
+[info] Iteration  10: 271.375 us/op
+[info] Iteration  11: 275.741 us/op
+[info] Iteration  12: 270.495 us/op
+[info] Iteration  13: 266.749 us/op
+[info] Iteration  14: 269.409 us/op
+[info] Iteration  15: 272.735 us/op
+[info] Iteration  16: 272.012 us/op
+[info] Iteration  17: 253.549 us/op
+[info] Iteration  18: 252.468 us/op
+[info] Iteration  19: 250.358 us/op
+[info] Iteration  20: 273.581 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap":
+[info]   271.913 ±(99.9%) 29.917 us/op [Average]
+[info]   (min, avg, max) = (250.358, 271.913, 413.738), stdev = 34.452
+[info]   CI (99.9%): [241.996, 301.829] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap
+[info] # Run progress: 30.00% complete, ETA 00:03:55
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3702453.873 us/op
+[info] # Warmup Iteration   2: 17.684 us/op
+[info] # Warmup Iteration   3: 11.994 us/op
+[info] # Warmup Iteration   4: 13.694 us/op
+[info] # Warmup Iteration   5: 12.882 us/op
+[info] # Warmup Iteration   6: 22.722 us/op
+[info] # Warmup Iteration   7: 12.409 us/op
+[info] # Warmup Iteration   8: 12.272 us/op
+[info] # Warmup Iteration   9: 12.280 us/op
+[info] # Warmup Iteration  10: 12.169 us/op
+[info] Iteration   1: 12.048 us/op
+[info] Iteration   2: 12.331 us/op
+[info] Iteration   3: 12.175 us/op
+[info] Iteration   4: 12.188 us/op
+[info] Iteration   5: 12.160 us/op
+[info] Iteration   6: 12.312 us/op
+[info] Iteration   7: 12.350 us/op
+[info] Iteration   8: 12.184 us/op
+[info] Iteration   9: 12.078 us/op
+[info] Iteration  10: 12.289 us/op
+[info] Iteration  11: 12.095 us/op
+[info] Iteration  12: 12.195 us/op
+[info] Iteration  13: 12.122 us/op
+[info] Iteration  14: 12.258 us/op
+[info] Iteration  15: 12.143 us/op
+[info] Iteration  16: 12.135 us/op
+[info] Iteration  17: 12.303 us/op
+[info] Iteration  18: 12.386 us/op
+[info] Iteration  19: 12.322 us/op
+[info] Iteration  20: 12.367 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap":
+[info]   12.222 ±(99.9%) 0.091 us/op [Average]
+[info]   (min, avg, max) = (12.048, 12.222, 12.386), stdev = 0.104
+[info]   CI (99.9%): [12.131, 12.313] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap
+[info] # Run progress: 40.00% complete, ETA 00:03:21
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3882495.749 us/op
+[info] # Warmup Iteration   2: 116.133 us/op
+[info] # Warmup Iteration   3: 161.391 us/op
+[info] # Warmup Iteration   4: 127.755 us/op
+[info] # Warmup Iteration   5: 114.802 us/op
+[info] # Warmup Iteration   6: 115.132 us/op
+[info] # Warmup Iteration   7: 112.939 us/op
+[info] # Warmup Iteration   8: 116.788 us/op
+[info] # Warmup Iteration   9: 114.722 us/op
+[info] # Warmup Iteration  10: 116.766 us/op
+[info] Iteration   1: 115.752 us/op
+[info] Iteration   2: 116.961 us/op
+[info] Iteration   3: 101.198 us/op
+[info] Iteration   4: 128.266 us/op
+[info] Iteration   5: 136.562 us/op
+[info] Iteration   6: 116.434 us/op
+[info] Iteration   7: 115.218 us/op
+[info] Iteration   8: 116.145 us/op
+[info] Iteration   9: 115.800 us/op
+[info] Iteration  10: 114.878 us/op
+[info] Iteration  11: 117.697 us/op
+[info] Iteration  12: 115.709 us/op
+[info] Iteration  13: 115.248 us/op
+[info] Iteration  14: 115.883 us/op
+[info] Iteration  15: 116.285 us/op
+[info] Iteration  16: 113.336 us/op
+[info] Iteration  17: 113.051 us/op
+[info] Iteration  18: 114.856 us/op
+[info] Iteration  19: 114.775 us/op
+[info] Iteration  20: 116.846 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap":
+[info]   116.545 ±(99.9%) 5.678 us/op [Average]
+[info]   (min, avg, max) = (101.198, 116.545, 136.562), stdev = 6.539
+[info]   CI (99.9%): [110.867, 122.223] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap
+[info] # Run progress: 50.00% complete, ETA 00:02:51
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1117056.013 us/op
+[info] # Warmup Iteration   2: 2.833 us/op
+[info] # Warmup Iteration   3: 2.179 us/op
+[info] # Warmup Iteration   4: 2.146 us/op
+[info] # Warmup Iteration   5: 2.104 us/op
+[info] # Warmup Iteration   6: 2.103 us/op
+[info] # Warmup Iteration   7: 2.104 us/op
+[info] # Warmup Iteration   8: 2.121 us/op
+[info] # Warmup Iteration   9: 2.131 us/op
+[info] # Warmup Iteration  10: 2.123 us/op
+[info] Iteration   1: 2.118 us/op
+[info] Iteration   2: 2.127 us/op
+[info] Iteration   3: 2.102 us/op
+[info] Iteration   4: 2.140 us/op
+[info] Iteration   5: 2.111 us/op
+[info] Iteration   6: 2.120 us/op
+[info] Iteration   7: 2.101 us/op
+[info] Iteration   8: 2.110 us/op
+[info] Iteration   9: 2.138 us/op
+[info] Iteration  10: 2.129 us/op
+[info] Iteration  11: 2.102 us/op
+[info] Iteration  12: 2.100 us/op
+[info] Iteration  13: 2.098 us/op
+[info] Iteration  14: 2.144 us/op
+[info] Iteration  15: 2.100 us/op
+[info] Iteration  16: 2.272 us/op
+[info] Iteration  17: 2.105 us/op
+[info] Iteration  18: 2.111 us/op
+[info] Iteration  19: 2.126 us/op
+[info] Iteration  20: 2.125 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap":
+[info]   2.124 ±(99.9%) 0.033 us/op [Average]
+[info]   (min, avg, max) = (2.098, 2.124, 2.272), stdev = 0.038
+[info]   CI (99.9%): [2.091, 2.157] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap
+[info] # Run progress: 60.00% complete, ETA 00:02:15
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1092954.197 us/op
+[info] # Warmup Iteration   2: 13.851 us/op
+[info] # Warmup Iteration   3: 10.790 us/op
+[info] # Warmup Iteration   4: 10.433 us/op
+[info] # Warmup Iteration   5: 10.414 us/op
+[info] # Warmup Iteration   6: 10.428 us/op
+[info] # Warmup Iteration   7: 10.436 us/op
+[info] # Warmup Iteration   8: 10.502 us/op
+[info] # Warmup Iteration   9: 10.471 us/op
+[info] # Warmup Iteration  10: 10.437 us/op
+[info] Iteration   1: 10.392 us/op
+[info] Iteration   2: 10.420 us/op
+[info] Iteration   3: 10.494 us/op
+[info] Iteration   4: 10.458 us/op
+[info] Iteration   5: 10.466 us/op
+[info] Iteration   6: 10.343 us/op
+[info] Iteration   7: 10.392 us/op
+[info] Iteration   8: 10.592 us/op
+[info] Iteration   9: 10.420 us/op
+[info] Iteration  10: 11.205 us/op
+[info] Iteration  11: 10.504 us/op
+[info] Iteration  12: 10.410 us/op
+[info] Iteration  13: 10.545 us/op
+[info] Iteration  14: 10.395 us/op
+[info] Iteration  15: 10.379 us/op
+[info] Iteration  16: 10.419 us/op
+[info] Iteration  17: 10.393 us/op
+[info] Iteration  18: 10.562 us/op
+[info] Iteration  19: 10.461 us/op
+[info] Iteration  20: 10.441 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap":
+[info]   10.485 ±(99.9%) 0.158 us/op [Average]
+[info]   (min, avg, max) = (10.343, 10.485, 11.205), stdev = 0.182
+[info]   CI (99.9%): [10.327, 10.642] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap
+[info] # Run progress: 70.00% complete, ETA 00:01:40
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1041577.237 us/op
+[info] # Warmup Iteration   2: 18.768 us/op
+[info] # Warmup Iteration   3: 16.327 us/op
+[info] # Warmup Iteration   4: 16.787 us/op
+[info] # Warmup Iteration   5: 15.862 us/op
+[info] # Warmup Iteration   6: 15.870 us/op
+[info] # Warmup Iteration   7: 16.308 us/op
+[info] # Warmup Iteration   8: 15.911 us/op
+[info] # Warmup Iteration   9: 15.822 us/op
+[info] # Warmup Iteration  10: 16.164 us/op
+[info] Iteration   1: 15.771 us/op
+[info] Iteration   2: 16.089 us/op
+[info] Iteration   3: 15.857 us/op
+[info] Iteration   4: 16.590 us/op
+[info] Iteration   5: 16.167 us/op
+[info] Iteration   6: 15.982 us/op
+[info] Iteration   7: 16.063 us/op
+[info] Iteration   8: 15.794 us/op
+[info] Iteration   9: 16.326 us/op
+[info] Iteration  10: 15.803 us/op
+[info] Iteration  11: 16.128 us/op
+[info] Iteration  12: 15.989 us/op
+[info] Iteration  13: 16.364 us/op
+[info] Iteration  14: 16.804 us/op
+[info] Iteration  15: 16.163 us/op
+[info] Iteration  16: 15.535 us/op
+[info] Iteration  17: 16.222 us/op
+[info] Iteration  18: 16.213 us/op
+[info] Iteration  19: 15.752 us/op
+[info] Iteration  20: 16.341 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap":
+[info]   16.098 ±(99.9%) 0.265 us/op [Average]
+[info]   (min, avg, max) = (15.535, 16.098, 16.804), stdev = 0.305
+[info]   CI (99.9%): [15.833, 16.363] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap
+[info] # Run progress: 80.00% complete, ETA 00:01:06
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1133007.337 us/op
+[info] # Warmup Iteration   2: 8.238 us/op
+[info] # Warmup Iteration   3: 6.944 us/op
+[info] # Warmup Iteration   4: 6.881 us/op
+[info] # Warmup Iteration   5: 6.905 us/op
+[info] # Warmup Iteration   6: 6.912 us/op
+[info] # Warmup Iteration   7: 6.855 us/op
+[info] # Warmup Iteration   8: 6.858 us/op
+[info] # Warmup Iteration   9: 6.842 us/op
+[info] # Warmup Iteration  10: 6.829 us/op
+[info] Iteration   1: 6.945 us/op
+[info] Iteration   2: 6.879 us/op
+[info] Iteration   3: 6.847 us/op
+[info] Iteration   4: 6.820 us/op
+[info] Iteration   5: 6.831 us/op
+[info] Iteration   6: 6.984 us/op
+[info] Iteration   7: 6.847 us/op
+[info] Iteration   8: 6.825 us/op
+[info] Iteration   9: 7.363 us/op
+[info] Iteration  10: 6.890 us/op
+[info] Iteration  11: 6.906 us/op
+[info] Iteration  12: 6.840 us/op
+[info] Iteration  13: 6.890 us/op
+[info] Iteration  14: 6.869 us/op
+[info] Iteration  15: 6.837 us/op
+[info] Iteration  16: 7.078 us/op
+[info] Iteration  17: 6.868 us/op
+[info] Iteration  18: 6.884 us/op
+[info] Iteration  19: 6.850 us/op
+[info] Iteration  20: 6.828 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap":
+[info]   6.904 ±(99.9%) 0.108 us/op [Average]
+[info]   (min, avg, max) = (6.820, 6.904, 7.363), stdev = 0.125
+[info]   CI (99.9%): [6.796, 7.012] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap
+[info] # Run progress: 90.00% complete, ETA 00:00:32
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1028172.651 us/op
+[info] # Warmup Iteration   2: 16.624 us/op
+[info] # Warmup Iteration   3: 12.449 us/op
+[info] # Warmup Iteration   4: 12.380 us/op
+[info] # Warmup Iteration   5: 12.383 us/op
+[info] # Warmup Iteration   6: 12.371 us/op
+[info] # Warmup Iteration   7: 12.199 us/op
+[info] # Warmup Iteration   8: 12.285 us/op
+[info] # Warmup Iteration   9: 12.273 us/op
+[info] # Warmup Iteration  10: 12.424 us/op
+[info] Iteration   1: 12.220 us/op
+[info] Iteration   2: 12.369 us/op
+[info] Iteration   3: 12.447 us/op
+[info] Iteration   4: 12.293 us/op
+[info] Iteration   5: 12.365 us/op
+[info] Iteration   6: 12.342 us/op
+[info] Iteration   7: 12.327 us/op
+[info] Iteration   8: 12.286 us/op
+[info] Iteration   9: 12.198 us/op
+[info] Iteration  10: 12.435 us/op
+[info] Iteration  11: 12.185 us/op
+[info] Iteration  12: 12.386 us/op
+[info] Iteration  13: 12.316 us/op
+[info] Iteration  14: 12.421 us/op
+[info] Iteration  15: 12.338 us/op
+[info] Iteration  16: 12.414 us/op
+[info] Iteration  17: 12.292 us/op
+[info] Iteration  18: 12.215 us/op
+[info] Iteration  19: 12.405 us/op
+[info] Iteration  20: 12.761 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap":
+[info]   12.351 ±(99.9%) 0.109 us/op [Average]
+[info]   (min, avg, max) = (12.185, 12.351, 12.761), stdev = 0.125
+[info]   CI (99.9%): [12.242, 12.459] (assumes normal distribution)
+[info] # Run complete. Total time: 00:05:26
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                                           Mode  Cnt    Score    Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.687 ±  0.024  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   69.402 ±  0.512  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  271.913 ± 29.917  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   12.222 ±  0.091  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  116.545 ±  5.678  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.124 ±  0.033  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.485 ±  0.158  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   16.098 ±  0.265  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.904 ±  0.108  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.351 ±  0.109  us/op
+[success] Total time: 329 s (05:29), completed Nov 6, 2024, 3:42:33 AM
+[info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 21.0.4)
+[info] loading settings for project global-plugins from metals.sbt,plugins.sbt ...
+[info] loading global plugins from /home/gaelrenoux/.sbt/1.0/plugins
+[info] loading settings for project public-scalaio2024-benchmarks-build from plugins.sbt ...
+[info] loading project definition from /home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/project
+[success] Generated .bloop/public-scalaio2024-benchmarks-build.json
+[success] Total time: 0 s, completed Nov 6, 2024, 6:15:48 AM
+[info] loading settings for project public-scalaio2024-benchmarks from build.sbt ...
+[info] set current project to scalaio2024-benchmarks (in build file:/home/gaelrenoux/Repositories/DataDome/public-scalaio2024-benchmarks/)
+[info] running (fork) org.openjdk.jmh.Main -i 20 -wi 10 -f1 -t1 .*chapter3.MapBenchmark_Invoice_HalfHit_(Small|Large).*
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap
+[info] # Run progress: 0.00% complete, ETA 00:05:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3311946.381 us/op
+[info] # Warmup Iteration   2: 10.852 us/op
+[info] # Warmup Iteration   3: 2.716 us/op
+[info] # Warmup Iteration   4: 2.785 us/op
+[info] # Warmup Iteration   5: 2.728 us/op
+[info] # Warmup Iteration   6: 2.755 us/op
+[info] # Warmup Iteration   7: 2.713 us/op
+[info] # Warmup Iteration   8: 2.696 us/op
+[info] # Warmup Iteration   9: 2.710 us/op
+[info] # Warmup Iteration  10: 2.762 us/op
+[info] Iteration   1: 2.752 us/op
+[info] Iteration   2: 2.698 us/op
+[info] Iteration   3: 2.729 us/op
+[info] Iteration   4: 2.741 us/op
+[info] Iteration   5: 2.697 us/op
+[info] Iteration   6: 2.756 us/op
+[info] Iteration   7: 2.707 us/op
+[info] Iteration   8: 2.710 us/op
+[info] Iteration   9: 2.698 us/op
+[info] Iteration  10: 2.693 us/op
+[info] Iteration  11: 2.733 us/op
+[info] Iteration  12: 2.709 us/op
+[info] Iteration  13: 2.694 us/op
+[info] Iteration  14: 2.699 us/op
+[info] Iteration  15: 2.694 us/op
+[info] Iteration  16: 2.745 us/op
+[info] Iteration  17: 2.698 us/op
+[info] Iteration  18: 2.686 us/op
+[info] Iteration  19: 2.708 us/op
+[info] Iteration  20: 2.691 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap":
+[info]   2.712 ±(99.9%) 0.019 us/op [Average]
+[info]   (min, avg, max) = (2.686, 2.712, 2.756), stdev = 0.022
+[info]   CI (99.9%): [2.693, 2.731] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap
+[info] # Run progress: 10.00% complete, ETA 00:04:59
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3304683.377 us/op
+[info] # Warmup Iteration   2: 89.458 us/op
+[info] # Warmup Iteration   3: 67.579 us/op
+[info] # Warmup Iteration   4: 70.136 us/op
+[info] # Warmup Iteration   5: 73.449 us/op
+[info] # Warmup Iteration   6: 71.056 us/op
+[info] # Warmup Iteration   7: 90.397 us/op
+[info] # Warmup Iteration   8: 90.768 us/op
+[info] # Warmup Iteration   9: 72.313 us/op
+[info] # Warmup Iteration  10: 70.954 us/op
+[info] Iteration   1: 71.614 us/op
+[info] Iteration   2: 82.621 us/op
+[info] Iteration   3: 71.074 us/op
+[info] Iteration   4: 71.710 us/op
+[info] Iteration   5: 70.320 us/op
+[info] Iteration   6: 70.264 us/op
+[info] Iteration   7: 70.388 us/op
+[info] Iteration   8: 72.266 us/op
+[info] Iteration   9: 70.546 us/op
+[info] Iteration  10: 70.045 us/op
+[info] Iteration  11: 70.763 us/op
+[info] Iteration  12: 70.534 us/op
+[info] Iteration  13: 71.544 us/op
+[info] Iteration  14: 70.243 us/op
+[info] Iteration  15: 70.145 us/op
+[info] Iteration  16: 70.272 us/op
+[info] Iteration  17: 70.017 us/op
+[info] Iteration  18: 71.123 us/op
+[info] Iteration  19: 70.167 us/op
+[info] Iteration  20: 79.347 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_HashMap":
+[info]   71.750 ±(99.9%) 2.835 us/op [Average]
+[info]   (min, avg, max) = (70.017, 71.750, 82.621), stdev = 3.265
+[info]   CI (99.9%): [68.915, 74.585] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap
+[info] # Run progress: 20.00% complete, ETA 00:04:25
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 4473394.981 us/op
+[info] # Warmup Iteration   2: 343.706 us/op
+[info] # Warmup Iteration   3: 302.783 us/op
+[info] # Warmup Iteration   4: 274.948 us/op
+[info] # Warmup Iteration   5: 273.605 us/op
+[info] # Warmup Iteration   6: 272.733 us/op
+[info] # Warmup Iteration   7: 287.212 us/op
+[info] # Warmup Iteration   8: 270.716 us/op
+[info] # Warmup Iteration   9: 277.646 us/op
+[info] # Warmup Iteration  10: 271.089 us/op
+[info] Iteration   1: 426.255 us/op
+[info] Iteration   2: 271.812 us/op
+[info] Iteration   3: 272.944 us/op
+[info] Iteration   4: 276.714 us/op
+[info] Iteration   5: 266.462 us/op
+[info] Iteration   6: 270.770 us/op
+[info] Iteration   7: 273.847 us/op
+[info] Iteration   8: 274.071 us/op
+[info] Iteration   9: 271.975 us/op
+[info] Iteration  10: 272.959 us/op
+[info] Iteration  11: 273.121 us/op
+[info] Iteration  12: 274.199 us/op
+[info] Iteration  13: 276.098 us/op
+[info] Iteration  14: 288.860 us/op
+[info] Iteration  15: 274.108 us/op
+[info] Iteration  16: 276.190 us/op
+[info] Iteration  17: 276.281 us/op
+[info] Iteration  18: 273.537 us/op
+[info] Iteration  19: 279.897 us/op
+[info] Iteration  20: 277.140 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_IntMap":
+[info]   282.362 ±(99.9%) 29.649 us/op [Average]
+[info]   (min, avg, max) = (266.462, 282.362, 426.255), stdev = 34.143
+[info]   CI (99.9%): [252.713, 312.011] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap
+[info] # Run progress: 30.00% complete, ETA 00:03:55
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3615722.925 us/op
+[info] # Warmup Iteration   2: 17.939 us/op
+[info] # Warmup Iteration   3: 12.282 us/op
+[info] # Warmup Iteration   4: 13.974 us/op
+[info] # Warmup Iteration   5: 12.765 us/op
+[info] # Warmup Iteration   6: 24.038 us/op
+[info] # Warmup Iteration   7: 12.332 us/op
+[info] # Warmup Iteration   8: 12.456 us/op
+[info] # Warmup Iteration   9: 12.444 us/op
+[info] # Warmup Iteration  10: 12.416 us/op
+[info] Iteration   1: 12.493 us/op
+[info] Iteration   2: 12.404 us/op
+[info] Iteration   3: 12.360 us/op
+[info] Iteration   4: 12.398 us/op
+[info] Iteration   5: 12.354 us/op
+[info] Iteration   6: 12.633 us/op
+[info] Iteration   7: 13.244 us/op
+[info] Iteration   8: 12.644 us/op
+[info] Iteration   9: 12.538 us/op
+[info] Iteration  10: 12.489 us/op
+[info] Iteration  11: 12.635 us/op
+[info] Iteration  12: 12.584 us/op
+[info] Iteration  13: 12.532 us/op
+[info] Iteration  14: 12.672 us/op
+[info] Iteration  15: 12.575 us/op
+[info] Iteration  16: 12.791 us/op
+[info] Iteration  17: 12.296 us/op
+[info] Iteration  18: 12.271 us/op
+[info] Iteration  19: 12.325 us/op
+[info] Iteration  20: 12.599 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap":
+[info]   12.542 ±(99.9%) 0.189 us/op [Average]
+[info]   (min, avg, max) = (12.271, 12.542, 13.244), stdev = 0.218
+[info]   CI (99.9%): [12.353, 12.731] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap
+[info] # Run progress: 40.00% complete, ETA 00:03:21
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3948353.635 us/op
+[info] # Warmup Iteration   2: 117.880 us/op
+[info] # Warmup Iteration   3: 156.400 us/op
+[info] # Warmup Iteration   4: 122.865 us/op
+[info] # Warmup Iteration   5: 116.259 us/op
+[info] # Warmup Iteration   6: 113.252 us/op
+[info] # Warmup Iteration   7: 115.074 us/op
+[info] # Warmup Iteration   8: 115.978 us/op
+[info] # Warmup Iteration   9: 114.169 us/op
+[info] # Warmup Iteration  10: 112.547 us/op
+[info] Iteration   1: 112.479 us/op
+[info] Iteration   2: 113.389 us/op
+[info] Iteration   3: 116.141 us/op
+[info] Iteration   4: 111.806 us/op
+[info] Iteration   5: 114.019 us/op
+[info] Iteration   6: 112.666 us/op
+[info] Iteration   7: 112.864 us/op
+[info] Iteration   8: 111.969 us/op
+[info] Iteration   9: 109.789 us/op
+[info] Iteration  10: 125.699 us/op
+[info] Iteration  11: 121.907 us/op
+[info] Iteration  12: 111.232 us/op
+[info] Iteration  13: 113.686 us/op
+[info] Iteration  14: 113.698 us/op
+[info] Iteration  15: 112.630 us/op
+[info] Iteration  16: 111.329 us/op
+[info] Iteration  17: 112.164 us/op
+[info] Iteration  18: 111.682 us/op
+[info] Iteration  19: 113.220 us/op
+[info] Iteration  20: 113.587 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Large.get_VectorMap":
+[info]   113.798 ±(99.9%) 3.224 us/op [Average]
+[info]   (min, avg, max) = (109.789, 113.798, 125.699), stdev = 3.713
+[info]   CI (99.9%): [110.573, 117.022] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap
+[info] # Run progress: 50.00% complete, ETA 00:02:51
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1095695.602 us/op
+[info] # Warmup Iteration   2: 2.842 us/op
+[info] # Warmup Iteration   3: 2.237 us/op
+[info] # Warmup Iteration   4: 2.119 us/op
+[info] # Warmup Iteration   5: 2.145 us/op
+[info] # Warmup Iteration   6: 2.118 us/op
+[info] # Warmup Iteration   7: 2.131 us/op
+[info] # Warmup Iteration   8: 2.213 us/op
+[info] # Warmup Iteration   9: 2.214 us/op
+[info] # Warmup Iteration  10: 2.119 us/op
+[info] Iteration   1: 2.130 us/op
+[info] Iteration   2: 2.121 us/op
+[info] Iteration   3: 2.143 us/op
+[info] Iteration   4: 2.121 us/op
+[info] Iteration   5: 2.147 us/op
+[info] Iteration   6: 2.134 us/op
+[info] Iteration   7: 2.149 us/op
+[info] Iteration   8: 2.152 us/op
+[info] Iteration   9: 2.142 us/op
+[info] Iteration  10: 2.121 us/op
+[info] Iteration  11: 2.132 us/op
+[info] Iteration  12: 2.123 us/op
+[info] Iteration  13: 2.165 us/op
+[info] Iteration  14: 2.118 us/op
+[info] Iteration  15: 2.134 us/op
+[info] Iteration  16: 2.122 us/op
+[info] Iteration  17: 2.136 us/op
+[info] Iteration  18: 2.150 us/op
+[info] Iteration  19: 2.134 us/op
+[info] Iteration  20: 2.124 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap":
+[info]   2.135 ±(99.9%) 0.011 us/op [Average]
+[info]   (min, avg, max) = (2.118, 2.135, 2.165), stdev = 0.013
+[info]   CI (99.9%): [2.124, 2.146] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap
+[info] # Run progress: 60.00% complete, ETA 00:02:14
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1082966.843 us/op
+[info] # Warmup Iteration   2: 14.895 us/op
+[info] # Warmup Iteration   3: 10.793 us/op
+[info] # Warmup Iteration   4: 12.218 us/op
+[info] # Warmup Iteration   5: 12.191 us/op
+[info] # Warmup Iteration   6: 13.623 us/op
+[info] # Warmup Iteration   7: 13.601 us/op
+[info] # Warmup Iteration   8: 13.432 us/op
+[info] # Warmup Iteration   9: 13.486 us/op
+[info] # Warmup Iteration  10: 12.582 us/op
+[info] Iteration   1: 12.426 us/op
+[info] Iteration   2: 10.963 us/op
+[info] Iteration   3: 11.008 us/op
+[info] Iteration   4: 11.582 us/op
+[info] Iteration   5: 10.411 us/op
+[info] Iteration   6: 10.542 us/op
+[info] Iteration   7: 10.516 us/op
+[info] Iteration   8: 10.397 us/op
+[info] Iteration   9: 10.827 us/op
+[info] Iteration  10: 10.581 us/op
+[info] Iteration  11: 10.514 us/op
+[info] Iteration  12: 10.531 us/op
+[info] Iteration  13: 10.386 us/op
+[info] Iteration  14: 10.504 us/op
+[info] Iteration  15: 10.479 us/op
+[info] Iteration  16: 10.386 us/op
+[info] Iteration  17: 10.554 us/op
+[info] Iteration  18: 10.405 us/op
+[info] Iteration  19: 10.522 us/op
+[info] Iteration  20: 10.426 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_HashMap":
+[info]   10.698 ±(99.9%) 0.434 us/op [Average]
+[info]   (min, avg, max) = (10.386, 10.698, 12.426), stdev = 0.500
+[info]   CI (99.9%): [10.264, 11.132] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap
+[info] # Run progress: 70.00% complete, ETA 00:01:39
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1122880.980 us/op
+[info] # Warmup Iteration   2: 18.841 us/op
+[info] # Warmup Iteration   3: 15.721 us/op
+[info] # Warmup Iteration   4: 15.941 us/op
+[info] # Warmup Iteration   5: 15.851 us/op
+[info] # Warmup Iteration   6: 16.250 us/op
+[info] # Warmup Iteration   7: 15.731 us/op
+[info] # Warmup Iteration   8: 15.682 us/op
+[info] # Warmup Iteration   9: 15.394 us/op
+[info] # Warmup Iteration  10: 17.361 us/op
+[info] Iteration   1: 17.993 us/op
+[info] Iteration   2: 15.667 us/op
+[info] Iteration   3: 15.533 us/op
+[info] Iteration   4: 15.748 us/op
+[info] Iteration   5: 16.490 us/op
+[info] Iteration   6: 16.084 us/op
+[info] Iteration   7: 15.875 us/op
+[info] Iteration   8: 15.591 us/op
+[info] Iteration   9: 15.932 us/op
+[info] Iteration  10: 15.518 us/op
+[info] Iteration  11: 15.926 us/op
+[info] Iteration  12: 16.000 us/op
+[info] Iteration  13: 15.969 us/op
+[info] Iteration  14: 15.696 us/op
+[info] Iteration  15: 15.673 us/op
+[info] Iteration  16: 16.246 us/op
+[info] Iteration  17: 15.670 us/op
+[info] Iteration  18: 15.591 us/op
+[info] Iteration  19: 15.571 us/op
+[info] Iteration  20: 15.856 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_IntMap":
+[info]   15.931 ±(99.9%) 0.475 us/op [Average]
+[info]   (min, avg, max) = (15.518, 15.931, 17.993), stdev = 0.547
+[info]   CI (99.9%): [15.456, 16.406] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap
+[info] # Run progress: 80.00% complete, ETA 00:01:05
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1039333.572 us/op
+[info] # Warmup Iteration   2: 8.211 us/op
+[info] # Warmup Iteration   3: 6.986 us/op
+[info] # Warmup Iteration   4: 6.806 us/op
+[info] # Warmup Iteration   5: 6.958 us/op
+[info] # Warmup Iteration   6: 6.786 us/op
+[info] # Warmup Iteration   7: 6.836 us/op
+[info] # Warmup Iteration   8: 6.906 us/op
+[info] # Warmup Iteration   9: 6.813 us/op
+[info] # Warmup Iteration  10: 6.904 us/op
+[info] Iteration   1: 7.185 us/op
+[info] Iteration   2: 6.846 us/op
+[info] Iteration   3: 6.801 us/op
+[info] Iteration   4: 6.998 us/op
+[info] Iteration   5: 6.945 us/op
+[info] Iteration   6: 6.828 us/op
+[info] Iteration   7: 6.813 us/op
+[info] Iteration   8: 6.804 us/op
+[info] Iteration   9: 6.850 us/op
+[info] Iteration  10: 6.877 us/op
+[info] Iteration  11: 6.785 us/op
+[info] Iteration  12: 6.825 us/op
+[info] Iteration  13: 6.959 us/op
+[info] Iteration  14: 6.787 us/op
+[info] Iteration  15: 6.872 us/op
+[info] Iteration  16: 6.861 us/op
+[info] Iteration  17: 6.921 us/op
+[info] Iteration  18: 6.792 us/op
+[info] Iteration  19: 6.791 us/op
+[info] Iteration  20: 6.881 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap":
+[info]   6.871 ±(99.9%) 0.084 us/op [Average]
+[info]   (min, avg, max) = (6.785, 6.871, 7.185), stdev = 0.096
+[info]   CI (99.9%): [6.788, 6.955] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 21.0.4, OpenJDK 64-Bit Server VM, 21.0.4+7-LTS
+[info] # VM invoker: /home/gaelrenoux/.sdkman/candidates/java/21.0.4-tem/bin/java
+[info] # VM options: -server -Xms1g -Xmx1g -XX:NewSize=512m -XX:MaxNewSize=512m -XX:InitialCodeCacheSize=256m -XX:ReservedCodeCacheSize=256m -XX:+UseParallelGC -XX:MaxInlineLevel=18 -XX:+AlwaysPreTouch
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 10 iterations, 1 s each
+[info] # Measurement: 20 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap
+[info] # Run progress: 90.00% complete, ETA 00:00:32
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1110366.074 us/op
+[info] # Warmup Iteration   2: 16.517 us/op
+[info] # Warmup Iteration   3: 12.520 us/op
+[info] # Warmup Iteration   4: 14.066 us/op
+[info] # Warmup Iteration   5: 17.087 us/op
+[info] # Warmup Iteration   6: 16.030 us/op
+[info] # Warmup Iteration   7: 13.495 us/op
+[info] # Warmup Iteration   8: 12.269 us/op
+[info] # Warmup Iteration   9: 12.399 us/op
+[info] # Warmup Iteration  10: 12.237 us/op
+[info] Iteration   1: 12.187 us/op
+[info] Iteration   2: 12.294 us/op
+[info] Iteration   3: 12.260 us/op
+[info] Iteration   4: 12.447 us/op
+[info] Iteration   5: 12.188 us/op
+[info] Iteration   6: 12.235 us/op
+[info] Iteration   7: 12.525 us/op
+[info] Iteration   8: 12.220 us/op
+[info] Iteration   9: 12.357 us/op
+[info] Iteration  10: 12.207 us/op
+[info] Iteration  11: 12.291 us/op
+[info] Iteration  12: 12.271 us/op
+[info] Iteration  13: 12.197 us/op
+[info] Iteration  14: 12.423 us/op
+[info] Iteration  15: 12.312 us/op
+[info] Iteration  16: 12.271 us/op
+[info] Iteration  17: 12.181 us/op
+[info] Iteration  18: 12.248 us/op
+[info] Iteration  19: 12.461 us/op
+[info] Iteration  20: 12.191 us/op
+[info] Result "co.datadome.pub.scalaio2024.benchmarks.chapter3.MapBenchmark_Invoice_HalfHit_Small.get_VectorMap":
+[info]   12.288 ±(99.9%) 0.089 us/op [Average]
+[info]   (min, avg, max) = (12.181, 12.288, 12.525), stdev = 0.103
+[info]   CI (99.9%): [12.199, 12.378] (assumes normal distribution)
+[info] # Run complete. Total time: 00:05:25
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                                           Mode  Cnt    Score    Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.712 ±  0.019  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   71.750 ±  2.835  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  282.362 ± 29.649  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   12.542 ±  0.189  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  113.798 ±  3.224  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.135 ±  0.011  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.698 ±  0.434  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   15.931 ±  0.475  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.871 ±  0.084  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.288 ±  0.089  us/op
+[success] Total time: 328 s (05:28), completed Nov 6, 2024, 6:21:17 AM

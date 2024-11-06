@@ -1,0 +1,55 @@
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  61888622.809 ± 458907.926  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  50177418.520 ± 343820.924  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  24277222.541 ± 140117.503  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    622763.413 ±   6715.156  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    554685.298 ±   5350.047  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    233889.260 ±   1489.714  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     30701.672 ±    288.498  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20    104457.542 ±   2236.891  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     14334.285 ±    105.268  us/op
+
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  62649047.511 ± 416103.328  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  50606531.708 ± 103048.138  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  23536449.468 ±  52638.761  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    623085.990 ±   7632.998  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    501541.095 ±   4224.285  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    285566.202 ±   1553.822  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     31355.215 ±    408.359  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20     25043.314 ±    264.191  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     14219.585 ±    129.432  us/op
+
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  62661680.580 ± 494750.002  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  52885161.691 ± 134659.873  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  23030448.953 ±  53121.807  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    626316.060 ±   7192.671  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    490865.288 ±   5696.053  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    289940.522 ±   1768.323  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     30728.115 ±    293.768  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20     26475.084 ±    278.492  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     11655.764 ±     68.122  us/op
+
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  62530123.052 ± 200221.469  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  50254722.380 ± 338850.060  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  23098400.636 ± 154413.444  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    638283.293 ±   8961.066  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    496946.666 ±   4372.690  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    229126.236 ±   1711.103  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     31764.300 ±    599.073  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20     25052.797 ±    276.593  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     11617.986 ±     86.602  us/op
+
+[info] Benchmark                              Mode  Cnt         Score        Error  Units
+[info] GastonBenchmarkLarge.improve_gaston1   avgt   20  62724024.761 ± 129568.735  us/op
+[info] GastonBenchmarkLarge.improve_gaston3   avgt   20  53363869.667 ± 305627.037  us/op
+[info] GastonBenchmarkLarge.improve_gaston4   avgt   20  22990248.425 ± 197112.691  us/op
+[info] GastonBenchmarkSmall.improve_gaston1   avgt   20    638069.050 ±   7130.423  us/op
+[info] GastonBenchmarkSmall.improve_gaston3   avgt   20    494191.647 ±   4755.429  us/op
+[info] GastonBenchmarkSmall.improve_gaston4   avgt   20    236366.116 ±   1659.449  us/op
+[info] GastonBenchmarkXSmall.improve_gaston1  avgt   20     30992.419 ±    210.520  us/op
+[info] GastonBenchmarkXSmall.improve_gaston3  avgt   20     24628.270 ±    258.305  us/op
+[info] GastonBenchmarkXSmall.improve_gaston4  avgt   20     11512.960 ±     67.384  us/op
+[success] Total time: 4378 s (01:12:58), completed Nov 6, 2024, 12:17:43 PM

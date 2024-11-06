@@ -1,0 +1,59 @@
+[info] Benchmark                                           Mode  Cnt    Score    Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.687 ±  0.018  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   69.040 ±  1.054  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  299.426 ± 34.453  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   12.377 ±  0.175  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  114.890 ±  1.040  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.132 ±  0.024  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.529 ±  0.103  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   15.710 ±  0.140  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.841 ±  0.106  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.315 ±  0.101  us/op
+
+[info] Benchmark                                           Mode  Cnt    Score    Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.680 ±  0.019  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   73.128 ±  0.760  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  276.823 ± 30.387  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   12.713 ±  0.142  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  119.405 ±  9.608  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.118 ±  0.016  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.429 ±  0.160  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   14.957 ±  0.150  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.902 ±  0.116  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.281 ±  0.069  us/op
+
+[info] Benchmark                                           Mode  Cnt    Score   Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.701 ± 0.020  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   76.491 ± 1.130  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  270.707 ± 5.312  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   14.379 ± 0.911  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  114.720 ± 0.826  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.138 ± 0.017  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.425 ± 0.064  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   14.994 ± 0.246  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.871 ± 0.081  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.323 ± 0.138  us/op
+
+[info] Benchmark                                           Mode  Cnt    Score    Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.687 ±  0.024  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   69.402 ±  0.512  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  271.913 ± 29.917  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   12.222 ±  0.091  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  116.545 ±  5.678  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.124 ±  0.033  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.485 ±  0.158  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   16.098 ±  0.265  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.904 ±  0.108  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.351 ±  0.109  us/op
+
+[info] Benchmark                                           Mode  Cnt    Score    Error  Units
+[info] MapBenchmark_Invoice_HalfHit_Large.apply_ArrayMap   avgt   20    2.712 ±  0.019  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_HashMap      avgt   20   71.750 ±  2.835  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_IntMap       avgt   20  282.362 ± 29.649  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_JavaHashMap  avgt   20   12.542 ±  0.189  us/op
+[info] MapBenchmark_Invoice_HalfHit_Large.get_VectorMap    avgt   20  113.798 ±  3.224  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.apply_ArrayMap   avgt   20    2.135 ±  0.011  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_HashMap      avgt   20   10.698 ±  0.434  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_IntMap       avgt   20   15.931 ±  0.475  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_JavaHashMap  avgt   20    6.871 ±  0.084  us/op
+[info] MapBenchmark_Invoice_HalfHit_Small.get_VectorMap    avgt   20   12.288 ±  0.089  us/op

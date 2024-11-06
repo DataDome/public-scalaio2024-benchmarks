@@ -1,0 +1,39 @@
+[info] Benchmark                                           Mode  Cnt      Score      Error  Units
+[info] AppendBenchmark_String_Large.append_javaArrayList   avgt   20  13852.515 ±  375.359  us/op
+[info] AppendBenchmark_String_Large.append_list            avgt   20  15369.764 ±  844.341  us/op
+[info] AppendBenchmark_String_Large.append_listBuffer      avgt   20   9332.273 ±  540.038  us/op
+[info] AppendBenchmark_String_Large.prepend_javaArrayList  avgt   20  27845.411 ± 1820.220  us/op
+[info] AppendBenchmark_String_Large.prepend_list           avgt   20   8236.737 ±  492.693  us/op
+[info] AppendBenchmark_String_Large.prepend_listBuffer     avgt   20   7964.618 ±  312.171  us/op
+
+[info] Benchmark                                           Mode  Cnt      Score      Error  Units
+[info] AppendBenchmark_String_Large.append_javaArrayList   avgt   20  13396.244 ±  257.248  us/op
+[info] AppendBenchmark_String_Large.append_list            avgt   20  17334.259 ±  825.813  us/op
+[info] AppendBenchmark_String_Large.append_listBuffer      avgt   20   9433.426 ±  948.234  us/op
+[info] AppendBenchmark_String_Large.prepend_javaArrayList  avgt   20  27558.961 ± 1770.078  us/op
+[info] AppendBenchmark_String_Large.prepend_list           avgt   20   7293.312 ±  549.419  us/op
+[info] AppendBenchmark_String_Large.prepend_listBuffer     avgt   20   7807.260 ±  264.463  us/op
+
+[info] Benchmark                                           Mode  Cnt      Score      Error  Units
+[info] AppendBenchmark_String_Large.append_javaArrayList   avgt   20  13363.433 ±  346.223  us/op
+[info] AppendBenchmark_String_Large.append_list            avgt   20  17673.011 ± 1169.351  us/op
+[info] AppendBenchmark_String_Large.append_listBuffer      avgt   20   9298.196 ±  498.316  us/op
+[info] AppendBenchmark_String_Large.prepend_javaArrayList  avgt   20  28764.323 ± 1357.527  us/op
+[info] AppendBenchmark_String_Large.prepend_list           avgt   20   6997.563 ±  454.987  us/op
+[info] AppendBenchmark_String_Large.prepend_listBuffer     avgt   20   8528.129 ±  878.939  us/op
+
+[info] Benchmark                                           Mode  Cnt      Score      Error  Units
+[info] AppendBenchmark_String_Large.append_javaArrayList   avgt   20  13471.858 ±  623.401  us/op
+[info] AppendBenchmark_String_Large.append_list            avgt   20  17375.438 ± 1173.059  us/op
+[info] AppendBenchmark_String_Large.append_listBuffer      avgt   20   9292.945 ±  480.045  us/op
+[info] AppendBenchmark_String_Large.prepend_javaArrayList  avgt   20  30214.556 ± 5645.300  us/op
+[info] AppendBenchmark_String_Large.prepend_list           avgt   20   7012.737 ±  300.610  us/op
+[info] AppendBenchmark_String_Large.prepend_listBuffer     avgt   20   8282.089 ± 1050.745  us/op
+
+[info] Benchmark                                           Mode  Cnt      Score      Error  Units
+[info] AppendBenchmark_String_Large.append_javaArrayList   avgt   20  13859.427 ±  377.284  us/op
+[info] AppendBenchmark_String_Large.append_list            avgt   20  17917.314 ±  975.108  us/op
+[info] AppendBenchmark_String_Large.append_listBuffer      avgt   20   9552.796 ± 1509.020  us/op
+[info] AppendBenchmark_String_Large.prepend_javaArrayList  avgt   20  28369.037 ± 2037.602  us/op
+[info] AppendBenchmark_String_Large.prepend_list           avgt   20   7266.141 ±  346.519  us/op
+[info] AppendBenchmark_String_Large.prepend_listBuffer     avgt   20   8529.687 ±  608.614  us/op
