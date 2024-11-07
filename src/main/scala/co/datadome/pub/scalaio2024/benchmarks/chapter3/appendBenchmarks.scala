@@ -56,16 +56,16 @@ abstract class AppendBenchmarkBase[A: ClassTag] {
     val _ = result.toList
   }
 
-  @Benchmark def append_javaArrayList(): Unit = {
-    val result: jutil.ArrayList[A] = new jutil.ArrayList[A]()
-    sample.foreach(result.add)
-    val _ = result.asScala.toList
+  @Benchmark def append_javaLinkedList(): Unit = {
+    val result: jutil.LinkedList[A] = new jutil.LinkedList[A]()
+    sample.foreach(result.addLast)
+    val _ = result
   }
 
-  @Benchmark def prepend_javaArrayList(): Unit = {
-    val result: jutil.ArrayList[A] = new jutil.ArrayList[A]()
-    sample.foreach(result.add)
-    val _ = result.asScala.reverse.toList
+  @Benchmark def prepend_javaLinkedList(): Unit = {
+    val result: jutil.LinkedList[A] = new jutil.LinkedList[A]()
+    sample.foreach(result.addFirst)
+    val _ = result
   }
 }
 
